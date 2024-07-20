@@ -64,6 +64,30 @@
     <Compile Include="Boleta.Designer.cs">
       <DependentUpon>Boleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Certifiacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certifiacion.Designer.cs">
+      <DependentUpon>Certifiacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listado_alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_alumnos.Designer.cs">
+      <DependentUpon>Listado_alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listado_catedraticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_catedraticos.Designer.cs">
+      <DependentUpon>Listado_catedraticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listado_Cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listado_Cursos.Designer.cs">
+      <DependentUpon>Listado_Cursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +116,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Boleta.resx">
       <DependentUpon>Boleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certifiacion.resx">
+      <DependentUpon>Certifiacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_alumnos.resx">
+      <DependentUpon>Listado_alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_catedraticos.resx">
+      <DependentUpon>Listado_catedraticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listado_Cursos.resx">
+      <DependentUpon>Listado_Cursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
