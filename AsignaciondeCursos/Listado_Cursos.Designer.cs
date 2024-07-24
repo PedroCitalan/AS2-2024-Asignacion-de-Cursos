@@ -29,97 +29,104 @@ namespace AsignaciondeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Dgv_curso = new System.Windows.Forms.DataGridView();
+            this.Lbl_listCurso = new System.Windows.Forms.Label();
+            this.Lbl_codCar = new System.Windows.Forms.Label();
+            this.Txt_codCarrera = new System.Windows.Forms.TextBox();
+            this.Btn_buscar = new System.Windows.Forms.Button();
+            this.Btn_limpiar = new System.Windows.Forms.Button();
+            this.Btn_salir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_curso)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Dgv_curso
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 285);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1041, 401);
-            this.dataGridView1.TabIndex = 2;
+            this.Dgv_curso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_curso.Location = new System.Drawing.Point(9, 232);
+            this.Dgv_curso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Dgv_curso.Name = "Dgv_curso";
+            this.Dgv_curso.RowHeadersWidth = 51;
+            this.Dgv_curso.RowTemplate.Height = 24;
+            this.Dgv_curso.Size = new System.Drawing.Size(781, 326);
+            this.Dgv_curso.TabIndex = 2;
             // 
-            // label1
+            // Lbl_listCurso
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(392, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 29);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Listado de Cursos";
+            this.Lbl_listCurso.AutoSize = true;
+            this.Lbl_listCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_listCurso.Location = new System.Drawing.Point(294, 7);
+            this.Lbl_listCurso.Name = "Lbl_listCurso";
+            this.Lbl_listCurso.Size = new System.Drawing.Size(160, 24);
+            this.Lbl_listCurso.TabIndex = 3;
+            this.Lbl_listCurso.Text = "Listado de Cursos";
             // 
-            // label2
+            // Lbl_codCar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 85);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Codigo Carrera";
+            this.Lbl_codCar.AutoSize = true;
+            this.Lbl_codCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_codCar.Location = new System.Drawing.Point(41, 69);
+            this.Lbl_codCar.Name = "Lbl_codCar";
+            this.Lbl_codCar.Size = new System.Drawing.Size(120, 16);
+            this.Lbl_codCar.TabIndex = 4;
+            this.Lbl_codCar.Text = "Código de carrera:";
             // 
-            // textBox1
+            // Txt_codCarrera
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 22);
-            this.textBox1.TabIndex = 5;
+            this.Txt_codCarrera.Location = new System.Drawing.Point(166, 68);
+            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_codCarrera.Name = "Txt_codCarrera";
+            this.Txt_codCarrera.Size = new System.Drawing.Size(128, 20);
+            this.Txt_codCarrera.TabIndex = 5;
             // 
-            // button1
+            // Btn_buscar
             // 
-            this.button1.Location = new System.Drawing.Point(735, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_buscar.Location = new System.Drawing.Point(551, 68);
+            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_buscar.Name = "Btn_buscar";
+            this.Btn_buscar.Size = new System.Drawing.Size(80, 30);
+            this.Btn_buscar.TabIndex = 10;
+            this.Btn_buscar.Text = "Buscar";
+            this.Btn_buscar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Btn_limpiar
             // 
-            this.button2.Location = new System.Drawing.Point(735, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_limpiar.Location = new System.Drawing.Point(551, 116);
+            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_limpiar.Name = "Btn_limpiar";
+            this.Btn_limpiar.Size = new System.Drawing.Size(80, 31);
+            this.Btn_limpiar.TabIndex = 11;
+            this.Btn_limpiar.Text = "Limpiar";
+            this.Btn_limpiar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Btn_salir
             // 
-            this.button3.Location = new System.Drawing.Point(735, 202);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Salir";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_salir.Location = new System.Drawing.Point(551, 164);
+            this.Btn_salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_salir.Name = "Btn_salir";
+            this.Btn_salir.Size = new System.Drawing.Size(80, 31);
+            this.Btn_salir.TabIndex = 12;
+            this.Btn_salir.Text = "Salir";
+            this.Btn_salir.UseVisualStyleBackColor = true;
             // 
             // Listado_Cursos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 690);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(802, 561);
+            this.Controls.Add(this.Btn_salir);
+            this.Controls.Add(this.Btn_limpiar);
+            this.Controls.Add(this.Btn_buscar);
+            this.Controls.Add(this.Txt_codCarrera);
+            this.Controls.Add(this.Lbl_codCar);
+            this.Controls.Add(this.Lbl_listCurso);
+            this.Controls.Add(this.Dgv_curso);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Listado_Cursos";
             this.Text = "Listado_Cursos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_curso)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,12 +134,12 @@ namespace AsignaciondeCursos
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView Dgv_curso;
+        private System.Windows.Forms.Label Lbl_listCurso;
+        private System.Windows.Forms.Label Lbl_codCar;
+        private System.Windows.Forms.TextBox Txt_codCarrera;
+        private System.Windows.Forms.Button Btn_buscar;
+        private System.Windows.Forms.Button Btn_limpiar;
+        private System.Windows.Forms.Button Btn_salir;
     }
 }

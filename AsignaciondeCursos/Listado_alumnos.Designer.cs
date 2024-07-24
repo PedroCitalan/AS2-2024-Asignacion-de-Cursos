@@ -29,146 +29,153 @@ namespace AsignaciondeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Dgv_alumno = new System.Windows.Forms.DataGridView();
+            this.Lbl_listadoA = new System.Windows.Forms.Label();
+            this.Lbl_codCar = new System.Windows.Forms.Label();
+            this.Txt_codCarrera = new System.Windows.Forms.TextBox();
+            this.Lbl_listCurso = new System.Windows.Forms.Label();
+            this.Txt_codCur = new System.Windows.Forms.TextBox();
+            this.Lbl_listSecc = new System.Windows.Forms.Label();
+            this.Cbo_secc = new System.Windows.Forms.ComboBox();
+            this.Btn_buscar = new System.Windows.Forms.Button();
+            this.Btn_limpiar = new System.Windows.Forms.Button();
+            this.Btn_salir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_alumno)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Dgv_alumno
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 281);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1041, 401);
-            this.dataGridView1.TabIndex = 0;
+            this.Dgv_alumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_alumno.Location = new System.Drawing.Point(9, 228);
+            this.Dgv_alumno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Dgv_alumno.Name = "Dgv_alumno";
+            this.Dgv_alumno.RowHeadersWidth = 51;
+            this.Dgv_alumno.RowTemplate.Height = 24;
+            this.Dgv_alumno.Size = new System.Drawing.Size(781, 326);
+            this.Dgv_alumno.TabIndex = 0;
             // 
-            // label1
+            // Lbl_listadoA
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(421, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Listado de alumnos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Lbl_listadoA.AutoSize = true;
+            this.Lbl_listadoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_listadoA.Location = new System.Drawing.Point(316, 7);
+            this.Lbl_listadoA.Name = "Lbl_listadoA";
+            this.Lbl_listadoA.Size = new System.Drawing.Size(173, 24);
+            this.Lbl_listadoA.TabIndex = 1;
+            this.Lbl_listadoA.Text = "Listado de alumnos";
+            this.Lbl_listadoA.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // Lbl_codCar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(46, 88);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Codigo Carrera";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Lbl_codCar.AutoSize = true;
+            this.Lbl_codCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_codCar.Location = new System.Drawing.Point(18, 73);
+            this.Lbl_codCar.Name = "Lbl_codCar";
+            this.Lbl_codCar.Size = new System.Drawing.Size(120, 16);
+            this.Lbl_codCar.TabIndex = 2;
+            this.Lbl_codCar.Text = "Codigo de carrera:";
+            this.Lbl_codCar.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // Txt_codCarrera
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 22);
-            this.textBox1.TabIndex = 3;
+            this.Txt_codCarrera.Location = new System.Drawing.Point(143, 72);
+            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_codCarrera.Name = "Txt_codCarrera";
+            this.Txt_codCarrera.Size = new System.Drawing.Size(128, 20);
+            this.Txt_codCarrera.TabIndex = 3;
             // 
-            // label3
+            // Lbl_listCurso
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(403, 90);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Codigo del Curso";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.Lbl_listCurso.AutoSize = true;
+            this.Lbl_listCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_listCurso.Location = new System.Drawing.Point(302, 73);
+            this.Lbl_listCurso.Name = "Lbl_listCurso";
+            this.Lbl_listCurso.Size = new System.Drawing.Size(113, 16);
+            this.Lbl_listCurso.TabIndex = 4;
+            this.Lbl_listCurso.Text = "Código del curso:";
+            this.Lbl_listCurso.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox2
+            // Txt_codCur
             // 
-            this.textBox2.Location = new System.Drawing.Point(563, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 22);
-            this.textBox2.TabIndex = 5;
+            this.Txt_codCur.Location = new System.Drawing.Point(420, 71);
+            this.Txt_codCur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_codCur.Name = "Txt_codCur";
+            this.Txt_codCur.Size = new System.Drawing.Size(128, 20);
+            this.Txt_codCur.TabIndex = 5;
             // 
-            // label4
+            // Lbl_listSecc
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(768, 88);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Seccion";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.Lbl_listSecc.AutoSize = true;
+            this.Lbl_listSecc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_listSecc.Location = new System.Drawing.Point(576, 73);
+            this.Lbl_listSecc.Name = "Lbl_listSecc";
+            this.Lbl_listSecc.Size = new System.Drawing.Size(60, 16);
+            this.Lbl_listSecc.TabIndex = 6;
+            this.Lbl_listSecc.Text = "Sección:";
+            this.Lbl_listSecc.Click += new System.EventHandler(this.label4_Click);
             // 
-            // comboBox1
+            // Cbo_secc
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(856, 88);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 7;
+            this.Cbo_secc.FormattingEnabled = true;
+            this.Cbo_secc.Location = new System.Drawing.Point(641, 72);
+            this.Cbo_secc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cbo_secc.Name = "Cbo_secc";
+            this.Cbo_secc.Size = new System.Drawing.Size(92, 21);
+            this.Cbo_secc.TabIndex = 7;
             // 
-            // button1
+            // Btn_buscar
             // 
-            this.button1.Location = new System.Drawing.Point(191, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_buscar.Location = new System.Drawing.Point(167, 169);
+            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_buscar.Name = "Btn_buscar";
+            this.Btn_buscar.Size = new System.Drawing.Size(76, 35);
+            this.Btn_buscar.TabIndex = 8;
+            this.Btn_buscar.Text = "Buscar";
+            this.Btn_buscar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Btn_limpiar
             // 
-            this.button2.Location = new System.Drawing.Point(466, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_limpiar.Location = new System.Drawing.Point(344, 169);
+            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_limpiar.Name = "Btn_limpiar";
+            this.Btn_limpiar.Size = new System.Drawing.Size(71, 35);
+            this.Btn_limpiar.TabIndex = 9;
+            this.Btn_limpiar.Text = "Limpiar";
+            this.Btn_limpiar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Btn_salir
             // 
-            this.button3.Location = new System.Drawing.Point(717, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Salir";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_salir.Location = new System.Drawing.Point(518, 169);
+            this.Btn_salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_salir.Name = "Btn_salir";
+            this.Btn_salir.Size = new System.Drawing.Size(66, 35);
+            this.Btn_salir.TabIndex = 10;
+            this.Btn_salir.Text = "Salir";
+            this.Btn_salir.UseVisualStyleBackColor = true;
             // 
             // Listado_alumnos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 694);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(799, 564);
+            this.Controls.Add(this.Btn_salir);
+            this.Controls.Add(this.Btn_limpiar);
+            this.Controls.Add(this.Btn_buscar);
+            this.Controls.Add(this.Cbo_secc);
+            this.Controls.Add(this.Lbl_listSecc);
+            this.Controls.Add(this.Txt_codCur);
+            this.Controls.Add(this.Lbl_listCurso);
+            this.Controls.Add(this.Txt_codCarrera);
+            this.Controls.Add(this.Lbl_codCar);
+            this.Controls.Add(this.Lbl_listadoA);
+            this.Controls.Add(this.Dgv_alumno);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Listado_alumnos";
             this.Text = "Listado_alumnos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_alumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,16 +183,16 @@ namespace AsignaciondeCursos
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView Dgv_alumno;
+        private System.Windows.Forms.Label Lbl_listadoA;
+        private System.Windows.Forms.Label Lbl_codCar;
+        private System.Windows.Forms.TextBox Txt_codCarrera;
+        private System.Windows.Forms.Label Lbl_listCurso;
+        private System.Windows.Forms.TextBox Txt_codCur;
+        private System.Windows.Forms.Label Lbl_listSecc;
+        private System.Windows.Forms.ComboBox Cbo_secc;
+        private System.Windows.Forms.Button Btn_buscar;
+        private System.Windows.Forms.Button Btn_limpiar;
+        private System.Windows.Forms.Button Btn_salir;
     }
 }
