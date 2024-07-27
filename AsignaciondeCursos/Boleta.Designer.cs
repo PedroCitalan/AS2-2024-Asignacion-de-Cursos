@@ -45,10 +45,9 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_generarb.AutoSize = true;
             this.Lbl_generarb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_generarb.Location = new System.Drawing.Point(196, 11);
-            this.Lbl_generarb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_generarb.Location = new System.Drawing.Point(147, 9);
             this.Lbl_generarb.Name = "Lbl_generarb";
-            this.Lbl_generarb.Size = new System.Drawing.Size(401, 29);
+            this.Lbl_generarb.Size = new System.Drawing.Size(315, 24);
             this.Lbl_generarb.TabIndex = 0;
             this.Lbl_generarb.Text = "Generación de boleta de inscripción";
             // 
@@ -56,37 +55,33 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_carnet.AutoSize = true;
             this.Lbl_carnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_carnet.Location = new System.Drawing.Point(117, 65);
-            this.Lbl_carnet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_carnet.Location = new System.Drawing.Point(88, 53);
             this.Lbl_carnet.Name = "Lbl_carnet";
-            this.Lbl_carnet.Size = new System.Drawing.Size(117, 20);
+            this.Lbl_carnet.Size = new System.Drawing.Size(93, 16);
             this.Lbl_carnet.TabIndex = 1;
             this.Lbl_carnet.Text = "No. de Carnet:";
             // 
             // Txt_carnetCer1
             // 
-            this.Txt_carnetCer1.Location = new System.Drawing.Point(121, 90);
-            this.Txt_carnetCer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_carnetCer1.Location = new System.Drawing.Point(91, 73);
             this.Txt_carnetCer1.Name = "Txt_carnetCer1";
-            this.Txt_carnetCer1.Size = new System.Drawing.Size(132, 22);
+            this.Txt_carnetCer1.Size = new System.Drawing.Size(100, 20);
             this.Txt_carnetCer1.TabIndex = 2;
             this.Txt_carnetCer1.TextChanged += new System.EventHandler(this.Txt_carnetCer1_TextChanged);
             // 
             // Txt_carnetCer2
             // 
-            this.Txt_carnetCer2.Location = new System.Drawing.Point(316, 90);
-            this.Txt_carnetCer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_carnetCer2.Location = new System.Drawing.Point(237, 73);
             this.Txt_carnetCer2.Name = "Txt_carnetCer2";
-            this.Txt_carnetCer2.Size = new System.Drawing.Size(132, 22);
+            this.Txt_carnetCer2.Size = new System.Drawing.Size(100, 20);
             this.Txt_carnetCer2.TabIndex = 3;
             this.Txt_carnetCer2.TextChanged += new System.EventHandler(this.Txt_carnetCer2_TextChanged);
             // 
             // Txt_carnetCer3
             // 
-            this.Txt_carnetCer3.Location = new System.Drawing.Point(511, 90);
-            this.Txt_carnetCer3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_carnetCer3.Location = new System.Drawing.Point(383, 73);
             this.Txt_carnetCer3.Name = "Txt_carnetCer3";
-            this.Txt_carnetCer3.Size = new System.Drawing.Size(132, 22);
+            this.Txt_carnetCer3.Size = new System.Drawing.Size(100, 20);
             this.Txt_carnetCer3.TabIndex = 4;
             this.Txt_carnetCer3.TextChanged += new System.EventHandler(this.Txt_carnetCer3_TextChanged);
             // 
@@ -94,20 +89,18 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_semestre.AutoSize = true;
             this.Lbl_semestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_semestre.Location = new System.Drawing.Point(117, 151);
-            this.Lbl_semestre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_semestre.Location = new System.Drawing.Point(88, 123);
             this.Lbl_semestre.Name = "Lbl_semestre";
-            this.Lbl_semestre.Size = new System.Drawing.Size(86, 20);
+            this.Lbl_semestre.Size = new System.Drawing.Size(69, 16);
             this.Lbl_semestre.TabIndex = 5;
             this.Lbl_semestre.Text = "Semestre:";
             // 
             // Btn_generar
             // 
             this.Btn_generar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_generar.Location = new System.Drawing.Point(247, 281);
-            this.Btn_generar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_generar.Location = new System.Drawing.Point(185, 228);
             this.Btn_generar.Name = "Btn_generar";
-            this.Btn_generar.Size = new System.Drawing.Size(116, 43);
+            this.Btn_generar.Size = new System.Drawing.Size(87, 35);
             this.Btn_generar.TabIndex = 7;
             this.Btn_generar.Text = "Generar";
             this.Btn_generar.UseVisualStyleBackColor = true;
@@ -115,10 +108,9 @@ namespace AsignaciondeCursos
             // Btn_salir
             // 
             this.Btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_salir.Location = new System.Drawing.Point(432, 281);
-            this.Btn_salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_salir.Location = new System.Drawing.Point(324, 228);
             this.Btn_salir.Name = "Btn_salir";
-            this.Btn_salir.Size = new System.Drawing.Size(116, 43);
+            this.Btn_salir.Size = new System.Drawing.Size(87, 35);
             this.Btn_salir.TabIndex = 8;
             this.Btn_salir.Text = "Salir";
             this.Btn_salir.UseVisualStyleBackColor = true;
@@ -126,10 +118,12 @@ namespace AsignaciondeCursos
             // Cbo_semestre
             // 
             this.Cbo_semestre.FormattingEnabled = true;
-            this.Cbo_semestre.Location = new System.Drawing.Point(121, 175);
-            this.Cbo_semestre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cbo_semestre.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.Cbo_semestre.Location = new System.Drawing.Point(91, 142);
             this.Cbo_semestre.Name = "Cbo_semestre";
-            this.Cbo_semestre.Size = new System.Drawing.Size(160, 24);
+            this.Cbo_semestre.Size = new System.Drawing.Size(121, 21);
             this.Cbo_semestre.TabIndex = 9;
             // 
             // Cbo_anio
@@ -141,17 +135,16 @@ namespace AsignaciondeCursos
             "2022",
             "2023",
             "2024"});
-            this.Cbo_anio.Location = new System.Drawing.Point(335, 175);
-            this.Cbo_anio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cbo_anio.Location = new System.Drawing.Point(251, 142);
             this.Cbo_anio.Name = "Cbo_anio";
-            this.Cbo_anio.Size = new System.Drawing.Size(160, 24);
+            this.Cbo_anio.Size = new System.Drawing.Size(121, 21);
             this.Cbo_anio.TabIndex = 10;
             // 
             // Boleta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 368);
+            this.ClientSize = new System.Drawing.Size(619, 299);
             this.Controls.Add(this.Cbo_anio);
             this.Controls.Add(this.Cbo_semestre);
             this.Controls.Add(this.Btn_salir);
@@ -162,7 +155,6 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Txt_carnetCer1);
             this.Controls.Add(this.Lbl_carnet);
             this.Controls.Add(this.Lbl_generarb);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Boleta";
             this.Text = "Boleta de inscripción";
             this.ResumeLayout(false);

@@ -11,45 +11,54 @@ using System.Windows.Forms;
 
 namespace AsignaciondeCursos
 {
-    public partial class LoginAdmin : Form
+    public partial class RegistroAdmin : Form
     {
-        public LoginAdmin()
+        public RegistroAdmin()
         {
             InitializeComponent();
-
         }
 
-        private void Btn_ingreso_Click(object sender, EventArgs e)
+        private void Btn_registrar_Click(object sender, EventArgs e)
         {
             try
             {
+                string name = Txt_nombre.Text;
                 string password = Txt_contra.Text;
                 string email = Txt_correo.Text;
+                string address = Txt_address.Text;
 
                 Match matchEspeciales = Regex.Match(Txt_correo.Text, @"[@]");
 
-                if (string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(email))
+                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(address))
                 {
-                    MessageBox.Show("Todos los campos son obligatorios.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Todos los campos son obligatorios.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+
                 else if (!matchEspeciales.Success)
                 {
-                    MessageBox.Show("El correo requiere una @ para ingresar.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El correo requiere una @ para registrarse.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 else
                 {
-                    MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Usuario registrado exitosamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
+                Txt_nombre.Clear();
                 Txt_contra.Clear();
                 Txt_correo.Clear();
+                Txt_address.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private bool RegisterUser(string name, string password, string email, string address)
+        {
+            return true;
         }
     }
 }

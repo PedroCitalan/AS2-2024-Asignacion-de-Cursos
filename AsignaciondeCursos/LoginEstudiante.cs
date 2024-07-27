@@ -16,5 +16,31 @@ namespace AsignaciondeCursos
         {
             InitializeComponent();
         }
+
+        private void Btn_ingreso_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string user = Txt_usuario.Text;
+                string password = Txt_contra.Text;
+
+                if (string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(user))
+                {
+                    MessageBox.Show("Todos los campos son obligatorios.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                Txt_contra.Clear();
+                Txt_usuario.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

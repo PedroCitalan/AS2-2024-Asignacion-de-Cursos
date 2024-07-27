@@ -36,6 +36,7 @@ namespace AsignaciondeCursos
             this.Lbl_contraseña = new System.Windows.Forms.Label();
             this.Btn_ingreso = new System.Windows.Forms.Button();
             this.Btn_cambiocontra = new System.Windows.Forms.Button();
+            this.Btn_registro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_loginadmin
@@ -85,28 +86,40 @@ namespace AsignaciondeCursos
             // Btn_ingreso
             // 
             this.Btn_ingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ingreso.Location = new System.Drawing.Point(156, 139);
+            this.Btn_ingreso.Location = new System.Drawing.Point(131, 136);
             this.Btn_ingreso.Name = "Btn_ingreso";
-            this.Btn_ingreso.Size = new System.Drawing.Size(143, 31);
+            this.Btn_ingreso.Size = new System.Drawing.Size(82, 31);
             this.Btn_ingreso.TabIndex = 9;
-            this.Btn_ingreso.Text = "Ingreso/Registro";
+            this.Btn_ingreso.Text = "Ingreso";
             this.Btn_ingreso.UseVisualStyleBackColor = true;
+            this.Btn_ingreso.Click += new System.EventHandler(this.Btn_ingreso_Click);
             // 
             // Btn_cambiocontra
             // 
             this.Btn_cambiocontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_cambiocontra.Location = new System.Drawing.Point(334, 136);
+            this.Btn_cambiocontra.Location = new System.Drawing.Point(250, 136);
             this.Btn_cambiocontra.Name = "Btn_cambiocontra";
             this.Btn_cambiocontra.Size = new System.Drawing.Size(108, 50);
             this.Btn_cambiocontra.TabIndex = 10;
             this.Btn_cambiocontra.Text = "Cambio de contraseña";
             this.Btn_cambiocontra.UseVisualStyleBackColor = true;
             // 
+            // Btn_registro
+            // 
+            this.Btn_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_registro.Location = new System.Drawing.Point(395, 136);
+            this.Btn_registro.Name = "Btn_registro";
+            this.Btn_registro.Size = new System.Drawing.Size(82, 31);
+            this.Btn_registro.TabIndex = 11;
+            this.Btn_registro.Text = "Registro";
+            this.Btn_registro.UseVisualStyleBackColor = true;
+            // 
             // LoginAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 198);
+            this.ClientSize = new System.Drawing.Size(589, 198);
+            this.Controls.Add(this.Btn_registro);
             this.Controls.Add(this.Btn_cambiocontra);
             this.Controls.Add(this.Btn_ingreso);
             this.Controls.Add(this.Txt_contra);
@@ -130,5 +143,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_contraseña;
         private System.Windows.Forms.Button Btn_ingreso;
         private System.Windows.Forms.Button Btn_cambiocontra;
+        private System.Windows.Forms.Button Btn_registro;
     }
 }

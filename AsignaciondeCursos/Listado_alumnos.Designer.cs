@@ -46,22 +46,21 @@ namespace AsignaciondeCursos
             // Dgv_alumno
             // 
             this.Dgv_alumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_alumno.Location = new System.Drawing.Point(12, 281);
-            this.Dgv_alumno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Dgv_alumno.Location = new System.Drawing.Point(9, 228);
+            this.Dgv_alumno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Dgv_alumno.Name = "Dgv_alumno";
             this.Dgv_alumno.RowHeadersWidth = 51;
             this.Dgv_alumno.RowTemplate.Height = 24;
-            this.Dgv_alumno.Size = new System.Drawing.Size(1041, 401);
+            this.Dgv_alumno.Size = new System.Drawing.Size(781, 326);
             this.Dgv_alumno.TabIndex = 0;
             // 
             // Lbl_listadoA
             // 
             this.Lbl_listadoA.AutoSize = true;
             this.Lbl_listadoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_listadoA.Location = new System.Drawing.Point(421, 9);
-            this.Lbl_listadoA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_listadoA.Location = new System.Drawing.Point(316, 7);
             this.Lbl_listadoA.Name = "Lbl_listadoA";
-            this.Lbl_listadoA.Size = new System.Drawing.Size(222, 29);
+            this.Lbl_listadoA.Size = new System.Drawing.Size(173, 24);
             this.Lbl_listadoA.TabIndex = 1;
             this.Lbl_listadoA.Text = "Listado de alumnos";
             this.Lbl_listadoA.Click += new System.EventHandler(this.label1_Click);
@@ -70,20 +69,19 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_codCar.AutoSize = true;
             this.Lbl_codCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_codCar.Location = new System.Drawing.Point(24, 90);
-            this.Lbl_codCar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_codCar.Location = new System.Drawing.Point(18, 73);
             this.Lbl_codCar.Name = "Lbl_codCar";
-            this.Lbl_codCar.Size = new System.Drawing.Size(148, 20);
+            this.Lbl_codCar.Size = new System.Drawing.Size(120, 16);
             this.Lbl_codCar.TabIndex = 2;
             this.Lbl_codCar.Text = "Codigo de carrera:";
             this.Lbl_codCar.Click += new System.EventHandler(this.label2_Click);
             // 
             // Txt_codCarrera
             // 
-            this.Txt_codCarrera.Location = new System.Drawing.Point(191, 89);
-            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Txt_codCarrera.Location = new System.Drawing.Point(143, 72);
+            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Txt_codCarrera.Name = "Txt_codCarrera";
-            this.Txt_codCarrera.Size = new System.Drawing.Size(169, 22);
+            this.Txt_codCarrera.Size = new System.Drawing.Size(128, 20);
             this.Txt_codCarrera.TabIndex = 3;
             this.Txt_codCarrera.TextChanged += new System.EventHandler(this.Txt_codCarrera_TextChanged);
             // 
@@ -91,20 +89,19 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_listCurso.AutoSize = true;
             this.Lbl_listCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_listCurso.Location = new System.Drawing.Point(403, 90);
-            this.Lbl_listCurso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_listCurso.Location = new System.Drawing.Point(302, 73);
             this.Lbl_listCurso.Name = "Lbl_listCurso";
-            this.Lbl_listCurso.Size = new System.Drawing.Size(140, 20);
+            this.Lbl_listCurso.Size = new System.Drawing.Size(113, 16);
             this.Lbl_listCurso.TabIndex = 4;
             this.Lbl_listCurso.Text = "Código del curso:";
             this.Lbl_listCurso.Click += new System.EventHandler(this.label3_Click);
             // 
             // Txt_codCur
             // 
-            this.Txt_codCur.Location = new System.Drawing.Point(560, 87);
-            this.Txt_codCur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Txt_codCur.Location = new System.Drawing.Point(420, 71);
+            this.Txt_codCur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Txt_codCur.Name = "Txt_codCur";
-            this.Txt_codCur.Size = new System.Drawing.Size(169, 22);
+            this.Txt_codCur.Size = new System.Drawing.Size(128, 20);
             this.Txt_codCur.TabIndex = 5;
             this.Txt_codCur.TextChanged += new System.EventHandler(this.Txt_codCur_TextChanged);
             // 
@@ -112,10 +109,9 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_listSecc.AutoSize = true;
             this.Lbl_listSecc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_listSecc.Location = new System.Drawing.Point(768, 90);
-            this.Lbl_listSecc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lbl_listSecc.Location = new System.Drawing.Point(576, 73);
             this.Lbl_listSecc.Name = "Lbl_listSecc";
-            this.Lbl_listSecc.Size = new System.Drawing.Size(74, 20);
+            this.Lbl_listSecc.Size = new System.Drawing.Size(60, 16);
             this.Lbl_listSecc.TabIndex = 6;
             this.Lbl_listSecc.Text = "Sección:";
             this.Lbl_listSecc.Click += new System.EventHandler(this.label4_Click);
@@ -123,19 +119,19 @@ namespace AsignaciondeCursos
             // Cbo_secc
             // 
             this.Cbo_secc.FormattingEnabled = true;
-            this.Cbo_secc.Location = new System.Drawing.Point(855, 89);
-            this.Cbo_secc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cbo_secc.Location = new System.Drawing.Point(641, 72);
+            this.Cbo_secc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Cbo_secc.Name = "Cbo_secc";
-            this.Cbo_secc.Size = new System.Drawing.Size(121, 24);
+            this.Cbo_secc.Size = new System.Drawing.Size(92, 21);
             this.Cbo_secc.TabIndex = 7;
             // 
             // Btn_buscar
             // 
             this.Btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_buscar.Location = new System.Drawing.Point(223, 208);
-            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_buscar.Location = new System.Drawing.Point(167, 169);
+            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_buscar.Name = "Btn_buscar";
-            this.Btn_buscar.Size = new System.Drawing.Size(101, 43);
+            this.Btn_buscar.Size = new System.Drawing.Size(76, 35);
             this.Btn_buscar.TabIndex = 8;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
@@ -143,10 +139,10 @@ namespace AsignaciondeCursos
             // Btn_limpiar
             // 
             this.Btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_limpiar.Location = new System.Drawing.Point(459, 208);
-            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_limpiar.Location = new System.Drawing.Point(344, 169);
+            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_limpiar.Name = "Btn_limpiar";
-            this.Btn_limpiar.Size = new System.Drawing.Size(95, 43);
+            this.Btn_limpiar.Size = new System.Drawing.Size(71, 35);
             this.Btn_limpiar.TabIndex = 9;
             this.Btn_limpiar.Text = "Limpiar";
             this.Btn_limpiar.UseVisualStyleBackColor = true;
@@ -154,19 +150,19 @@ namespace AsignaciondeCursos
             // Btn_salir
             // 
             this.Btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_salir.Location = new System.Drawing.Point(691, 208);
-            this.Btn_salir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_salir.Location = new System.Drawing.Point(518, 169);
+            this.Btn_salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_salir.Name = "Btn_salir";
-            this.Btn_salir.Size = new System.Drawing.Size(88, 43);
+            this.Btn_salir.Size = new System.Drawing.Size(66, 35);
             this.Btn_salir.TabIndex = 10;
             this.Btn_salir.Text = "Salir";
             this.Btn_salir.UseVisualStyleBackColor = true;
             // 
             // Listado_alumnos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 694);
+            this.ClientSize = new System.Drawing.Size(799, 564);
             this.Controls.Add(this.Btn_salir);
             this.Controls.Add(this.Btn_limpiar);
             this.Controls.Add(this.Btn_buscar);
@@ -178,9 +174,9 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Lbl_codCar);
             this.Controls.Add(this.Lbl_listadoA);
             this.Controls.Add(this.Dgv_alumno);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Listado_alumnos";
-            this.Text = "Listado_alumnos";
+            this.Text = "Listado de alumnos";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_alumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

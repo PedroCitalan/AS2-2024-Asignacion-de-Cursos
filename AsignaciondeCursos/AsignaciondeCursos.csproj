@@ -171,6 +171,12 @@
     <Compile Include="LoginAdmin.Designer.cs">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroAdmin.Designer.cs">
+      <DependentUpon>RegistroAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </Compile>
     <EmbeddedResource Include="LoginAdmin.resx">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroAdmin.resx">
+      <DependentUpon>RegistroAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Validacion.resx">
       <DependentUpon>Validacion.cs</DependentUpon>

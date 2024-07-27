@@ -85,17 +85,18 @@ namespace AsignaciondeCursos
             // Btn_ingreso
             // 
             this.Btn_ingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ingreso.Location = new System.Drawing.Point(126, 143);
+            this.Btn_ingreso.Location = new System.Drawing.Point(160, 143);
             this.Btn_ingreso.Name = "Btn_ingreso";
-            this.Btn_ingreso.Size = new System.Drawing.Size(143, 33);
+            this.Btn_ingreso.Size = new System.Drawing.Size(91, 33);
             this.Btn_ingreso.TabIndex = 5;
-            this.Btn_ingreso.Text = "Ingreso/Registro";
+            this.Btn_ingreso.Text = "Ingreso";
             this.Btn_ingreso.UseVisualStyleBackColor = true;
+            this.Btn_ingreso.Click += new System.EventHandler(this.Btn_ingreso_Click);
             // 
             // Btn_cambiocontra
             // 
             this.Btn_cambiocontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_cambiocontra.Location = new System.Drawing.Point(295, 143);
+            this.Btn_cambiocontra.Location = new System.Drawing.Point(283, 143);
             this.Btn_cambiocontra.Name = "Btn_cambiocontra";
             this.Btn_cambiocontra.Size = new System.Drawing.Size(108, 50);
             this.Btn_cambiocontra.TabIndex = 6;
