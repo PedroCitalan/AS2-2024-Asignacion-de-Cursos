@@ -13,10 +13,13 @@ namespace AsignaciondeCursos
 {
     public partial class LoginAdmin : Form
     {
+        private Admin_catedratico mAdmin;
+        private AdminCRUD mAdminCRUD;
         public LoginAdmin()
         {
             InitializeComponent();
-
+            mAdminCRUD = new AdminCRUD();
+            mAdmin = new Admin_catedratico();
         }
 
         private void Btn_ingreso_Click(object sender, EventArgs e)
@@ -40,16 +43,48 @@ namespace AsignaciondeCursos
                 }
                 else
                 {
-                    MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    obtenerDatosAdmin();
+                    if (mAdminCRUD.buscarUsuario(mAdmin))
+                    {
+                        MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        AyudaAdmin AyudaAdmin = new AyudaAdmin();
+                        AyudaAdmin.ShowDialog();
+                        this.Close();
+                    }
                 }
-
-                Txt_contra.Clear();
-                Txt_correo.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void obtenerDatosAdmin()
+        {
+            mAdmin.Contra = Txt_contra.Text.Trim();
+            mAdmin.Correo = Txt_correo.Text.Trim();
+        }
+
+        private void Btn_cambiocontra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_registro_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistroAdmin RegistroAdmin = new RegistroAdmin();
+            RegistroAdmin.ShowDialog();
+            this.Close();
+        }
+
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InicioSesión InicioSesion = new InicioSesión();
+            InicioSesion.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -113,6 +113,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCRUD.cs" />
+    <Compile Include="Admin_catedratico.cs" />
     <Compile Include="Asignacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +126,12 @@
     </Compile>
     <Compile Include="Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AyudaAdmin.Designer.cs">
+      <DependentUpon>AyudaAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Boleta.cs">
       <SubType>Form</SubType>
@@ -139,6 +147,12 @@
     </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="ConexionMySQL.cs" />
+    <Compile Include="InicioSesión.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesión.Designer.cs">
+      <DependentUpon>InicioSesión.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listado_alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,11 +203,17 @@
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AyudaAdmin.resx">
+      <DependentUpon>AyudaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Boleta.resx">
       <DependentUpon>Boleta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Certificacion.resx">
       <DependentUpon>Certificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesión.resx">
+      <DependentUpon>InicioSesión.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listado_alumnos.resx">
       <DependentUpon>Listado_alumnos.cs</DependentUpon>

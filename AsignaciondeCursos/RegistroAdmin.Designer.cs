@@ -39,6 +39,7 @@ namespace AsignaciondeCursos
             this.Txt_correo = new System.Windows.Forms.TextBox();
             this.Lbl_correo = new System.Windows.Forms.Label();
             this.Btn_registrar = new System.Windows.Forms.Button();
+            this.Btn_regresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Txt_contra
@@ -130,11 +131,23 @@ namespace AsignaciondeCursos
             this.Btn_registrar.UseVisualStyleBackColor = true;
             this.Btn_registrar.Click += new System.EventHandler(this.Btn_registrar_Click);
             // 
+            // Btn_regresar
+            // 
+            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Location = new System.Drawing.Point(12, 222);
+            this.Btn_regresar.Name = "Btn_regresar";
+            this.Btn_regresar.Size = new System.Drawing.Size(84, 31);
+            this.Btn_regresar.TabIndex = 15;
+            this.Btn_regresar.Text = "Regresar";
+            this.Btn_regresar.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
+            // 
             // RegistroAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 282);
+            this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_registrar);
             this.Controls.Add(this.Txt_address);
             this.Controls.Add(this.Lbl_address);
@@ -164,5 +177,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.TextBox Txt_correo;
         private System.Windows.Forms.Label Lbl_correo;
         private System.Windows.Forms.Button Btn_registrar;
+        private System.Windows.Forms.Button Btn_regresar;
     }
 }

@@ -39,7 +39,7 @@ namespace AsignaciondeCursos
             this.Cbo_secc = new System.Windows.Forms.ComboBox();
             this.Btn_buscar = new System.Windows.Forms.Button();
             this.Btn_limpiar = new System.Windows.Forms.Button();
-            this.Btn_salir = new System.Windows.Forms.Button();
+            this.Btn_regresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_alumno)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@ namespace AsignaciondeCursos
             // 
             this.Dgv_alumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_alumno.Location = new System.Drawing.Point(9, 228);
-            this.Dgv_alumno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Dgv_alumno.Margin = new System.Windows.Forms.Padding(2);
             this.Dgv_alumno.Name = "Dgv_alumno";
             this.Dgv_alumno.RowHeadersWidth = 51;
             this.Dgv_alumno.RowTemplate.Height = 24;
@@ -79,7 +79,7 @@ namespace AsignaciondeCursos
             // Txt_codCarrera
             // 
             this.Txt_codCarrera.Location = new System.Drawing.Point(143, 72);
-            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_codCarrera.Name = "Txt_codCarrera";
             this.Txt_codCarrera.Size = new System.Drawing.Size(128, 20);
             this.Txt_codCarrera.TabIndex = 3;
@@ -99,7 +99,7 @@ namespace AsignaciondeCursos
             // Txt_codCur
             // 
             this.Txt_codCur.Location = new System.Drawing.Point(420, 71);
-            this.Txt_codCur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_codCur.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_codCur.Name = "Txt_codCur";
             this.Txt_codCur.Size = new System.Drawing.Size(128, 20);
             this.Txt_codCur.TabIndex = 5;
@@ -120,7 +120,7 @@ namespace AsignaciondeCursos
             // 
             this.Cbo_secc.FormattingEnabled = true;
             this.Cbo_secc.Location = new System.Drawing.Point(641, 72);
-            this.Cbo_secc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cbo_secc.Margin = new System.Windows.Forms.Padding(2);
             this.Cbo_secc.Name = "Cbo_secc";
             this.Cbo_secc.Size = new System.Drawing.Size(92, 21);
             this.Cbo_secc.TabIndex = 7;
@@ -129,7 +129,7 @@ namespace AsignaciondeCursos
             // 
             this.Btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_buscar.Location = new System.Drawing.Point(167, 169);
-            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_buscar.Name = "Btn_buscar";
             this.Btn_buscar.Size = new System.Drawing.Size(76, 35);
             this.Btn_buscar.TabIndex = 8;
@@ -140,30 +140,30 @@ namespace AsignaciondeCursos
             // 
             this.Btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_limpiar.Location = new System.Drawing.Point(344, 169);
-            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_limpiar.Name = "Btn_limpiar";
             this.Btn_limpiar.Size = new System.Drawing.Size(71, 35);
             this.Btn_limpiar.TabIndex = 9;
             this.Btn_limpiar.Text = "Limpiar";
             this.Btn_limpiar.UseVisualStyleBackColor = true;
             // 
-            // Btn_salir
+            // Btn_regresar
             // 
-            this.Btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_salir.Location = new System.Drawing.Point(518, 169);
-            this.Btn_salir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Btn_salir.Name = "Btn_salir";
-            this.Btn_salir.Size = new System.Drawing.Size(66, 35);
-            this.Btn_salir.TabIndex = 10;
-            this.Btn_salir.Text = "Salir";
-            this.Btn_salir.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Location = new System.Drawing.Point(518, 169);
+            this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_regresar.Name = "Btn_regresar";
+            this.Btn_regresar.Size = new System.Drawing.Size(85, 35);
+            this.Btn_regresar.TabIndex = 10;
+            this.Btn_regresar.Text = "Regresar";
+            this.Btn_regresar.UseVisualStyleBackColor = true;
             // 
             // Listado_alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 564);
-            this.Controls.Add(this.Btn_salir);
+            this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_limpiar);
             this.Controls.Add(this.Btn_buscar);
             this.Controls.Add(this.Cbo_secc);
@@ -174,7 +174,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Lbl_codCar);
             this.Controls.Add(this.Lbl_listadoA);
             this.Controls.Add(this.Dgv_alumno);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Listado_alumnos";
             this.Text = "Listado de alumnos";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_alumno)).EndInit();
@@ -195,6 +195,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.ComboBox Cbo_secc;
         private System.Windows.Forms.Button Btn_buscar;
         private System.Windows.Forms.Button Btn_limpiar;
-        private System.Windows.Forms.Button Btn_salir;
+        private System.Windows.Forms.Button Btn_regresar;
     }
 }

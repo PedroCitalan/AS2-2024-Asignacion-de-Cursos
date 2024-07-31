@@ -36,6 +36,7 @@ namespace AsignaciondeCursos
             this.Lbl_contraseña = new System.Windows.Forms.Label();
             this.Btn_ingreso = new System.Windows.Forms.Button();
             this.Btn_cambiocontra = new System.Windows.Forms.Button();
+            this.Btn_regresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_loginestudiante
@@ -102,12 +103,25 @@ namespace AsignaciondeCursos
             this.Btn_cambiocontra.TabIndex = 6;
             this.Btn_cambiocontra.Text = "Cambio de contraseña";
             this.Btn_cambiocontra.UseVisualStyleBackColor = true;
+            this.Btn_cambiocontra.Click += new System.EventHandler(this.Btn_cambiocontra_Click);
+            // 
+            // Btn_regresar
+            // 
+            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Location = new System.Drawing.Point(21, 143);
+            this.Btn_regresar.Name = "Btn_regresar";
+            this.Btn_regresar.Size = new System.Drawing.Size(91, 33);
+            this.Btn_regresar.TabIndex = 7;
+            this.Btn_regresar.Text = "Regresar";
+            this.Btn_regresar.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
             // LoginEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 216);
+            this.ClientSize = new System.Drawing.Size(493, 216);
+            this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_cambiocontra);
             this.Controls.Add(this.Btn_ingreso);
             this.Controls.Add(this.Txt_contra);
@@ -131,5 +145,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_contraseña;
         private System.Windows.Forms.Button Btn_ingreso;
         private System.Windows.Forms.Button Btn_cambiocontra;
+        private System.Windows.Forms.Button Btn_regresar;
     }
 }

@@ -37,6 +37,7 @@ namespace AsignaciondeCursos
             this.Btn_ingreso = new System.Windows.Forms.Button();
             this.Btn_cambiocontra = new System.Windows.Forms.Button();
             this.Btn_registro = new System.Windows.Forms.Button();
+            this.Btn_regresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_loginadmin
@@ -103,6 +104,7 @@ namespace AsignaciondeCursos
             this.Btn_cambiocontra.TabIndex = 10;
             this.Btn_cambiocontra.Text = "Cambio de contraseña";
             this.Btn_cambiocontra.UseVisualStyleBackColor = true;
+            this.Btn_cambiocontra.Click += new System.EventHandler(this.Btn_cambiocontra_Click);
             // 
             // Btn_registro
             // 
@@ -113,12 +115,25 @@ namespace AsignaciondeCursos
             this.Btn_registro.TabIndex = 11;
             this.Btn_registro.Text = "Registro";
             this.Btn_registro.UseVisualStyleBackColor = true;
+            this.Btn_registro.Click += new System.EventHandler(this.Btn_registro_Click);
+            // 
+            // Btn_regresar
+            // 
+            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Location = new System.Drawing.Point(12, 136);
+            this.Btn_regresar.Name = "Btn_regresar";
+            this.Btn_regresar.Size = new System.Drawing.Size(85, 31);
+            this.Btn_regresar.TabIndex = 12;
+            this.Btn_regresar.Text = "Regresar";
+            this.Btn_regresar.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
             // LoginAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 198);
+            this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_registro);
             this.Controls.Add(this.Btn_cambiocontra);
             this.Controls.Add(this.Btn_ingreso);
@@ -144,5 +159,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Button Btn_ingreso;
         private System.Windows.Forms.Button Btn_cambiocontra;
         private System.Windows.Forms.Button Btn_registro;
+        private System.Windows.Forms.Button Btn_regresar;
     }
 }

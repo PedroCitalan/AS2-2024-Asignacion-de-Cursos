@@ -36,7 +36,7 @@ namespace AsignaciondeCursos
             this.Txt_carnetCer3 = new System.Windows.Forms.TextBox();
             this.Lbl_semestre = new System.Windows.Forms.Label();
             this.Btn_generar = new System.Windows.Forms.Button();
-            this.Btn_salir = new System.Windows.Forms.Button();
+            this.Btn_regresar = new System.Windows.Forms.Button();
             this.Cbo_semestre = new System.Windows.Forms.ComboBox();
             this.Cbo_anio = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -98,22 +98,22 @@ namespace AsignaciondeCursos
             // Btn_generar
             // 
             this.Btn_generar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_generar.Location = new System.Drawing.Point(185, 228);
+            this.Btn_generar.Location = new System.Drawing.Point(184, 209);
             this.Btn_generar.Name = "Btn_generar";
             this.Btn_generar.Size = new System.Drawing.Size(87, 35);
             this.Btn_generar.TabIndex = 7;
             this.Btn_generar.Text = "Generar";
             this.Btn_generar.UseVisualStyleBackColor = true;
             // 
-            // Btn_salir
+            // Btn_regresar
             // 
-            this.Btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_salir.Location = new System.Drawing.Point(324, 228);
-            this.Btn_salir.Name = "Btn_salir";
-            this.Btn_salir.Size = new System.Drawing.Size(87, 35);
-            this.Btn_salir.TabIndex = 8;
-            this.Btn_salir.Text = "Salir";
-            this.Btn_salir.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Location = new System.Drawing.Point(321, 209);
+            this.Btn_regresar.Name = "Btn_regresar";
+            this.Btn_regresar.Size = new System.Drawing.Size(87, 35);
+            this.Btn_regresar.TabIndex = 8;
+            this.Btn_regresar.Text = "Regresar";
+            this.Btn_regresar.UseVisualStyleBackColor = true;
             // 
             // Cbo_semestre
             // 
@@ -144,10 +144,10 @@ namespace AsignaciondeCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 299);
+            this.ClientSize = new System.Drawing.Size(619, 273);
             this.Controls.Add(this.Cbo_anio);
             this.Controls.Add(this.Cbo_semestre);
-            this.Controls.Add(this.Btn_salir);
+            this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_generar);
             this.Controls.Add(this.Lbl_semestre);
             this.Controls.Add(this.Txt_carnetCer3);
@@ -171,7 +171,7 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.TextBox Txt_carnetCer3;
         private System.Windows.Forms.Label Lbl_semestre;
         private System.Windows.Forms.Button Btn_generar;
-        private System.Windows.Forms.Button Btn_salir;
+        private System.Windows.Forms.Button Btn_regresar;
         private System.Windows.Forms.ComboBox Cbo_semestre;
         private System.Windows.Forms.ComboBox Cbo_anio;
     }

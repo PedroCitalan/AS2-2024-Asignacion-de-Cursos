@@ -13,9 +13,13 @@ namespace AsignaciondeCursos
 {
     public partial class RegistroAdmin : Form
     {
+        private Admin_catedratico mAdmin;
+        private AdminCRUD mAdminCRUD;
         public RegistroAdmin()
         {
             InitializeComponent();
+            mAdminCRUD = new AdminCRUD();
+            mAdmin = new Admin_catedratico();
         }
 
         private void Btn_registrar_Click(object sender, EventArgs e)
@@ -42,13 +46,16 @@ namespace AsignaciondeCursos
                 }
                 else
                 {
-                    MessageBox.Show("Usuario registrado exitosamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    obtenerDatosAdmin();
+                    if (mAdminCRUD.agregarUsuario(mAdmin))
+                    {
+                        MessageBox.Show("Usuario registrado exitosamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Txt_nombre.Clear();
+                        Txt_contra.Clear();
+                        Txt_correo.Clear();
+                        Txt_address.Clear();
+                    }
                 }
-
-                Txt_nombre.Clear();
-                Txt_contra.Clear();
-                Txt_correo.Clear();
-                Txt_address.Clear();
             }
             catch (Exception ex)
             {
@@ -56,9 +63,20 @@ namespace AsignaciondeCursos
             }
         }
 
-        private bool RegisterUser(string name, string password, string email, string address)
+        private void obtenerDatosAdmin()
         {
-            return true;
+            mAdmin.Nombre = Txt_nombre.Text.Trim();
+            mAdmin.Contra = Txt_contra.Text.Trim();
+            mAdmin.Correo = Txt_correo.Text.Trim();
+            mAdmin.Direccion = Txt_address.Text.Trim();
+        }
+
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginAdmin LoginAdmin = new LoginAdmin();
+            LoginAdmin.ShowDialog();
+            this.Close();
         }
     }
 }

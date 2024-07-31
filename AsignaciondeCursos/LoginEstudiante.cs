@@ -42,5 +42,18 @@ namespace AsignaciondeCursos
                 MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Btn_cambiocontra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InicioSesión InicioSesion = new InicioSesión();
+            InicioSesion.ShowDialog();
+            this.Close();
+        }
     }
 }
