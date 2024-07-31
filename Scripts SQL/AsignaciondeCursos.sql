@@ -1,5 +1,10 @@
+CREATE USER 'usuario1'@'%' IDENTIFIED BY '123456';
+
 CREATE DATABASE asignacion;
 USE asignacion;
+
+GRANT ALL ON asignacion.* TO 'usuario1'@'%';
+FLUSH PRIVILEGES;
 
 CREATE TABLE Admin_catedratico (
 ID_admin INT AUTO_INCREMENT PRIMARY KEY NOT NULL,

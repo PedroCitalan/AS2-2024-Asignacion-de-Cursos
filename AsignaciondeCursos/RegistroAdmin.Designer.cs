@@ -40,6 +40,8 @@ namespace AsignaciondeCursos
             this.Lbl_correo = new System.Windows.Forms.Label();
             this.Btn_registrar = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
+            this.Txt_confirmarcontra = new System.Windows.Forms.TextBox();
+            this.Lbl_confirmarcontra = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Txt_contra
@@ -88,7 +90,7 @@ namespace AsignaciondeCursos
             // 
             // Txt_address
             // 
-            this.Txt_address.Location = new System.Drawing.Point(164, 172);
+            this.Txt_address.Location = new System.Drawing.Point(164, 217);
             this.Txt_address.Name = "Txt_address";
             this.Txt_address.Size = new System.Drawing.Size(310, 20);
             this.Txt_address.TabIndex = 13;
@@ -97,7 +99,7 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_address.AutoSize = true;
             this.Lbl_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_address.Location = new System.Drawing.Point(90, 173);
+            this.Lbl_address.Location = new System.Drawing.Point(90, 218);
             this.Lbl_address.Name = "Lbl_address";
             this.Lbl_address.Size = new System.Drawing.Size(68, 16);
             this.Lbl_address.TabIndex = 12;
@@ -105,7 +107,7 @@ namespace AsignaciondeCursos
             // 
             // Txt_correo
             // 
-            this.Txt_correo.Location = new System.Drawing.Point(164, 136);
+            this.Txt_correo.Location = new System.Drawing.Point(164, 180);
             this.Txt_correo.Name = "Txt_correo";
             this.Txt_correo.Size = new System.Drawing.Size(310, 20);
             this.Txt_correo.TabIndex = 11;
@@ -114,7 +116,7 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_correo.AutoSize = true;
             this.Lbl_correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_correo.Location = new System.Drawing.Point(106, 137);
+            this.Lbl_correo.Location = new System.Drawing.Point(106, 181);
             this.Lbl_correo.Name = "Lbl_correo";
             this.Lbl_correo.Size = new System.Drawing.Size(52, 16);
             this.Lbl_correo.TabIndex = 10;
@@ -123,7 +125,7 @@ namespace AsignaciondeCursos
             // Btn_registrar
             // 
             this.Btn_registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_registrar.Location = new System.Drawing.Point(263, 222);
+            this.Btn_registrar.Location = new System.Drawing.Point(263, 264);
             this.Btn_registrar.Name = "Btn_registrar";
             this.Btn_registrar.Size = new System.Drawing.Size(82, 31);
             this.Btn_registrar.TabIndex = 14;
@@ -134,7 +136,7 @@ namespace AsignaciondeCursos
             // Btn_regresar
             // 
             this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_regresar.Location = new System.Drawing.Point(12, 222);
+            this.Btn_regresar.Location = new System.Drawing.Point(12, 264);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(84, 31);
             this.Btn_regresar.TabIndex = 15;
@@ -142,11 +144,30 @@ namespace AsignaciondeCursos
             this.Btn_regresar.UseVisualStyleBackColor = true;
             this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
+            // Txt_confirmarcontra
+            // 
+            this.Txt_confirmarcontra.Location = new System.Drawing.Point(164, 140);
+            this.Txt_confirmarcontra.Name = "Txt_confirmarcontra";
+            this.Txt_confirmarcontra.Size = new System.Drawing.Size(310, 20);
+            this.Txt_confirmarcontra.TabIndex = 10;
+            // 
+            // Lbl_confirmarcontra
+            // 
+            this.Lbl_confirmarcontra.AutoSize = true;
+            this.Lbl_confirmarcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_confirmarcontra.Location = new System.Drawing.Point(20, 141);
+            this.Lbl_confirmarcontra.Name = "Lbl_confirmarcontra";
+            this.Lbl_confirmarcontra.Size = new System.Drawing.Size(138, 16);
+            this.Lbl_confirmarcontra.TabIndex = 16;
+            this.Lbl_confirmarcontra.Text = "Confirmar contraseña:";
+            // 
             // RegistroAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 282);
+            this.ClientSize = new System.Drawing.Size(594, 317);
+            this.Controls.Add(this.Txt_confirmarcontra);
+            this.Controls.Add(this.Lbl_confirmarcontra);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_registrar);
             this.Controls.Add(this.Txt_address);
@@ -178,5 +199,7 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_correo;
         private System.Windows.Forms.Button Btn_registrar;
         private System.Windows.Forms.Button Btn_regresar;
+        private System.Windows.Forms.TextBox Txt_confirmarcontra;
+        private System.Windows.Forms.Label Lbl_confirmarcontra;
     }
 }

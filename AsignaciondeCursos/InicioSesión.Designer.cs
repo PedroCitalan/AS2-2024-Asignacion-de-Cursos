@@ -34,6 +34,7 @@ namespace AsignaciondeCursos
             this.Btn_sesion2 = new System.Windows.Forms.Button();
             this.Lbl_iniciosesion2 = new System.Windows.Forms.Label();
             this.Btn_sesion1 = new System.Windows.Forms.Button();
+            this.Btn_salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_iniciosesion
@@ -50,7 +51,7 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_iniciosesion3.AutoSize = true;
             this.Lbl_iniciosesion3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_iniciosesion3.Location = new System.Drawing.Point(284, 58);
+            this.Lbl_iniciosesion3.Location = new System.Drawing.Point(146, 147);
             this.Lbl_iniciosesion3.Name = "Lbl_iniciosesion3";
             this.Lbl_iniciosesion3.Size = new System.Drawing.Size(317, 16);
             this.Lbl_iniciosesion3.TabIndex = 20;
@@ -59,7 +60,7 @@ namespace AsignaciondeCursos
             // Btn_sesion2
             // 
             this.Btn_sesion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_sesion2.Location = new System.Drawing.Point(315, 86);
+            this.Btn_sesion2.Location = new System.Drawing.Point(175, 176);
             this.Btn_sesion2.Name = "Btn_sesion2";
             this.Btn_sesion2.Size = new System.Drawing.Size(249, 31);
             this.Btn_sesion2.TabIndex = 19;
@@ -71,7 +72,7 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_iniciosesion2.AutoSize = true;
             this.Lbl_iniciosesion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_iniciosesion2.Location = new System.Drawing.Point(12, 58);
+            this.Lbl_iniciosesion2.Location = new System.Drawing.Point(172, 57);
             this.Lbl_iniciosesion2.Name = "Lbl_iniciosesion2";
             this.Lbl_iniciosesion2.Size = new System.Drawing.Size(247, 16);
             this.Lbl_iniciosesion2.TabIndex = 18;
@@ -80,7 +81,7 @@ namespace AsignaciondeCursos
             // Btn_sesion1
             // 
             this.Btn_sesion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_sesion1.Location = new System.Drawing.Point(64, 86);
+            this.Btn_sesion1.Location = new System.Drawing.Point(214, 85);
             this.Btn_sesion1.Name = "Btn_sesion1";
             this.Btn_sesion1.Size = new System.Drawing.Size(152, 31);
             this.Btn_sesion1.TabIndex = 17;
@@ -88,11 +89,23 @@ namespace AsignaciondeCursos
             this.Btn_sesion1.UseVisualStyleBackColor = true;
             this.Btn_sesion1.Click += new System.EventHandler(this.Btn_sesion1_Click);
             // 
+            // Btn_salir
+            // 
+            this.Btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_salir.Location = new System.Drawing.Point(22, 176);
+            this.Btn_salir.Name = "Btn_salir";
+            this.Btn_salir.Size = new System.Drawing.Size(66, 31);
+            this.Btn_salir.TabIndex = 21;
+            this.Btn_salir.Text = "Salir";
+            this.Btn_salir.UseVisualStyleBackColor = true;
+            this.Btn_salir.Click += new System.EventHandler(this.Btn_salir_Click);
+            // 
             // InicioSesión
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 154);
+            this.ClientSize = new System.Drawing.Size(581, 230);
+            this.Controls.Add(this.Btn_salir);
             this.Controls.Add(this.Lbl_iniciosesion3);
             this.Controls.Add(this.Btn_sesion2);
             this.Controls.Add(this.Lbl_iniciosesion2);
@@ -112,5 +125,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Button Btn_sesion2;
         private System.Windows.Forms.Label Lbl_iniciosesion2;
         private System.Windows.Forms.Button Btn_sesion1;
+        private System.Windows.Forms.Button Btn_salir;
     }
 }

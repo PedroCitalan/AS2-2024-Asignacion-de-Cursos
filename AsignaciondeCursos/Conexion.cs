@@ -10,7 +10,7 @@ namespace AsignaciondeCursos
     {
         protected string server = "localhost";
         protected string database = "asignacion";
-        protected string user = "root";
-        protected string password = "Contrasql125";
+        protected string user = "usuario1";
+        protected string password = "123456";
     }
 }

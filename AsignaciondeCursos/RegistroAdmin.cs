@@ -28,12 +28,13 @@ namespace AsignaciondeCursos
             {
                 string name = Txt_nombre.Text;
                 string password = Txt_contra.Text;
+                string passwordconfirm = Txt_confirmarcontra.Text;
                 string email = Txt_correo.Text;
                 string address = Txt_address.Text;
 
                 Match matchEspeciales = Regex.Match(Txt_correo.Text, @"[@]");
 
-                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(address))
+                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(address))
                 {
                     MessageBox.Show("Todos los campos son obligatorios.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -52,6 +53,7 @@ namespace AsignaciondeCursos
                         MessageBox.Show("Usuario registrado exitosamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Txt_nombre.Clear();
                         Txt_contra.Clear();
+                        Txt_confirmarcontra.Clear();
                         Txt_correo.Clear();
                         Txt_address.Clear();
                     }
@@ -69,6 +71,11 @@ namespace AsignaciondeCursos
             mAdmin.Contra = Txt_contra.Text.Trim();
             mAdmin.Correo = Txt_correo.Text.Trim();
             mAdmin.Direccion = Txt_address.Text.Trim();
+            string confirmarcontra = Txt_confirmarcontra.Text.Trim();
+            if (mAdmin.Contra != confirmarcontra)
+            {
+                MessageBox.Show("Las contraseñas no coinciden.", "Error de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Btn_regresar_Click(object sender, EventArgs e)

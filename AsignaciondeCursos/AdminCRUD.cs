@@ -52,7 +52,7 @@ namespace AsignaciondeCursos
             }
             if (rows == 0)
             {
-                MessageBox.Show("Datos de usuario no encontrados.");
+                MessageBox.Show("Datos de usuario no encontrados. Si es un nuevo usuario, debe registrarse en la aplicación. Si olvidó su contraseña, debe hacer un cambio de contraseña.");
             }
             mReader.Close();
 

@@ -32,5 +32,10 @@ namespace AsignaciondeCursos
             LoginAdmin.ShowDialog();
             this.Close();
         }
+
+        private void Btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
