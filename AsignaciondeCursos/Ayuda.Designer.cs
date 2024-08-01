@@ -44,27 +44,29 @@ namespace AsignaciondeCursos
             // Lbl_menuayuda
             // 
             this.Lbl_menuayuda.AutoSize = true;
-            this.Lbl_menuayuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_menuayuda.Location = new System.Drawing.Point(174, 9);
+            this.Lbl_menuayuda.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayuda.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_menuayuda.Location = new System.Drawing.Point(145, 9);
             this.Lbl_menuayuda.Name = "Lbl_menuayuda";
-            this.Lbl_menuayuda.Size = new System.Drawing.Size(269, 24);
+            this.Lbl_menuayuda.Size = new System.Drawing.Size(330, 25);
             this.Lbl_menuayuda.TabIndex = 0;
             this.Lbl_menuayuda.Text = "Menú de ayuda de estudiantes";
             // 
             // Lbl_menuayuda2
             // 
             this.Lbl_menuayuda2.AutoSize = true;
-            this.Lbl_menuayuda2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_menuayuda2.Location = new System.Drawing.Point(12, 59);
+            this.Lbl_menuayuda2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayuda2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_menuayuda2.Location = new System.Drawing.Point(21, 59);
             this.Lbl_menuayuda2.Name = "Lbl_menuayuda2";
-            this.Lbl_menuayuda2.Size = new System.Drawing.Size(303, 16);
+            this.Lbl_menuayuda2.Size = new System.Drawing.Size(299, 16);
             this.Lbl_menuayuda2.TabIndex = 1;
             this.Lbl_menuayuda2.Text = "Menú para poder realizar la asignación de cursos";
             // 
             // Btn_ayuda
             // 
             this.Btn_ayuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda.Location = new System.Drawing.Point(96, 87);
+            this.Btn_ayuda.Location = new System.Drawing.Point(122, 87);
             this.Btn_ayuda.Name = "Btn_ayuda";
             this.Btn_ayuda.Size = new System.Drawing.Size(100, 31);
             this.Btn_ayuda.TabIndex = 2;
@@ -86,17 +88,19 @@ namespace AsignaciondeCursos
             // Lbl_menuayuda3
             // 
             this.Lbl_menuayuda3.AutoSize = true;
-            this.Lbl_menuayuda3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_menuayuda3.Location = new System.Drawing.Point(355, 59);
+            this.Lbl_menuayuda3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayuda3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_menuayuda3.Location = new System.Drawing.Point(369, 59);
             this.Lbl_menuayuda3.Name = "Lbl_menuayuda3";
-            this.Lbl_menuayuda3.Size = new System.Drawing.Size(201, 16);
+            this.Lbl_menuayuda3.Size = new System.Drawing.Size(200, 16);
             this.Lbl_menuayuda3.TabIndex = 4;
             this.Lbl_menuayuda3.Text = "Menú para boleta de asignación";
             // 
             // Lbl_menuayuda4
             // 
             this.Lbl_menuayuda4.AutoSize = true;
-            this.Lbl_menuayuda4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayuda4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayuda4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Lbl_menuayuda4.Location = new System.Drawing.Point(40, 145);
             this.Lbl_menuayuda4.Name = "Lbl_menuayuda4";
             this.Lbl_menuayuda4.Size = new System.Drawing.Size(208, 16);
@@ -117,10 +121,11 @@ namespace AsignaciondeCursos
             // Lbl_menuayuda5
             // 
             this.Lbl_menuayuda5.AutoSize = true;
-            this.Lbl_menuayuda5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayuda5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayuda5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Lbl_menuayuda5.Location = new System.Drawing.Point(369, 145);
             this.Lbl_menuayuda5.Name = "Lbl_menuayuda5";
-            this.Lbl_menuayuda5.Size = new System.Drawing.Size(187, 16);
+            this.Lbl_menuayuda5.Size = new System.Drawing.Size(185, 16);
             this.Lbl_menuayuda5.TabIndex = 18;
             this.Lbl_menuayuda5.Text = "Menú de validación de cursos";
             // 
@@ -150,6 +155,7 @@ namespace AsignaciondeCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(621, 300);
             this.Controls.Add(this.Btn_ayuda5);
             this.Controls.Add(this.Lbl_menuayuda5);
