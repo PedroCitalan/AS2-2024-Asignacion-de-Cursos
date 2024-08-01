@@ -169,7 +169,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_alumno)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         private System.Windows.Forms.DataGridView Dgv_alumno;

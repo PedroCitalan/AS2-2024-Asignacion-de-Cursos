@@ -44,7 +44,7 @@ namespace AsignaciondeCursos
                 else
                 {
                     obtenerDatosAdmin();
-                    if (mAdminCRUD.buscarUsuario(mAdmin))
+                    if (mAdminCRUD.buscarUsuarioAdmin(mAdmin))
                     {
                         MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
@@ -68,7 +68,10 @@ namespace AsignaciondeCursos
 
         private void Btn_cambiocontra_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CambioContraAdmin CambioContraAdmin = new CambioContraAdmin();
+            CambioContraAdmin.ShowDialog();
+            this.Close();
         }
 
         private void Btn_registro_Click(object sender, EventArgs e)

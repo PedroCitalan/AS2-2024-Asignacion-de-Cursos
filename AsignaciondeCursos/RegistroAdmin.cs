@@ -39,7 +39,6 @@ namespace AsignaciondeCursos
                     MessageBox.Show("Todos los campos son obligatorios.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
                 else if (!matchEspeciales.Success)
                 {
                     MessageBox.Show("El correo requiere una @ para registrarse.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -48,7 +47,11 @@ namespace AsignaciondeCursos
                 else
                 {
                     obtenerDatosAdmin();
-                    if (mAdminCRUD.agregarUsuario(mAdmin))
+                    if (mAdmin.Contra != passwordconfirm)
+                    {
+                        MessageBox.Show("Las contraseñas no coinciden.", "Error de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (mAdminCRUD.agregarUsuario(mAdmin))
                     {
                         MessageBox.Show("Usuario registrado exitosamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Txt_nombre.Clear();
@@ -71,11 +74,6 @@ namespace AsignaciondeCursos
             mAdmin.Contra = Txt_contra.Text.Trim();
             mAdmin.Correo = Txt_correo.Text.Trim();
             mAdmin.Direccion = Txt_address.Text.Trim();
-            string confirmarcontra = Txt_confirmarcontra.Text.Trim();
-            if (mAdmin.Contra != confirmarcontra)
-            {
-                MessageBox.Show("Las contraseñas no coinciden.", "Error de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
 
         private void Btn_regresar_Click(object sender, EventArgs e)

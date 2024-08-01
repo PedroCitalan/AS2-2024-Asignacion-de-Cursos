@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -18,12 +15,12 @@ namespace AsignaciondeCursos
         {
             InitializeComponent();
             ConexionaMySQL = new ConexionMySQL();
-            Txt_codCarrera.TextChanged += new EventHandler(Txt_codCarrera_TextChanged);
-            Txt_codCur.TextChanged += new EventHandler(Txt_codCur_TextChanged);
-            Btn_buscar.Click += new EventHandler(Btn_buscar_Click);
-            Btn_limpiar.Click += new EventHandler(Btn_limpiar_Click);
-            Btn_regresar.Click += new EventHandler(Btn_regresar_Click);
-            this.Load += new EventHandler(Listado_alumnos_Load);
+            Txt_codCarrera.TextChanged += Txt_codCarrera_TextChanged;
+            Txt_codCur.TextChanged += Txt_codCur_TextChanged;
+            Btn_buscar.Click += Btn_buscar_Click;
+            Btn_limpiar.Click += Btn_limpiar_Click;
+            Btn_regresar.Click += Btn_regresar_Click;
+            this.Load += Listado_alumnos_Load;
         }
 
         private void Listado_alumnos_Load(object sender, EventArgs e)
@@ -43,8 +40,11 @@ namespace AsignaciondeCursos
         private List<Estudiante> ObtenerEstudiantes()
         {
             List<Estudiante> estudiantes = new List<Estudiante>();
-            using (MySqlConnection connection = ConexionaMySQL.GetConnection())
+            MySqlConnection connection = null;
+
+            try
             {
+                connection = ConexionaMySQL.GetConnection();
                 string query = "SELECT ID_ESTUDIANTE, NOMBRE, APELLIDO, FECHA_NAC, CARNE, CREDITOS_ACUMULADOS FROM ESTUDIANTE";
                 using (MySqlCommand cmd = new MySqlCommand(query, connection))
                 {
@@ -66,25 +66,30 @@ namespace AsignaciondeCursos
                     }
                 }
             }
+            finally
+            {
+                ConexionaMySQL.CloseConnection(connection);
+            }
+
             return estudiantes;
         }
 
         private void CargarSecciones()
         {
+            MySqlConnection connection = null;
+
             try
             {
-                using (var connection = ConexionaMySQL.GetConnection())
+                connection = ConexionaMySQL.GetConnection();
+                string query = "SELECT DISTINCT SECCION FROM ESTUDIANTE";
+                using (var command = new MySqlCommand(query, connection))
                 {
-                    string query = "SELECT DISTINCT SECCION FROM ESTUDIANTE";
-                    using (var command = new MySqlCommand(query, connection))
+                    using (var reader = command.ExecuteReader())
                     {
-                        using (var reader = command.ExecuteReader())
+                        Cbo_secc.Items.Clear();
+                        while (reader.Read())
                         {
-                            Cbo_secc.Items.Clear();
-                            while (reader.Read())
-                            {
-                                Cbo_secc.Items.Add(reader.GetString("SECCION"));
-                            }
+                            Cbo_secc.Items.Add(reader.GetString("SECCION"));
                         }
                     }
                 }
@@ -92,6 +97,10 @@ namespace AsignaciondeCursos
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al cargar las secciones: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                ConexionaMySQL.CloseConnection(connection);
             }
         }
 
@@ -101,7 +110,6 @@ namespace AsignaciondeCursos
             string codigoCurso = Txt_codCur.Text.Trim();
             string seccion = Cbo_secc.SelectedItem?.ToString();
 
-            // Construir la consulta SQL
             string query = "SELECT * FROM ESTUDIANTE WHERE 1=1";
             if (!string.IsNullOrEmpty(codigoCarrera))
             {
@@ -116,9 +124,11 @@ namespace AsignaciondeCursos
                 query += " AND SECCION = @Seccion";
             }
 
-            // Conectar a la base de datos y ejecutar la consulta
-            using (var connection = ConexionaMySQL.GetConnection())
+            MySqlConnection connection = null;
+
+            try
             {
+                connection = ConexionaMySQL.GetConnection();
                 using (var command = new MySqlCommand(query, connection))
                 {
                     if (!string.IsNullOrEmpty(codigoCarrera))
@@ -142,11 +152,18 @@ namespace AsignaciondeCursos
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al realizar la búsqueda: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                ConexionaMySQL.CloseConnection(connection);
+            }
         }
 
         private void Btn_limpiar_Click(object sender, EventArgs e)
         {
-            // Limpiar campos
             Txt_codCarrera.Text = string.Empty;
             Txt_codCur.Text = string.Empty;
             Cbo_secc.SelectedIndex = -1;
@@ -155,21 +172,20 @@ namespace AsignaciondeCursos
 
         private void Btn_regresar_Click(object sender, EventArgs e)
         {
-            // Código para regresar a la pantalla anterior, si es necesario
             this.Close();
         }
 
         private void Txt_codCarrera_TextChanged(object sender, EventArgs e)
         {
-            HandleTextChanged(Txt_codCarrera, "codCarrera");
+            HandleTextChanged(Txt_codCarrera);
         }
 
         private void Txt_codCur_TextChanged(object sender, EventArgs e)
         {
-            HandleTextChanged(Txt_codCur, "codCur");
+            HandleTextChanged(Txt_codCur);
         }
 
-        private void HandleTextChanged(TextBox textBox, string fieldName)
+        private void HandleTextChanged(TextBox textBox)
         {
             try
             {
@@ -178,15 +194,11 @@ namespace AsignaciondeCursos
                     long.Parse(textBox.Text);
                 }
             }
-            catch (FormatException ex)
+            catch (FormatException)
             {
-                MessageBox.Show(ex.Message, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, ingrese solo números.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox.Text = new string(textBox.Text.Where(char.IsDigit).ToArray());
                 textBox.SelectionStart = textBox.Text.Length;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ocurrió un error inesperado en {fieldName}: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
