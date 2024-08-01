@@ -68,5 +68,15 @@ namespace AsignaciondeCursos
             InicioSesion.ShowDialog();
             this.Close();
         }
+
+        private void AyudaEst1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

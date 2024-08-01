@@ -39,6 +39,10 @@ namespace AsignaciondeCursos
             this.Lbl_menuayuda5 = new System.Windows.Forms.Label();
             this.Btn_ayuda4 = new System.Windows.Forms.Button();
             this.Btn_ayuda5 = new System.Windows.Forms.Button();
+            this.AyudaEst1 = new System.Windows.Forms.Button();
+            this.AyudaEst2 = new System.Windows.Forms.Button();
+            this.AyudaEst3 = new System.Windows.Forms.Button();
+            this.AyudaEst4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_menuayuda
@@ -66,7 +70,7 @@ namespace AsignaciondeCursos
             // Btn_ayuda
             // 
             this.Btn_ayuda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda.Location = new System.Drawing.Point(122, 87);
+            this.Btn_ayuda.Location = new System.Drawing.Point(74, 88);
             this.Btn_ayuda.Name = "Btn_ayuda";
             this.Btn_ayuda.Size = new System.Drawing.Size(100, 31);
             this.Btn_ayuda.TabIndex = 2;
@@ -77,7 +81,7 @@ namespace AsignaciondeCursos
             // Btn_ayuda2
             // 
             this.Btn_ayuda2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda2.Location = new System.Drawing.Point(411, 87);
+            this.Btn_ayuda2.Location = new System.Drawing.Point(372, 88);
             this.Btn_ayuda2.Name = "Btn_ayuda2";
             this.Btn_ayuda2.Size = new System.Drawing.Size(88, 31);
             this.Btn_ayuda2.TabIndex = 3;
@@ -110,7 +114,7 @@ namespace AsignaciondeCursos
             // Btn_ayuda3
             // 
             this.Btn_ayuda3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda3.Location = new System.Drawing.Point(85, 174);
+            this.Btn_ayuda3.Location = new System.Drawing.Point(43, 174);
             this.Btn_ayuda3.Name = "Btn_ayuda3";
             this.Btn_ayuda3.Size = new System.Drawing.Size(152, 31);
             this.Btn_ayuda3.TabIndex = 5;
@@ -132,7 +136,7 @@ namespace AsignaciondeCursos
             // Btn_ayuda4
             // 
             this.Btn_ayuda4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda4.Location = new System.Drawing.Point(391, 174);
+            this.Btn_ayuda4.Location = new System.Drawing.Point(357, 174);
             this.Btn_ayuda4.Name = "Btn_ayuda4";
             this.Btn_ayuda4.Size = new System.Drawing.Size(131, 31);
             this.Btn_ayuda4.TabIndex = 17;
@@ -151,12 +155,58 @@ namespace AsignaciondeCursos
             this.Btn_ayuda5.UseVisualStyleBackColor = true;
             this.Btn_ayuda5.Click += new System.EventHandler(this.Btn_ayuda5_Click);
             // 
+            // AyudaEst1
+            // 
+            this.AyudaEst1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyudaEst1.Location = new System.Drawing.Point(191, 88);
+            this.AyudaEst1.Name = "AyudaEst1";
+            this.AyudaEst1.Size = new System.Drawing.Size(57, 28);
+            this.AyudaEst1.TabIndex = 20;
+            this.AyudaEst1.Text = "Ayuda";
+            this.AyudaEst1.UseVisualStyleBackColor = true;
+            this.AyudaEst1.Click += new System.EventHandler(this.AyudaEst1_Click);
+            // 
+            // AyudaEst2
+            // 
+            this.AyudaEst2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyudaEst2.Location = new System.Drawing.Point(466, 88);
+            this.AyudaEst2.Name = "AyudaEst2";
+            this.AyudaEst2.Size = new System.Drawing.Size(52, 28);
+            this.AyudaEst2.TabIndex = 21;
+            this.AyudaEst2.Text = "Ayuda";
+            this.AyudaEst2.UseVisualStyleBackColor = true;
+            // 
+            // AyudaEst3
+            // 
+            this.AyudaEst3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyudaEst3.Location = new System.Drawing.Point(201, 174);
+            this.AyudaEst3.Name = "AyudaEst3";
+            this.AyudaEst3.Size = new System.Drawing.Size(56, 29);
+            this.AyudaEst3.TabIndex = 22;
+            this.AyudaEst3.Text = "Ayuda";
+            this.AyudaEst3.UseVisualStyleBackColor = true;
+            // 
+            // AyudaEst4
+            // 
+            this.AyudaEst4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyudaEst4.Location = new System.Drawing.Point(494, 174);
+            this.AyudaEst4.Name = "AyudaEst4";
+            this.AyudaEst4.Size = new System.Drawing.Size(60, 31);
+            this.AyudaEst4.TabIndex = 23;
+            this.AyudaEst4.Text = "Ayuda";
+            this.AyudaEst4.UseVisualStyleBackColor = true;
+            this.AyudaEst4.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Ayuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(621, 300);
+            this.Controls.Add(this.AyudaEst4);
+            this.Controls.Add(this.AyudaEst3);
+            this.Controls.Add(this.AyudaEst2);
+            this.Controls.Add(this.AyudaEst1);
             this.Controls.Add(this.Btn_ayuda5);
             this.Controls.Add(this.Lbl_menuayuda5);
             this.Controls.Add(this.Btn_ayuda4);
@@ -186,5 +236,9 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_menuayuda5;
         private System.Windows.Forms.Button Btn_ayuda4;
         private System.Windows.Forms.Button Btn_ayuda5;
+        private System.Windows.Forms.Button AyudaEst1;
+        private System.Windows.Forms.Button AyudaEst2;
+        private System.Windows.Forms.Button AyudaEst3;
+        private System.Windows.Forms.Button AyudaEst4;
     }
 }

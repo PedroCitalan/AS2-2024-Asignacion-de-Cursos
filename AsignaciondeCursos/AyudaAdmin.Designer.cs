@@ -37,6 +37,9 @@ namespace AsignaciondeCursos
             this.Lbl_menuayudaAdmin1 = new System.Windows.Forms.Label();
             this.Btn_ayudaAdmin1 = new System.Windows.Forms.Button();
             this.Btn_ayudaAdmin4 = new System.Windows.Forms.Button();
+            this.AyudaAdm1 = new System.Windows.Forms.Button();
+            this.AyudaAdm2 = new System.Windows.Forms.Button();
+            this.AyudaAdm3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_menuayudaAdmin
@@ -64,7 +67,7 @@ namespace AsignaciondeCursos
             // Btn_ayudaAdmin3
             // 
             this.Btn_ayudaAdmin3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayudaAdmin3.Location = new System.Drawing.Point(347, 161);
+            this.Btn_ayudaAdmin3.Location = new System.Drawing.Point(320, 161);
             this.Btn_ayudaAdmin3.Name = "Btn_ayudaAdmin3";
             this.Btn_ayudaAdmin3.Size = new System.Drawing.Size(163, 31);
             this.Btn_ayudaAdmin3.TabIndex = 17;
@@ -108,7 +111,7 @@ namespace AsignaciondeCursos
             // Btn_ayudaAdmin1
             // 
             this.Btn_ayudaAdmin1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayudaAdmin1.Location = new System.Drawing.Point(193, 79);
+            this.Btn_ayudaAdmin1.Location = new System.Drawing.Point(165, 79);
             this.Btn_ayudaAdmin1.Name = "Btn_ayudaAdmin1";
             this.Btn_ayudaAdmin1.Size = new System.Drawing.Size(173, 31);
             this.Btn_ayudaAdmin1.TabIndex = 13;
@@ -119,7 +122,7 @@ namespace AsignaciondeCursos
             // Btn_ayudaAdmin4
             // 
             this.Btn_ayudaAdmin4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayudaAdmin4.Location = new System.Drawing.Point(210, 233);
+            this.Btn_ayudaAdmin4.Location = new System.Drawing.Point(222, 233);
             this.Btn_ayudaAdmin4.Name = "Btn_ayudaAdmin4";
             this.Btn_ayudaAdmin4.Size = new System.Drawing.Size(116, 31);
             this.Btn_ayudaAdmin4.TabIndex = 19;
@@ -127,12 +130,48 @@ namespace AsignaciondeCursos
             this.Btn_ayudaAdmin4.UseVisualStyleBackColor = true;
             this.Btn_ayudaAdmin4.Click += new System.EventHandler(this.Btn_ayudaAdmin4_Click);
             // 
+            // AyudaAdm1
+            // 
+            this.AyudaAdm1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyudaAdm1.Location = new System.Drawing.Point(344, 79);
+            this.AyudaAdm1.Name = "AyudaAdm1";
+            this.AyudaAdm1.Size = new System.Drawing.Size(51, 31);
+            this.AyudaAdm1.TabIndex = 22;
+            this.AyudaAdm1.Text = "Ayuda";
+            this.AyudaAdm1.UseVisualStyleBackColor = true;
+            this.AyudaAdm1.Click += new System.EventHandler(this.AyudaAdm1_Click);
+            // 
+            // AyudaAdm2
+            // 
+            this.AyudaAdm2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyudaAdm2.Location = new System.Drawing.Point(227, 161);
+            this.AyudaAdm2.Name = "AyudaAdm2";
+            this.AyudaAdm2.Size = new System.Drawing.Size(51, 31);
+            this.AyudaAdm2.TabIndex = 23;
+            this.AyudaAdm2.Text = "Ayuda";
+            this.AyudaAdm2.UseVisualStyleBackColor = true;
+            this.AyudaAdm2.Click += new System.EventHandler(this.AyudaAdm2_Click);
+            // 
+            // AyudaAdm3
+            // 
+            this.AyudaAdm3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AyudaAdm3.Location = new System.Drawing.Point(489, 161);
+            this.AyudaAdm3.Name = "AyudaAdm3";
+            this.AyudaAdm3.Size = new System.Drawing.Size(51, 31);
+            this.AyudaAdm3.TabIndex = 24;
+            this.AyudaAdm3.Text = "Ayuda";
+            this.AyudaAdm3.UseVisualStyleBackColor = true;
+            this.AyudaAdm3.Click += new System.EventHandler(this.AyudaAdm3_Click);
+            // 
             // AyudaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(564, 307);
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(564, 276);
+            this.Controls.Add(this.AyudaAdm3);
+            this.Controls.Add(this.AyudaAdm2);
+            this.Controls.Add(this.AyudaAdm1);
             this.Controls.Add(this.Btn_ayudaAdmin4);
             this.Controls.Add(this.Lbl_menuayudaAdmin3);
             this.Controls.Add(this.Btn_ayudaAdmin3);
@@ -142,8 +181,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Btn_ayudaAdmin1);
             this.Controls.Add(this.Lbl_menuayudaAdmin);
             this.Name = "AyudaAdmin";
-            this.Text = "Ayuda de personal administrativo/catedrático";
-            this.Load += new System.EventHandler(this.AyudaAdmin_Load);
+            this.Text = "AyudaAdmin";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +197,8 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_menuayudaAdmin1;
         private System.Windows.Forms.Button Btn_ayudaAdmin1;
         private System.Windows.Forms.Button Btn_ayudaAdmin4;
+        private System.Windows.Forms.Button AyudaAdm1;
+        private System.Windows.Forms.Button AyudaAdm2;
+        private System.Windows.Forms.Button AyudaAdm3;
     }
 }
