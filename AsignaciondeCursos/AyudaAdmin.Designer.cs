@@ -138,6 +138,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Lbl_menuayudaAdmin);
             this.Name = "AyudaAdmin";
             this.Text = "Ayuda de personal administrativo/catedrático";
+            this.Load += new System.EventHandler(this.AyudaAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

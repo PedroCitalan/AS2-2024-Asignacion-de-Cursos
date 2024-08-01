@@ -1,17 +1,9 @@
-﻿
-namespace AsignaciondeCursos
+﻿namespace AsignaciondeCursos
 {
     partial class Listado_alumnos
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,12 +13,6 @@ namespace AsignaciondeCursos
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.Dgv_alumno = new System.Windows.Forms.DataGridView();
@@ -135,6 +121,7 @@ namespace AsignaciondeCursos
             this.Btn_buscar.TabIndex = 8;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
             // Btn_limpiar
             // 
@@ -146,6 +133,7 @@ namespace AsignaciondeCursos
             this.Btn_limpiar.TabIndex = 9;
             this.Btn_limpiar.Text = "Limpiar";
             this.Btn_limpiar.UseVisualStyleBackColor = true;
+            this.Btn_limpiar.Click += new System.EventHandler(this.Btn_limpiar_Click);
             // 
             // Btn_regresar
             // 
@@ -157,6 +145,7 @@ namespace AsignaciondeCursos
             this.Btn_regresar.TabIndex = 10;
             this.Btn_regresar.Text = "Regresar";
             this.Btn_regresar.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
             // Listado_alumnos
             // 
@@ -182,8 +171,6 @@ namespace AsignaciondeCursos
             this.PerformLayout();
 
         }
-
-        #endregion
 
         private System.Windows.Forms.DataGridView Dgv_alumno;
         private System.Windows.Forms.Label Lbl_listadoA;

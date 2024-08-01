@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -13,14 +12,17 @@ namespace AsignaciondeCursos
 {
     public partial class Listado_alumnos : Form
     {
-        private ConexionMySQL ConexionaMySQL;
+        private readonly ConexionMySQL ConexionaMySQL;
 
         public Listado_alumnos()
         {
             InitializeComponent();
+            ConexionaMySQL = new ConexionMySQL();
             Txt_codCarrera.TextChanged += new EventHandler(Txt_codCarrera_TextChanged);
             Txt_codCur.TextChanged += new EventHandler(Txt_codCur_TextChanged);
-            ConexionaMySQL = new ConexionMySQL();
+            Btn_buscar.Click += new EventHandler(Btn_buscar_Click);
+            Btn_limpiar.Click += new EventHandler(Btn_limpiar_Click);
+            Btn_regresar.Click += new EventHandler(Btn_regresar_Click);
             this.Load += new EventHandler(Listado_alumnos_Load);
         }
 
@@ -30,6 +32,7 @@ namespace AsignaciondeCursos
             {
                 List<Estudiante> estudiantes = ObtenerEstudiantes();
                 Dgv_alumno.DataSource = estudiantes;
+                CargarSecciones();
             }
             catch (Exception ex)
             {
@@ -64,6 +67,96 @@ namespace AsignaciondeCursos
                 }
             }
             return estudiantes;
+        }
+
+        private void CargarSecciones()
+        {
+            try
+            {
+                using (var connection = ConexionaMySQL.GetConnection())
+                {
+                    string query = "SELECT DISTINCT SECCION FROM ESTUDIANTE";
+                    using (var command = new MySqlCommand(query, connection))
+                    {
+                        using (var reader = command.ExecuteReader())
+                        {
+                            Cbo_secc.Items.Clear();
+                            while (reader.Read())
+                            {
+                                Cbo_secc.Items.Add(reader.GetString("SECCION"));
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar las secciones: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Btn_buscar_Click(object sender, EventArgs e)
+        {
+            string codigoCarrera = Txt_codCarrera.Text.Trim();
+            string codigoCurso = Txt_codCur.Text.Trim();
+            string seccion = Cbo_secc.SelectedItem?.ToString();
+
+            // Construir la consulta SQL
+            string query = "SELECT * FROM ESTUDIANTE WHERE 1=1";
+            if (!string.IsNullOrEmpty(codigoCarrera))
+            {
+                query += " AND ID_CARRERA = @CodigoCarrera";
+            }
+            if (!string.IsNullOrEmpty(codigoCurso))
+            {
+                query += " AND ID_CURSOS = @CodigoCurso";
+            }
+            if (!string.IsNullOrEmpty(seccion))
+            {
+                query += " AND SECCION = @Seccion";
+            }
+
+            // Conectar a la base de datos y ejecutar la consulta
+            using (var connection = ConexionaMySQL.GetConnection())
+            {
+                using (var command = new MySqlCommand(query, connection))
+                {
+                    if (!string.IsNullOrEmpty(codigoCarrera))
+                    {
+                        command.Parameters.AddWithValue("@CodigoCarrera", codigoCarrera);
+                    }
+                    if (!string.IsNullOrEmpty(codigoCurso))
+                    {
+                        command.Parameters.AddWithValue("@CodigoCurso", codigoCurso);
+                    }
+                    if (!string.IsNullOrEmpty(seccion))
+                    {
+                        command.Parameters.AddWithValue("@Seccion", seccion);
+                    }
+
+                    using (var adapter = new MySqlDataAdapter(command))
+                    {
+                        var dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        Dgv_alumno.DataSource = dataTable;
+                    }
+                }
+            }
+        }
+
+        private void Btn_limpiar_Click(object sender, EventArgs e)
+        {
+            // Limpiar campos
+            Txt_codCarrera.Text = string.Empty;
+            Txt_codCur.Text = string.Empty;
+            Cbo_secc.SelectedIndex = -1;
+            Dgv_alumno.DataSource = null;
+        }
+
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            // Código para regresar a la pantalla anterior, si es necesario
+            this.Close();
         }
 
         private void Txt_codCarrera_TextChanged(object sender, EventArgs e)
