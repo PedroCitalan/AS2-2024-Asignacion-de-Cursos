@@ -119,7 +119,7 @@
             // Btn_buscar
             // 
             this.Btn_buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_buscar.Location = new System.Drawing.Point(167, 158);
+            this.Btn_buscar.Location = new System.Drawing.Point(184, 158);
             this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_buscar.Name = "Btn_buscar";
             this.Btn_buscar.Size = new System.Drawing.Size(86, 46);
@@ -131,7 +131,7 @@
             // Btn_limpiar
             // 
             this.Btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_limpiar.Location = new System.Drawing.Point(344, 158);
+            this.Btn_limpiar.Location = new System.Drawing.Point(350, 158);
             this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_limpiar.Name = "Btn_limpiar";
             this.Btn_limpiar.Size = new System.Drawing.Size(80, 46);
@@ -143,7 +143,7 @@
             // Btn_regresar
             // 
             this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_regresar.Location = new System.Drawing.Point(518, 158);
+            this.Btn_regresar.Location = new System.Drawing.Point(548, 158);
             this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(85, 46);

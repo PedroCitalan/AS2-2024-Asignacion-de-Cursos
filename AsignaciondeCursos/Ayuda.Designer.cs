@@ -65,7 +65,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_ayuda
             // 
-            this.Btn_ayuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayuda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ayuda.Location = new System.Drawing.Point(122, 87);
             this.Btn_ayuda.Name = "Btn_ayuda";
             this.Btn_ayuda.Size = new System.Drawing.Size(100, 31);
@@ -76,7 +76,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_ayuda2
             // 
-            this.Btn_ayuda2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayuda2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ayuda2.Location = new System.Drawing.Point(411, 87);
             this.Btn_ayuda2.Name = "Btn_ayuda2";
             this.Btn_ayuda2.Size = new System.Drawing.Size(88, 31);
@@ -109,10 +109,10 @@ namespace AsignaciondeCursos
             // 
             // Btn_ayuda3
             // 
-            this.Btn_ayuda3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda3.Location = new System.Drawing.Point(96, 174);
+            this.Btn_ayuda3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayuda3.Location = new System.Drawing.Point(85, 174);
             this.Btn_ayuda3.Name = "Btn_ayuda3";
-            this.Btn_ayuda3.Size = new System.Drawing.Size(110, 31);
+            this.Btn_ayuda3.Size = new System.Drawing.Size(152, 31);
             this.Btn_ayuda3.TabIndex = 5;
             this.Btn_ayuda3.Text = "Certificación";
             this.Btn_ayuda3.UseVisualStyleBackColor = true;
@@ -131,10 +131,10 @@ namespace AsignaciondeCursos
             // 
             // Btn_ayuda4
             // 
-            this.Btn_ayuda4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda4.Location = new System.Drawing.Point(411, 174);
+            this.Btn_ayuda4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayuda4.Location = new System.Drawing.Point(391, 174);
             this.Btn_ayuda4.Name = "Btn_ayuda4";
-            this.Btn_ayuda4.Size = new System.Drawing.Size(96, 31);
+            this.Btn_ayuda4.Size = new System.Drawing.Size(131, 31);
             this.Btn_ayuda4.TabIndex = 17;
             this.Btn_ayuda4.Text = "Validación";
             this.Btn_ayuda4.UseVisualStyleBackColor = true;
@@ -142,7 +142,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_ayuda5
             // 
-            this.Btn_ayuda5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayuda5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ayuda5.Location = new System.Drawing.Point(243, 248);
             this.Btn_ayuda5.Name = "Btn_ayuda5";
             this.Btn_ayuda5.Size = new System.Drawing.Size(118, 31);

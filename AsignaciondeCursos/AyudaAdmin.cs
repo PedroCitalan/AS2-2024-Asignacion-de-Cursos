@@ -28,12 +28,20 @@ namespace AsignaciondeCursos
 
         private void Btn_ayudaAdmin2_Click(object sender, EventArgs e)
         {
-            // Puedes agregar el código para otros botones aquí
+            // Crea una instancia del formulario Listado_catedraticos
+            Listado_catedraticos listadocatedraticos = new Listado_catedraticos();
+
+            // Muestra el formulario Listado_catedraticos
+            listadocatedraticos.Show();
         }
 
         private void Btn_ayudaAdmin3_Click(object sender, EventArgs e)
         {
-            // Puedes agregar el código para otros botones aquí
+            // Crea una instancia del formulario Listado_catedraticos
+            Listado_Cursos listadocursos = new Listado_Cursos();
+
+            // Muestra el formulario Listado_catedraticos
+            listadocursos.Show();
         }
 
         private void Btn_ayudaAdmin4_Click(object sender, EventArgs e)
