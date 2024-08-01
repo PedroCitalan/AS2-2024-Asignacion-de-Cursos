@@ -139,6 +139,12 @@
     <Compile Include="Boleta.Designer.cs">
       <DependentUpon>Boleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="CambioContraAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioContraAdmin.Designer.cs">
+      <DependentUpon>CambioContraAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Certificacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Boleta.resx">
       <DependentUpon>Boleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioContraAdmin.resx">
+      <DependentUpon>CambioContraAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Certificacion.resx">
       <DependentUpon>Certificacion.cs</DependentUpon>
