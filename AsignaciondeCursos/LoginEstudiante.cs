@@ -56,7 +56,7 @@ namespace AsignaciondeCursos
         }
         private bool ValidarUsuario (string user, string password)
         {
-            string query = "SELECT COUNT(*) FROM Usuario WHERE NOMBRE = @usuario AND CONTRASENA = @contraseña";
+            string query = "SELECT COUNT(*) FROM TBL_USUARIOS WHERE NOMBRE_USUARIO = @usuario AND CONTRASEÑA = @contraseña";
             MySqlDataReader mReader;
             MySqlCommand cmd = new MySqlCommand(query, conexionSQL.GetConnection());
             cmd.Parameters.AddWithValue("@usuario", user);
@@ -77,6 +77,14 @@ namespace AsignaciondeCursos
             this.Hide();
             InicioSesión InicioSesion = new InicioSesión();
             InicioSesion.ShowDialog();
+            this.Close();
+        }
+
+        private void Btn_registroEstudiante_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistroEstudiante registroEstudiante = new RegistroEstudiante();
+            registroEstudiante.ShowDialog();
             this.Close();
         }
     }

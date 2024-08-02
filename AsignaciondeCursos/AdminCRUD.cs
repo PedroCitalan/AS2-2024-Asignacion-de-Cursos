@@ -32,7 +32,7 @@ namespace AsignaciondeCursos
             return mCommand.ExecuteNonQuery() > 0;
         }
 
-        internal bool buscarUsuario(Admin_catedratico mAdmin)
+        internal bool buscarUsuarioAdmin(Admin_catedratico mAdmin)
         {
             string BUSCAR = "SELECT * FROM Admin_catedratico WHERE Correo = @Correo AND Contra = @Contra;";
 
@@ -57,6 +57,44 @@ namespace AsignaciondeCursos
             mReader.Close();
 
             return rows > 0;
+        }
+
+        internal bool buscarCorreoAdmin(Admin_catedratico mAdmin)
+        {
+            string BUSCARCORREO = "SELECT * FROM Admin_catedratico WHERE Correo = @Correo;";
+
+            MySqlDataReader mReader;
+            MySqlCommand mCommand = new MySqlCommand(BUSCARCORREO, ConexionMySQL.GetConnection());
+
+            mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo));
+
+            mReader = mCommand.ExecuteReader();
+
+            int rows = 0;
+            if (mReader.HasRows)
+            {
+                while (mReader.Read())
+                    rows++;
+            }
+            if (rows == 0)
+            {
+                MessageBox.Show("Correo no encontrado.");
+            }
+            mReader.Close();
+
+            return rows > 0;
+        }
+
+        internal bool actualizarContraAdmin(Admin_catedratico mAdmin)
+        {
+            string UPDATE = "UPDATE Admin_catedratico SET Contra = @Contra WHERE Correo = @Correo;";
+
+            MySqlCommand mCommand = new MySqlCommand(UPDATE, ConexionMySQL.GetConnection());
+
+            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contra));
+            mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo));
+
+            return mCommand.ExecuteNonQuery() > 0;
         }
     }
 }

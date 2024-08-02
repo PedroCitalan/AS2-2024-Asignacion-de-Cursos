@@ -51,7 +51,7 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_iniciosesion3.AutoSize = true;
             this.Lbl_iniciosesion3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_iniciosesion3.Location = new System.Drawing.Point(146, 147);
+            this.Lbl_iniciosesion3.Location = new System.Drawing.Point(140, 148);
             this.Lbl_iniciosesion3.Name = "Lbl_iniciosesion3";
             this.Lbl_iniciosesion3.Size = new System.Drawing.Size(317, 16);
             this.Lbl_iniciosesion3.TabIndex = 20;
@@ -60,7 +60,7 @@ namespace AsignaciondeCursos
             // Btn_sesion2
             // 
             this.Btn_sesion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_sesion2.Location = new System.Drawing.Point(175, 176);
+            this.Btn_sesion2.Location = new System.Drawing.Point(170, 176);
             this.Btn_sesion2.Name = "Btn_sesion2";
             this.Btn_sesion2.Size = new System.Drawing.Size(249, 31);
             this.Btn_sesion2.TabIndex = 19;
@@ -104,6 +104,7 @@ namespace AsignaciondeCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(581, 230);
             this.Controls.Add(this.Btn_salir);
             this.Controls.Add(this.Lbl_iniciosesion3);
