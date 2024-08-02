@@ -12,14 +12,20 @@ namespace AsignaciondeCursos
 {
     public partial class AyudaAdmin : Form
     {
+        public string correo { get; set; }
+        private Admin_catedratico mAdmin;
+        private AdminCRUD mAdminCRUD;
         public AyudaAdmin()
         {
             InitializeComponent();
+            mAdminCRUD = new AdminCRUD();
+            mAdmin = new Admin_catedratico();
         }
 
         private void Btn_ayudaAdmin1_Click(object sender, EventArgs e)
         {
             // Abre el formulario de Listado_alumnos
+            this.Hide();
             Listado_alumnos listadoAlumnosForm = new Listado_alumnos();
             listadoAlumnosForm.Show();
         }
@@ -27,6 +33,7 @@ namespace AsignaciondeCursos
         private void Btn_ayudaAdmin2_Click(object sender, EventArgs e)
         {
             // Abre el formulario de Listado_catedraticos
+            this.Hide();
             Listado_catedraticos listadoCatedraticosForm = new Listado_catedraticos();
             listadoCatedraticosForm.Show();
         }
@@ -34,6 +41,7 @@ namespace AsignaciondeCursos
         private void Btn_ayudaAdmin3_Click(object sender, EventArgs e)
         {
             // Abre el formulario de Listado_cursos
+            this.Hide();
             Listado_Cursos listadoCursosForm = new Listado_Cursos();
             listadoCursosForm.Show();
         }
@@ -63,6 +71,74 @@ namespace AsignaciondeCursos
         {
             // Muestra un mensaje de ayuda para generar la lista de cursos
             MessageBox.Show("Para generar la lista de cursos, ingrese el código de carrera. Luego, haga clic en 'Buscar' para ver los resultados.");
+        }
+
+        private void Btn_cambiocontra2_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario de cambio de contraseña para catedráticos
+            this.Close();
+            CambioContraCatedratico CambioContraCatedratico = new CambioContraCatedratico();
+            CambioContraCatedratico.ShowDialog();
+        }
+
+        private void obtenerCorreo()
+        {
+            mAdmin.Correo_electronico = correo;
+        }
+
+        private void Btn_registrar1_Click(object sender, EventArgs e)
+        {
+            obtenerCorreo();
+            if (mAdminCRUD.verificarUsuarioAdmin(mAdmin))
+            {
+                this.Hide();
+                RegistroAdmin RegistroAdmin = new RegistroAdmin();
+                RegistroAdmin.ShowDialog();
+            }
+        }
+
+        private void Btn_registrar2_Click(object sender, EventArgs e)
+        {
+            obtenerCorreo();
+            if (mAdminCRUD.verificarUsuarioAdmin(mAdmin))
+            {
+                this.Hide();
+                RegistroCatedratico RegistroCatedratico = new RegistroCatedratico();
+                RegistroCatedratico.ShowDialog();
+            }
+        }
+
+        private void Btn_cambiocontra1_Click(object sender, EventArgs e)
+        {
+            obtenerCorreo();
+            if (mAdminCRUD.verificarUsuarioAdmin(mAdmin))
+            {
+                this.Hide();
+                CambioContraAdmin CambioContraAdmin = new CambioContraAdmin();
+                CambioContraAdmin.ShowDialog();
+            }
+        }
+
+        private void Btn_eliminar1_Click(object sender, EventArgs e)
+        {
+            obtenerCorreo();
+            if (mAdminCRUD.verificarUsuarioAdmin(mAdmin))
+            {
+                this.Hide();
+                DeleteCatedratico DeleteCatedratico = new DeleteCatedratico();
+                DeleteCatedratico.ShowDialog();
+            }
+        }
+
+        private void Btn_eliminar2_Click(object sender, EventArgs e)
+        {
+            obtenerCorreo();
+            if (mAdminCRUD.verificarUsuarioAdmin(mAdmin))
+            {
+                this.Hide();
+                DeleteEstudiante DeleteEstudiante = new DeleteEstudiante();
+                DeleteEstudiante.ShowDialog();
+            }
         }
     }
 }

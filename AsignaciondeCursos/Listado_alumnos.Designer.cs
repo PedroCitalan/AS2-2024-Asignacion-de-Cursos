@@ -131,7 +131,7 @@
             // Btn_limpiar
             // 
             this.Btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_limpiar.Location = new System.Drawing.Point(350, 158);
+            this.Btn_limpiar.Location = new System.Drawing.Point(363, 158);
             this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_limpiar.Name = "Btn_limpiar";
             this.Btn_limpiar.Size = new System.Drawing.Size(80, 46);

@@ -51,22 +51,24 @@ namespace AsignaciondeCursos
             // Lbl_correo
             // 
             this.Lbl_correo.AutoSize = true;
-            this.Lbl_correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_correo.Location = new System.Drawing.Point(113, 59);
+            this.Lbl_correo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_correo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_correo.Location = new System.Drawing.Point(110, 59);
             this.Lbl_correo.Name = "Lbl_correo";
-            this.Lbl_correo.Size = new System.Drawing.Size(52, 16);
+            this.Lbl_correo.Size = new System.Drawing.Size(56, 16);
             this.Lbl_correo.TabIndex = 4;
             this.Lbl_correo.Text = "Correo:";
             // 
             // Lbl_loginadmin
             // 
             this.Lbl_loginadmin.AutoSize = true;
-            this.Lbl_loginadmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_loginadmin.Location = new System.Drawing.Point(45, 9);
+            this.Lbl_loginadmin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_loginadmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_loginadmin.Location = new System.Drawing.Point(68, 9);
             this.Lbl_loginadmin.Name = "Lbl_loginadmin";
-            this.Lbl_loginadmin.Size = new System.Drawing.Size(519, 24);
+            this.Lbl_loginadmin.Size = new System.Drawing.Size(477, 23);
             this.Lbl_loginadmin.TabIndex = 3;
-            this.Lbl_loginadmin.Text = "Cambio de contraseña de personal administrativo/catedrático";
+            this.Lbl_loginadmin.Text = "Cambio de contraseña de personal administrativo";
             // 
             // Txt_confirmarcontra
             // 
@@ -79,10 +81,11 @@ namespace AsignaciondeCursos
             // Lbl_confirmarcontra
             // 
             this.Lbl_confirmarcontra.AutoSize = true;
-            this.Lbl_confirmarcontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_confirmarcontra.Location = new System.Drawing.Point(27, 137);
+            this.Lbl_confirmarcontra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_confirmarcontra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_confirmarcontra.Location = new System.Drawing.Point(12, 137);
             this.Lbl_confirmarcontra.Name = "Lbl_confirmarcontra";
-            this.Lbl_confirmarcontra.Size = new System.Drawing.Size(138, 16);
+            this.Lbl_confirmarcontra.Size = new System.Drawing.Size(154, 16);
             this.Lbl_confirmarcontra.TabIndex = 20;
             this.Lbl_confirmarcontra.Text = "Confirmar contraseña:";
             this.Lbl_confirmarcontra.Visible = false;
@@ -98,17 +101,18 @@ namespace AsignaciondeCursos
             // Lbl_contraseña
             // 
             this.Lbl_contraseña.AutoSize = true;
-            this.Lbl_contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_contraseña.Location = new System.Drawing.Point(88, 97);
+            this.Lbl_contraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_contraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_contraseña.Location = new System.Drawing.Point(79, 97);
             this.Lbl_contraseña.Name = "Lbl_contraseña";
-            this.Lbl_contraseña.Size = new System.Drawing.Size(80, 16);
+            this.Lbl_contraseña.Size = new System.Drawing.Size(87, 16);
             this.Lbl_contraseña.TabIndex = 17;
             this.Lbl_contraseña.Text = "Contraseña:";
             this.Lbl_contraseña.Visible = false;
             // 
             // Btn_cambiocontra
             // 
-            this.Btn_cambiocontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_cambiocontra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_cambiocontra.Location = new System.Drawing.Point(269, 179);
             this.Btn_cambiocontra.Name = "Btn_cambiocontra";
             this.Btn_cambiocontra.Size = new System.Drawing.Size(108, 50);
@@ -120,7 +124,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_regresar
             // 
-            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_regresar.Location = new System.Drawing.Point(12, 189);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(85, 31);
@@ -131,7 +135,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_buscar
             // 
-            this.Btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_buscar.Location = new System.Drawing.Point(505, 51);
             this.Btn_buscar.Name = "Btn_buscar";
             this.Btn_buscar.Size = new System.Drawing.Size(85, 31);
@@ -144,7 +148,7 @@ namespace AsignaciondeCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(606, 246);
             this.Controls.Add(this.Btn_buscar);
             this.Controls.Add(this.Btn_regresar);
@@ -157,7 +161,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Lbl_correo);
             this.Controls.Add(this.Lbl_loginadmin);
             this.Name = "CambioContraAdmin";
-            this.Text = "Cambio de contraseña de personal administrativo/catedrático";
+            this.Text = "Cambio de contraseña de personal administrativo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

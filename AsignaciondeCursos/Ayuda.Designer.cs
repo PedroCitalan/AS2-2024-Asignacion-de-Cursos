@@ -70,9 +70,9 @@ namespace AsignaciondeCursos
             // Btn_ayuda
             // 
             this.Btn_ayuda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda.Location = new System.Drawing.Point(74, 88);
+            this.Btn_ayuda.Location = new System.Drawing.Point(65, 88);
             this.Btn_ayuda.Name = "Btn_ayuda";
-            this.Btn_ayuda.Size = new System.Drawing.Size(100, 31);
+            this.Btn_ayuda.Size = new System.Drawing.Size(111, 31);
             this.Btn_ayuda.TabIndex = 2;
             this.Btn_ayuda.Text = "Asignación";
             this.Btn_ayuda.UseVisualStyleBackColor = true;

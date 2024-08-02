@@ -45,7 +45,7 @@ namespace AsignaciondeCursos
             try
             {
                 connection = ConexionaMySQL.GetConnection();
-                string query = "SELECT ID_ESTUDIANTE, NOMBRE, APELLIDO, FECHA_NAC, CARNE, CREDITOS_ACUMULADOS FROM ESTUDIANTE";
+                string query = "SELECT ID_ESTUDIANTE, NOMBRE, APELLIDO, FECHA_NAC, CARNE, CREDITOS_ACUMULADOS FROM TBL_ESTUDIANTE";
                 using (MySqlCommand cmd = new MySqlCommand(query, connection))
                 {
                     using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -81,7 +81,7 @@ namespace AsignaciondeCursos
             try
             {
                 connection = ConexionaMySQL.GetConnection();
-                string query = "SELECT DISTINCT SECCION FROM ESTUDIANTE";
+                string query = "SELECT DISTINCT SECCION FROM TBL_ESTUDIANTE";
                 using (var command = new MySqlCommand(query, connection))
                 {
                     using (var reader = command.ExecuteReader())
@@ -110,7 +110,7 @@ namespace AsignaciondeCursos
             string codigoCurso = Txt_codCur.Text.Trim();
             string seccion = Cbo_secc.SelectedItem?.ToString();
 
-            string query = "SELECT * FROM ESTUDIANTE WHERE 1=1";
+            string query = "SELECT * FROM TBL_ESTUDIANTE WHERE 1=1";
             if (!string.IsNullOrEmpty(codigoCarrera))
             {
                 query += " AND ID_CARRERA = @CodigoCarrera";
@@ -209,11 +209,6 @@ namespace AsignaciondeCursos
         private void label3_Click(object sender, EventArgs e) { }
 
         private void label4_Click(object sender, EventArgs e) { }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
     public class Estudiante

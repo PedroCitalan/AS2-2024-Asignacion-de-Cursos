@@ -26,15 +26,14 @@ namespace AsignaciondeCursos
         {
             try
             {
-                string name = Txt_nombre.Text;
+                string username = Txt_username.Text;
                 string password = Txt_contra.Text;
                 string passwordconfirm = Txt_confirmarcontra.Text;
                 string email = Txt_correo.Text;
-                string address = Txt_address.Text;
 
                 Match matchEspeciales = Regex.Match(Txt_correo.Text, @"[@]");
 
-                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(address))
+                if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email))
                 {
                     MessageBox.Show("Todos los campos son obligatorios.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -47,18 +46,17 @@ namespace AsignaciondeCursos
                 else
                 {
                     obtenerDatosAdmin();
-                    if (mAdmin.Contra != passwordconfirm)
+                    if (mAdmin.Contraseña != passwordconfirm)
                     {
                         MessageBox.Show("Las contraseñas no coinciden.", "Error de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    else if (mAdminCRUD.agregarUsuario(mAdmin))
+                    else if (mAdminCRUD.agregarUsuarioAdmin(mAdmin))
                     {
                         MessageBox.Show("Usuario registrado exitosamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Txt_nombre.Clear();
+                        Txt_username.Clear();
                         Txt_contra.Clear();
                         Txt_confirmarcontra.Clear();
                         Txt_correo.Clear();
-                        Txt_address.Clear();
                     }
                 }
             }
@@ -70,17 +68,16 @@ namespace AsignaciondeCursos
 
         private void obtenerDatosAdmin()
         {
-            mAdmin.Nombre = Txt_nombre.Text.Trim();
-            mAdmin.Contra = Txt_contra.Text.Trim();
-            mAdmin.Correo = Txt_correo.Text.Trim();
-            mAdmin.Direccion = Txt_address.Text.Trim();
+            mAdmin.Nombre_usuario = Txt_username.Text.Trim();
+            mAdmin.Contraseña = Txt_contra.Text.Trim();
+            mAdmin.Correo_electronico = Txt_correo.Text.Trim();
         }
 
         private void Btn_regresar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginAdmin LoginAdmin = new LoginAdmin();
-            LoginAdmin.ShowDialog();
+            AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.ShowDialog();
             this.Close();
         }
     }

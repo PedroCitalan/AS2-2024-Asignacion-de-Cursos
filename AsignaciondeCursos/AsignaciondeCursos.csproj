@@ -145,6 +145,12 @@
     <Compile Include="CambioContraAdmin.Designer.cs">
       <DependentUpon>CambioContraAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="CambioContraCatedratico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioContraCatedratico.Designer.cs">
+      <DependentUpon>CambioContraCatedratico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Certificacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,18 @@
     </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="ConexionMySQL.cs" />
+    <Compile Include="DeleteCatedratico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCatedratico.Designer.cs">
+      <DependentUpon>DeleteCatedratico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteEstudiante.Designer.cs">
+      <DependentUpon>DeleteEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="InicioSesión.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +215,12 @@
     <Compile Include="RegistroAdmin.Designer.cs">
       <DependentUpon>RegistroAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroCatedratico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroCatedratico.Designer.cs">
+      <DependentUpon>RegistroCatedratico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,8 +242,17 @@
     <EmbeddedResource Include="CambioContraAdmin.resx">
       <DependentUpon>CambioContraAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CambioContraCatedratico.resx">
+      <DependentUpon>CambioContraCatedratico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Certificacion.resx">
       <DependentUpon>Certificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCatedratico.resx">
+      <DependentUpon>DeleteCatedratico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteEstudiante.resx">
+      <DependentUpon>DeleteEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesión.resx">
       <DependentUpon>InicioSesión.cs</DependentUpon>
@@ -250,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroAdmin.resx">
       <DependentUpon>RegistroAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroCatedratico.resx">
+      <DependentUpon>RegistroCatedratico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Validacion.resx">
       <DependentUpon>Validacion.cs</DependentUpon>
