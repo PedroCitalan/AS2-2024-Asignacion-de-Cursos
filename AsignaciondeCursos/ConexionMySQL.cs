@@ -12,30 +12,35 @@ namespace AsignaciondeCursos
     {
         private MySqlConnection conexion;
         private string cadenaConexion;
+
         public ConexionMySQL()
         {
             cadenaConexion = "Database=" + database +
             "; DataSource=" + server +
             "; User Id=" + user +
             "; Password=" + password;
-
-            conexion = new MySqlConnection(cadenaConexion);
         }
 
         public MySqlConnection GetConnection()
         {
+            conexion = new MySqlConnection(cadenaConexion);
             try
             {
-                if (conexion.State != System.Data.ConnectionState.Open)
-                {
-                    conexion.Open();
-                }
+                conexion.Open();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString());
             }
             return conexion;
+        }
+
+        public void CloseConnection(MySqlConnection conn)
+        {
+            if (conn != null && conn.State == System.Data.ConnectionState.Open)
+            {
+                conn.Close();
+            }
         }
     }
 }

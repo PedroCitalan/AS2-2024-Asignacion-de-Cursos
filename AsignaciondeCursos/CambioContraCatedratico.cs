@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace AsignaciondeCursos
 {
-    public partial class CambioContraAdmin : Form
+    public partial class CambioContraCatedratico : Form
     {
         public string correo { get; set; }
         private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
-        public CambioContraAdmin()
+        public CambioContraCatedratico()
         {
             InitializeComponent();
             mAdminCRUD = new AdminCRUD();
@@ -33,7 +33,7 @@ namespace AsignaciondeCursos
 
                 if (string.IsNullOrWhiteSpace(email))
                 {
-                    MessageBox.Show("Debe ingresar un correo para poder cambiar la contraseña.", "Correo no ingresado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Debe ingresar un correo para poder cambiar su contraseña.", "Correo no ingresado", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 else if (!matchEspeciales.Success)
@@ -44,7 +44,7 @@ namespace AsignaciondeCursos
                 else
                 {
                     obtenerDatosCorreo();
-                    if (mAdminCRUD.buscarCorreoAdmin(mAdmin))
+                    if (mAdminCRUD.buscarCorreoCatedratico(mAdmin))
                     {
                         MessageBox.Show("Correo encontrado con éxito, puede proceder a cambiar la contraseña.", "Correo Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Lbl_contraseña.Visible = true;
