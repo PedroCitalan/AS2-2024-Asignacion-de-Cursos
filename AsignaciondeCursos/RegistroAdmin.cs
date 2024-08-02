@@ -13,6 +13,7 @@ namespace AsignaciondeCursos
 {
     public partial class RegistroAdmin : Form
     {
+        public string correo { get; set; }
         private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
         public RegistroAdmin()
@@ -77,8 +78,8 @@ namespace AsignaciondeCursos
         {
             this.Hide();
             AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
             AyudaAdmin.ShowDialog();
-            this.Close();
         }
     }
 }

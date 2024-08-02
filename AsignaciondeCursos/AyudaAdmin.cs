@@ -27,7 +27,9 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_alumnos
             this.Hide();
             Listado_alumnos listadoAlumnosForm = new Listado_alumnos();
-            listadoAlumnosForm.Show();
+            listadoAlumnosForm.correo = correo;
+            listadoAlumnosForm.ShowDialog();
+            this.Close();
         }
 
         private void Btn_ayudaAdmin2_Click(object sender, EventArgs e)
@@ -35,7 +37,8 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_catedraticos
             this.Hide();
             Listado_catedraticos listadoCatedraticosForm = new Listado_catedraticos();
-            listadoCatedraticosForm.Show();
+            listadoCatedraticosForm.ShowDialog();
+            this.Close();
         }
 
         private void Btn_ayudaAdmin3_Click(object sender, EventArgs e)
@@ -43,7 +46,8 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_cursos
             this.Hide();
             Listado_Cursos listadoCursosForm = new Listado_Cursos();
-            listadoCursosForm.Show();
+            listadoCursosForm.ShowDialog();
+            this.Close();
         }
 
         private void Btn_ayudaAdmin4_Click(object sender, EventArgs e)
@@ -76,9 +80,11 @@ namespace AsignaciondeCursos
         private void Btn_cambiocontra2_Click(object sender, EventArgs e)
         {
             // Abre el formulario de cambio de contraseña para catedráticos
-            this.Close();
+            this.Hide();
             CambioContraCatedratico CambioContraCatedratico = new CambioContraCatedratico();
+            CambioContraCatedratico.correo = correo;
             CambioContraCatedratico.ShowDialog();
+            this.Close();
         }
 
         private void obtenerCorreo()
@@ -93,7 +99,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 RegistroAdmin RegistroAdmin = new RegistroAdmin();
+                RegistroAdmin.correo = correo;
                 RegistroAdmin.ShowDialog();
+                this.Close();
             }
         }
 
@@ -104,7 +112,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 RegistroCatedratico RegistroCatedratico = new RegistroCatedratico();
+                RegistroCatedratico.correo = correo;
                 RegistroCatedratico.ShowDialog();
+                this.Close();
             }
         }
 
@@ -115,7 +125,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 CambioContraAdmin CambioContraAdmin = new CambioContraAdmin();
+                CambioContraAdmin.correo = correo;
                 CambioContraAdmin.ShowDialog();
+                this.Close();
             }
         }
 
@@ -126,7 +138,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 DeleteCatedratico DeleteCatedratico = new DeleteCatedratico();
+                DeleteCatedratico.correo = correo;
                 DeleteCatedratico.ShowDialog();
+                this.Close();
             }
         }
 
@@ -137,7 +151,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 DeleteEstudiante DeleteEstudiante = new DeleteEstudiante();
+                DeleteEstudiante.correo = correo;
                 DeleteEstudiante.ShowDialog();
+                this.Close();
             }
         }
     }

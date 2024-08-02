@@ -13,6 +13,7 @@ namespace AsignaciondeCursos
 {
     public partial class RegistroCatedratico : Form
     {
+        public string correo { get; set; }
         private Catedratico mCatedratico;
         private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
@@ -35,11 +36,12 @@ namespace AsignaciondeCursos
                 string username = Txt_username.Text;
                 string password = Txt_contra.Text;
                 string passwordconfirm = Txt_confirmarcontra.Text;
-                string email = Lbl_correo.Text;
+                string email = Txt_correo.Text;
+                string course = Txt_idcurso.Text;
 
-                Match matchEspeciales = Regex.Match(Lbl_correo.Text, @"[@]");
+                Match matchEspeciales = Regex.Match(Txt_correo.Text, @"[@]");
 
-                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(lastname) || string.IsNullOrWhiteSpace(carne) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email))
+                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(lastname) || string.IsNullOrWhiteSpace(carne) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(course))
                 {
                     MessageBox.Show("Todos los campos son obligatorios.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -68,6 +70,7 @@ namespace AsignaciondeCursos
                         Txt_username.Clear();
                         Txt_contra.Clear();
                         Txt_confirmarcontra.Clear();
+                        Txt_idcurso.Clear();
                     }
                 }
             }
@@ -87,6 +90,7 @@ namespace AsignaciondeCursos
             mCatedratico.Carne = Convert.ToInt32(Txt_carne.Text.Trim());
             mCatedratico.Correo_electronico = Txt_correo.Text.Trim();
             mCatedratico.Telefono = Convert.ToInt32(Txt_telefono.Text.Trim());
+            mCatedratico.idCurso = Convert.ToInt32(Txt_idcurso.Text.Trim());
         }
 
         private void obtenerDatosAdmin()
@@ -122,6 +126,7 @@ namespace AsignaciondeCursos
         {
             this.Hide();
             AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
             AyudaAdmin.ShowDialog();
         }
 
@@ -134,6 +139,7 @@ namespace AsignaciondeCursos
             public int Carne { get; set; }
             public string Correo_electronico { get; set; }
             public int Telefono { get; set; }
+            public int idCurso { get; set; }
         }
     }
 }

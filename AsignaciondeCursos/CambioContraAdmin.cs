@@ -13,6 +13,7 @@ namespace AsignaciondeCursos
 {
     public partial class CambioContraAdmin : Form
     {
+        public string correo { get; set; }
         private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
         public CambioContraAdmin()
@@ -109,6 +110,7 @@ namespace AsignaciondeCursos
         {
             this.Hide();
             AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
             AyudaAdmin.ShowDialog();
             this.Close();
         }

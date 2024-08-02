@@ -73,6 +73,7 @@ namespace AsignaciondeCursos
             this.Txt_contra.Name = "Txt_contra";
             this.Txt_contra.Size = new System.Drawing.Size(310, 20);
             this.Txt_contra.TabIndex = 4;
+            this.Txt_contra.UseSystemPasswordChar = true;
             // 
             // Lbl_contraseña
             // 
