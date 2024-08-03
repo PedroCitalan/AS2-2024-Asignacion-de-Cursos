@@ -45,7 +45,7 @@ namespace AsignaciondeCursos
             this.Lbl_loginestudiante.AutoSize = true;
             this.Lbl_loginestudiante.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_loginestudiante.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_loginestudiante.Location = new System.Drawing.Point(121, 9);
+            this.Lbl_loginestudiante.Location = new System.Drawing.Point(130, 9);
             this.Lbl_loginestudiante.Name = "Lbl_loginestudiante";
             this.Lbl_loginestudiante.Size = new System.Drawing.Size(261, 23);
             this.Lbl_loginestudiante.TabIndex = 0;

@@ -46,11 +46,11 @@ namespace AsignaciondeCursos
             this.Lbl_loginadmin.AutoSize = true;
             this.Lbl_loginadmin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_loginadmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_loginadmin.Location = new System.Drawing.Point(156, 9);
+            this.Lbl_loginadmin.Location = new System.Drawing.Point(144, 9);
             this.Lbl_loginadmin.Name = "Lbl_loginadmin";
-            this.Lbl_loginadmin.Size = new System.Drawing.Size(355, 23);
+            this.Lbl_loginadmin.Size = new System.Drawing.Size(357, 23);
             this.Lbl_loginadmin.TabIndex = 25;
-            this.Lbl_loginadmin.Text = "Cambio de contraseña de Estudiante";
+            this.Lbl_loginadmin.Text = "Cambio de contraseña de estudiante";
             // 
             // Txt_correo
             // 
@@ -75,7 +75,7 @@ namespace AsignaciondeCursos
             this.Lbl_correo.AutoSize = true;
             this.Lbl_correo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_correo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_correo.Location = new System.Drawing.Point(89, 49);
+            this.Lbl_correo.Location = new System.Drawing.Point(110, 49);
             this.Lbl_correo.Name = "Lbl_correo";
             this.Lbl_correo.Size = new System.Drawing.Size(56, 16);
             this.Lbl_correo.TabIndex = 35;
@@ -105,7 +105,7 @@ namespace AsignaciondeCursos
             this.Lbl_contraseña.AutoSize = true;
             this.Lbl_contraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_contraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_contraseña.Location = new System.Drawing.Point(67, 89);
+            this.Lbl_contraseña.Location = new System.Drawing.Point(81, 86);
             this.Lbl_contraseña.Name = "Lbl_contraseña";
             this.Lbl_contraseña.Size = new System.Drawing.Size(87, 16);
             this.Lbl_contraseña.TabIndex = 38;
@@ -117,7 +117,7 @@ namespace AsignaciondeCursos
             this.Lbl_confirmarcontra.AutoSize = true;
             this.Lbl_confirmarcontra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_confirmarcontra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_confirmarcontra.Location = new System.Drawing.Point(12, 125);
+            this.Lbl_confirmarcontra.Location = new System.Drawing.Point(14, 125);
             this.Lbl_confirmarcontra.Name = "Lbl_confirmarcontra";
             this.Lbl_confirmarcontra.Size = new System.Drawing.Size(154, 16);
             this.Lbl_confirmarcontra.TabIndex = 39;

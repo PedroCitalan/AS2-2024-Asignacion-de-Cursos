@@ -16,64 +16,11 @@ namespace AsignaciondeCursos
         {
             InitializeComponent();
             Txt_carnetCer1.TextChanged += new EventHandler(Txt_carnetCer1_TextChanged);
-            Txt_carnetCer2.TextChanged += new EventHandler(Txt_carnetCer2_TextChanged);
-            Txt_carnetCer3.TextChanged += new EventHandler(Txt_carnetCer3_TextChanged);
         }
 
-        private void Txt_carnetCer3_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
+        
 
-                if (!string.IsNullOrEmpty(Txt_carnetCer3.Text))
-                {
-                    long.Parse(Txt_carnetCer3.Text);
-                }
-            }
-            catch (FormatException ex)
-            {
-
-                MessageBox.Show(ex.Message, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-                Txt_carnetCer3.Text = new string(Txt_carnetCer3.Text.Where(char.IsDigit).ToArray());
-
-                Txt_carnetCer3.SelectionStart = Txt_carnetCer3.Text.Length;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void Txt_carnetCer2_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-
-                if (!string.IsNullOrEmpty(Txt_carnetCer2.Text))
-                {
-                    long.Parse(Txt_carnetCer2.Text);
-                }
-            }
-            catch (FormatException ex)
-            {
-
-                MessageBox.Show(ex.Message, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-                Txt_carnetCer2.Text = new string(Txt_carnetCer2.Text.Where(char.IsDigit).ToArray());
-
-                Txt_carnetCer2.SelectionStart = Txt_carnetCer2.Text.Length;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
+  
         private void Txt_carnetCer1_TextChanged(object sender, EventArgs e)
         {
             try
@@ -99,6 +46,26 @@ namespace AsignaciondeCursos
 
                 MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Btn_limpiar_Click(object sender, EventArgs e)
+        {
+            Txt_carnetCer1.Clear();
+            Dgv_cert.Rows.Clear();
+
+        }
+
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda ayuda = new Ayuda();
+            ayuda.ShowDialog();
+            this.Close();
+        }
+
+        private void Btn_buscar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
