@@ -217,19 +217,16 @@
     <Compile Include="RegistroAdmin.Designer.cs">
       <DependentUpon>RegistroAdmin.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="RegistroEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroEstudiante.Designer.cs">
       <DependentUpon>RegistroEstudiante.cs</DependentUpon>
-=======
     <Compile Include="RegistroCatedratico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroCatedratico.Designer.cs">
       <DependentUpon>RegistroCatedratico.cs</DependentUpon>
->>>>>>> cdf84b6560dbbf5e8e00ce64b50a9815523e9b0e
     </Compile>
     <Compile Include="Validacion.cs">
       <SubType>Form</SubType>
@@ -294,13 +291,10 @@
     <EmbeddedResource Include="RegistroAdmin.resx">
       <DependentUpon>RegistroAdmin.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="RegistroEstudiante.resx">
       <DependentUpon>RegistroEstudiante.cs</DependentUpon>
-=======
     <EmbeddedResource Include="RegistroCatedratico.resx">
       <DependentUpon>RegistroCatedratico.cs</DependentUpon>
->>>>>>> cdf84b6560dbbf5e8e00ce64b50a9815523e9b0e
     </EmbeddedResource>
     <EmbeddedResource Include="Validacion.resx">
       <DependentUpon>Validacion.cs</DependentUpon>
