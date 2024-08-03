@@ -126,7 +126,10 @@ namespace AsignaciondeCursos
             string INSERT = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, ID_CATEDRATICO)" +
                 "values (@Nombre, @Contra, @Correo, 'CATEDRATICO', @Idcatedratico);";
 
+            MySqlDataReader mReader;
             MySqlCommand mCommand = new MySqlCommand(IDCATEDRATICO, ConexionMySQL.GetConnection());
+            mReader = mCommand.ExecuteReader();
+            mReader.Close();
             int Idcatedratico = Convert.ToInt32(mCommand.ExecuteScalar());
 
             MySqlCommand mCommand2 = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
