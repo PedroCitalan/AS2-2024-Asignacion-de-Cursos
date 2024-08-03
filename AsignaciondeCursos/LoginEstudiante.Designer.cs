@@ -37,6 +37,7 @@ namespace AsignaciondeCursos
             this.Btn_ingreso = new System.Windows.Forms.Button();
             this.Btn_cambiocontra = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
+            this.Btn_registroEstudiante = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_loginestudiante
@@ -97,7 +98,7 @@ namespace AsignaciondeCursos
             // Btn_cambiocontra
             // 
             this.Btn_cambiocontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_cambiocontra.Location = new System.Drawing.Point(283, 143);
+            this.Btn_cambiocontra.Location = new System.Drawing.Point(373, 134);
             this.Btn_cambiocontra.Name = "Btn_cambiocontra";
             this.Btn_cambiocontra.Size = new System.Drawing.Size(108, 50);
             this.Btn_cambiocontra.TabIndex = 6;
@@ -116,12 +117,24 @@ namespace AsignaciondeCursos
             this.Btn_regresar.UseVisualStyleBackColor = true;
             this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
+            // Btn_registroEstudiante
+            // 
+            this.Btn_registroEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_registroEstudiante.Location = new System.Drawing.Point(266, 143);
+            this.Btn_registroEstudiante.Name = "Btn_registroEstudiante";
+            this.Btn_registroEstudiante.Size = new System.Drawing.Size(91, 33);
+            this.Btn_registroEstudiante.TabIndex = 8;
+            this.Btn_registroEstudiante.Text = "Registro";
+            this.Btn_registroEstudiante.UseVisualStyleBackColor = true;
+            this.Btn_registroEstudiante.Click += new System.EventHandler(this.Btn_registroEstudiante_Click);
+            // 
             // LoginEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(493, 216);
+            this.Controls.Add(this.Btn_registroEstudiante);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_cambiocontra);
             this.Controls.Add(this.Btn_ingreso);
@@ -147,5 +160,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Button Btn_ingreso;
         private System.Windows.Forms.Button Btn_cambiocontra;
         private System.Windows.Forms.Button Btn_regresar;
+        private System.Windows.Forms.Button Btn_registroEstudiante;
     }
 }
