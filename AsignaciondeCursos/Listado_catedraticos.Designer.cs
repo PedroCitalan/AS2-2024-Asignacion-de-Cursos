@@ -53,10 +53,11 @@ namespace AsignaciondeCursos
             // Lbl_listCat
             // 
             this.Lbl_listCat.AutoSize = true;
-            this.Lbl_listCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_listCat.Location = new System.Drawing.Point(298, 9);
+            this.Lbl_listCat.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_listCat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_listCat.Location = new System.Drawing.Point(264, 9);
             this.Lbl_listCat.Name = "Lbl_listCat";
-            this.Lbl_listCat.Size = new System.Drawing.Size(201, 24);
+            this.Lbl_listCat.Size = new System.Drawing.Size(228, 23);
             this.Lbl_listCat.TabIndex = 2;
             this.Lbl_listCat.Text = "Listado de catedráticos";
             this.Lbl_listCat.Click += new System.EventHandler(this.label1_Click);
@@ -64,10 +65,11 @@ namespace AsignaciondeCursos
             // Lbl_codCar
             // 
             this.Lbl_codCar.AutoSize = true;
-            this.Lbl_codCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_codCar.Location = new System.Drawing.Point(30, 67);
+            this.Lbl_codCar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_codCar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_codCar.Location = new System.Drawing.Point(16, 67);
             this.Lbl_codCar.Name = "Lbl_codCar";
-            this.Lbl_codCar.Size = new System.Drawing.Size(120, 16);
+            this.Lbl_codCar.Size = new System.Drawing.Size(134, 16);
             this.Lbl_codCar.TabIndex = 3;
             this.Lbl_codCar.Text = "Código de carrera:";
             // 
@@ -82,7 +84,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_buscar
             // 
-            this.Btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_buscar.Location = new System.Drawing.Point(587, 64);
             this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_buscar.Name = "Btn_buscar";
@@ -93,7 +95,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_limpiar
             // 
-            this.Btn_limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_limpiar.Location = new System.Drawing.Point(587, 115);
             this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_limpiar.Name = "Btn_limpiar";
@@ -104,7 +106,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_regresar
             // 
-            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_regresar.Location = new System.Drawing.Point(587, 167);
             this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_regresar.Name = "Btn_regresar";
@@ -112,11 +114,13 @@ namespace AsignaciondeCursos
             this.Btn_regresar.TabIndex = 11;
             this.Btn_regresar.Text = "Regresar";
             this.Btn_regresar.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
             // Listado_catedraticos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(803, 568);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_limpiar);

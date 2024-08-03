@@ -47,15 +47,15 @@ namespace AsignaciondeCursos
             this.Lbl_registrocatedratico = new System.Windows.Forms.Label();
             this.Tblcontrol_administradorcatedratico = new System.Windows.Forms.TabControl();
             this.tabPage_menuayuda = new System.Windows.Forms.TabPage();
-            this.tabPage_menuadministrador = new System.Windows.Forms.TabPage();
-            this.Lbl_cambiocontraadmin = new System.Windows.Forms.Label();
-            this.Btn_eliminar1 = new System.Windows.Forms.Button();
-            this.Btn_eliminar2 = new System.Windows.Forms.Button();
-            this.Lbl_eliminarusuariocatedratico = new System.Windows.Forms.Label();
-            this.Lbl_eliminarusuarioestudiante = new System.Windows.Forms.Label();
-            this.Lbl_menuaccionadmin = new System.Windows.Forms.Label();
             this.Lbl_cambiocontracatedratico = new System.Windows.Forms.Label();
             this.Btn_cambiocontra2 = new System.Windows.Forms.Button();
+            this.tabPage_menuadministrador = new System.Windows.Forms.TabPage();
+            this.Lbl_menuaccionadmin = new System.Windows.Forms.Label();
+            this.Lbl_eliminarusuarioestudiante = new System.Windows.Forms.Label();
+            this.Lbl_eliminarusuariocatedratico = new System.Windows.Forms.Label();
+            this.Btn_eliminar2 = new System.Windows.Forms.Button();
+            this.Btn_eliminar1 = new System.Windows.Forms.Button();
+            this.Lbl_cambiocontraadmin = new System.Windows.Forms.Label();
             this.Tblcontrol_administradorcatedratico.SuspendLayout();
             this.tabPage_menuayuda.SuspendLayout();
             this.tabPage_menuadministrador.SuspendLayout();
@@ -270,94 +270,6 @@ namespace AsignaciondeCursos
             this.tabPage_menuayuda.TabIndex = 0;
             this.tabPage_menuayuda.Text = "Menú de ayuda";
             // 
-            // tabPage_menuadministrador
-            // 
-            this.tabPage_menuadministrador.BackColor = System.Drawing.Color.DodgerBlue;
-            this.tabPage_menuadministrador.Controls.Add(this.Lbl_menuaccionadmin);
-            this.tabPage_menuadministrador.Controls.Add(this.Lbl_eliminarusuarioestudiante);
-            this.tabPage_menuadministrador.Controls.Add(this.Lbl_eliminarusuariocatedratico);
-            this.tabPage_menuadministrador.Controls.Add(this.Btn_eliminar2);
-            this.tabPage_menuadministrador.Controls.Add(this.Btn_eliminar1);
-            this.tabPage_menuadministrador.Controls.Add(this.Lbl_cambiocontraadmin);
-            this.tabPage_menuadministrador.Controls.Add(this.Btn_registrar2);
-            this.tabPage_menuadministrador.Controls.Add(this.Lbl_registrocatedratico);
-            this.tabPage_menuadministrador.Controls.Add(this.Btn_registrar1);
-            this.tabPage_menuadministrador.Controls.Add(this.Lbl_registroadmin);
-            this.tabPage_menuadministrador.Controls.Add(this.Btn_cambiocontra1);
-            this.tabPage_menuadministrador.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage_menuadministrador.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_menuadministrador.Name = "tabPage_menuadministrador";
-            this.tabPage_menuadministrador.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_menuadministrador.Size = new System.Drawing.Size(642, 299);
-            this.tabPage_menuadministrador.TabIndex = 1;
-            this.tabPage_menuadministrador.Text = "Menú administrativo";
-            // 
-            // Lbl_cambiocontraadmin
-            // 
-            this.Lbl_cambiocontraadmin.AutoSize = true;
-            this.Lbl_cambiocontraadmin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_cambiocontraadmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_cambiocontraadmin.Location = new System.Drawing.Point(202, 132);
-            this.Lbl_cambiocontraadmin.Name = "Lbl_cambiocontraadmin";
-            this.Lbl_cambiocontraadmin.Size = new System.Drawing.Size(260, 16);
-            this.Lbl_cambiocontraadmin.TabIndex = 31;
-            this.Lbl_cambiocontraadmin.Text = "Cambiar contraseña de administrador";
-            // 
-            // Btn_eliminar1
-            // 
-            this.Btn_eliminar1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_eliminar1.Location = new System.Drawing.Point(109, 240);
-            this.Btn_eliminar1.Name = "Btn_eliminar1";
-            this.Btn_eliminar1.Size = new System.Drawing.Size(109, 31);
-            this.Btn_eliminar1.TabIndex = 33;
-            this.Btn_eliminar1.Text = "Eliminar";
-            this.Btn_eliminar1.UseVisualStyleBackColor = true;
-            this.Btn_eliminar1.Click += new System.EventHandler(this.Btn_eliminar1_Click);
-            // 
-            // Btn_eliminar2
-            // 
-            this.Btn_eliminar2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_eliminar2.Location = new System.Drawing.Point(428, 240);
-            this.Btn_eliminar2.Name = "Btn_eliminar2";
-            this.Btn_eliminar2.Size = new System.Drawing.Size(109, 31);
-            this.Btn_eliminar2.TabIndex = 34;
-            this.Btn_eliminar2.Text = "Eliminar";
-            this.Btn_eliminar2.UseVisualStyleBackColor = true;
-            this.Btn_eliminar2.Click += new System.EventHandler(this.Btn_eliminar2_Click);
-            // 
-            // Lbl_eliminarusuariocatedratico
-            // 
-            this.Lbl_eliminarusuariocatedratico.AutoSize = true;
-            this.Lbl_eliminarusuariocatedratico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_eliminarusuariocatedratico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_eliminarusuariocatedratico.Location = new System.Drawing.Point(56, 212);
-            this.Lbl_eliminarusuariocatedratico.Name = "Lbl_eliminarusuariocatedratico";
-            this.Lbl_eliminarusuariocatedratico.Size = new System.Drawing.Size(214, 16);
-            this.Lbl_eliminarusuariocatedratico.TabIndex = 35;
-            this.Lbl_eliminarusuariocatedratico.Text = "Eliminar usuario de catedrático";
-            // 
-            // Lbl_eliminarusuarioestudiante
-            // 
-            this.Lbl_eliminarusuarioestudiante.AutoSize = true;
-            this.Lbl_eliminarusuarioestudiante.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_eliminarusuarioestudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_eliminarusuarioestudiante.Location = new System.Drawing.Point(385, 212);
-            this.Lbl_eliminarusuarioestudiante.Name = "Lbl_eliminarusuarioestudiante";
-            this.Lbl_eliminarusuarioestudiante.Size = new System.Drawing.Size(206, 16);
-            this.Lbl_eliminarusuarioestudiante.TabIndex = 36;
-            this.Lbl_eliminarusuarioestudiante.Text = "Eliminar usuario de estudiante";
-            // 
-            // Lbl_menuaccionadmin
-            // 
-            this.Lbl_menuaccionadmin.AutoSize = true;
-            this.Lbl_menuaccionadmin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_menuaccionadmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_menuaccionadmin.Location = new System.Drawing.Point(167, 13);
-            this.Lbl_menuaccionadmin.Name = "Lbl_menuaccionadmin";
-            this.Lbl_menuaccionadmin.Size = new System.Drawing.Size(327, 23);
-            this.Lbl_menuaccionadmin.TabIndex = 37;
-            this.Lbl_menuaccionadmin.Text = "Menú de acciones administrativas";
-            // 
             // Lbl_cambiocontracatedratico
             // 
             this.Lbl_cambiocontracatedratico.AutoSize = true;
@@ -380,6 +292,94 @@ namespace AsignaciondeCursos
             this.Btn_cambiocontra2.UseVisualStyleBackColor = true;
             this.Btn_cambiocontra2.Click += new System.EventHandler(this.Btn_cambiocontra2_Click);
             // 
+            // tabPage_menuadministrador
+            // 
+            this.tabPage_menuadministrador.BackColor = System.Drawing.Color.DodgerBlue;
+            this.tabPage_menuadministrador.Controls.Add(this.Lbl_menuaccionadmin);
+            this.tabPage_menuadministrador.Controls.Add(this.Lbl_eliminarusuarioestudiante);
+            this.tabPage_menuadministrador.Controls.Add(this.Lbl_eliminarusuariocatedratico);
+            this.tabPage_menuadministrador.Controls.Add(this.Btn_eliminar2);
+            this.tabPage_menuadministrador.Controls.Add(this.Btn_eliminar1);
+            this.tabPage_menuadministrador.Controls.Add(this.Lbl_cambiocontraadmin);
+            this.tabPage_menuadministrador.Controls.Add(this.Btn_registrar2);
+            this.tabPage_menuadministrador.Controls.Add(this.Lbl_registrocatedratico);
+            this.tabPage_menuadministrador.Controls.Add(this.Btn_registrar1);
+            this.tabPage_menuadministrador.Controls.Add(this.Lbl_registroadmin);
+            this.tabPage_menuadministrador.Controls.Add(this.Btn_cambiocontra1);
+            this.tabPage_menuadministrador.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage_menuadministrador.Location = new System.Drawing.Point(4, 22);
+            this.tabPage_menuadministrador.Name = "tabPage_menuadministrador";
+            this.tabPage_menuadministrador.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_menuadministrador.Size = new System.Drawing.Size(642, 299);
+            this.tabPage_menuadministrador.TabIndex = 1;
+            this.tabPage_menuadministrador.Text = "Menú administrativo";
+            // 
+            // Lbl_menuaccionadmin
+            // 
+            this.Lbl_menuaccionadmin.AutoSize = true;
+            this.Lbl_menuaccionadmin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuaccionadmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_menuaccionadmin.Location = new System.Drawing.Point(167, 13);
+            this.Lbl_menuaccionadmin.Name = "Lbl_menuaccionadmin";
+            this.Lbl_menuaccionadmin.Size = new System.Drawing.Size(327, 23);
+            this.Lbl_menuaccionadmin.TabIndex = 37;
+            this.Lbl_menuaccionadmin.Text = "Menú de acciones administrativas";
+            // 
+            // Lbl_eliminarusuarioestudiante
+            // 
+            this.Lbl_eliminarusuarioestudiante.AutoSize = true;
+            this.Lbl_eliminarusuarioestudiante.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_eliminarusuarioestudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_eliminarusuarioestudiante.Location = new System.Drawing.Point(385, 212);
+            this.Lbl_eliminarusuarioestudiante.Name = "Lbl_eliminarusuarioestudiante";
+            this.Lbl_eliminarusuarioestudiante.Size = new System.Drawing.Size(206, 16);
+            this.Lbl_eliminarusuarioestudiante.TabIndex = 36;
+            this.Lbl_eliminarusuarioestudiante.Text = "Eliminar usuario de estudiante";
+            // 
+            // Lbl_eliminarusuariocatedratico
+            // 
+            this.Lbl_eliminarusuariocatedratico.AutoSize = true;
+            this.Lbl_eliminarusuariocatedratico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_eliminarusuariocatedratico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_eliminarusuariocatedratico.Location = new System.Drawing.Point(56, 212);
+            this.Lbl_eliminarusuariocatedratico.Name = "Lbl_eliminarusuariocatedratico";
+            this.Lbl_eliminarusuariocatedratico.Size = new System.Drawing.Size(214, 16);
+            this.Lbl_eliminarusuariocatedratico.TabIndex = 35;
+            this.Lbl_eliminarusuariocatedratico.Text = "Eliminar usuario de catedrático";
+            // 
+            // Btn_eliminar2
+            // 
+            this.Btn_eliminar2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_eliminar2.Location = new System.Drawing.Point(428, 240);
+            this.Btn_eliminar2.Name = "Btn_eliminar2";
+            this.Btn_eliminar2.Size = new System.Drawing.Size(109, 31);
+            this.Btn_eliminar2.TabIndex = 34;
+            this.Btn_eliminar2.Text = "Eliminar";
+            this.Btn_eliminar2.UseVisualStyleBackColor = true;
+            this.Btn_eliminar2.Click += new System.EventHandler(this.Btn_eliminar2_Click);
+            // 
+            // Btn_eliminar1
+            // 
+            this.Btn_eliminar1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_eliminar1.Location = new System.Drawing.Point(109, 240);
+            this.Btn_eliminar1.Name = "Btn_eliminar1";
+            this.Btn_eliminar1.Size = new System.Drawing.Size(109, 31);
+            this.Btn_eliminar1.TabIndex = 33;
+            this.Btn_eliminar1.Text = "Eliminar";
+            this.Btn_eliminar1.UseVisualStyleBackColor = true;
+            this.Btn_eliminar1.Click += new System.EventHandler(this.Btn_eliminar1_Click);
+            // 
+            // Lbl_cambiocontraadmin
+            // 
+            this.Lbl_cambiocontraadmin.AutoSize = true;
+            this.Lbl_cambiocontraadmin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cambiocontraadmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_cambiocontraadmin.Location = new System.Drawing.Point(202, 132);
+            this.Lbl_cambiocontraadmin.Name = "Lbl_cambiocontraadmin";
+            this.Lbl_cambiocontraadmin.Size = new System.Drawing.Size(260, 16);
+            this.Lbl_cambiocontraadmin.TabIndex = 31;
+            this.Lbl_cambiocontraadmin.Text = "Cambiar contraseña de administrador";
+            // 
             // AyudaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -389,7 +389,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Tblcontrol_administradorcatedratico);
             this.Controls.Add(this.Btn_ayudaAdmin4);
             this.Name = "AyudaAdmin";
-            this.Text = "Ayuda de administrador";
+            this.Text = "Ayuda de personal administrativo/catedrático";
             this.Tblcontrol_administradorcatedratico.ResumeLayout(false);
             this.tabPage_menuayuda.ResumeLayout(false);
             this.tabPage_menuayuda.PerformLayout();

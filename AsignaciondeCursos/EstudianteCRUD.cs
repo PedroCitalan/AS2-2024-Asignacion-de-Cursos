@@ -39,7 +39,6 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@Nombre_usuario", mEstudiantes.Nombre_usuario));
             mCommand.Parameters.Add(new MySqlParameter("@Contraseña", mEstudiantes.Contraseña));
             mCommand.Parameters.Add(new MySqlParameter("@Correo_electronico", mEstudiantes.Correo_electronico));
-            mCommand.Parameters.Add(new MySqlParameter("@Tipo_usuario", mEstudiantes.tipo_usuario));
             mCommand.Parameters.Add(new MySqlParameter("@Carne", mEstudiantes.Carne));
 
             return mCommand.ExecuteNonQuery() > 0;

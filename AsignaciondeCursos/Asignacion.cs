@@ -16,5 +16,18 @@ namespace AsignaciondeCursos
         {
             InitializeComponent();
         }
+
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda Ayuda = new Ayuda();
+            Ayuda.ShowDialog();
+            this.Close();
+        }
+
+        private void Btn_asignar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -52,49 +52,55 @@ namespace AsignaciondeCursos
             // Lbl_asignacioncurso
             // 
             this.Lbl_asignacioncurso.AutoSize = true;
-            this.Lbl_asignacioncurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_asignacioncurso.Location = new System.Drawing.Point(203, 9);
+            this.Lbl_asignacioncurso.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_asignacioncurso.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_asignacioncurso.Location = new System.Drawing.Point(199, 9);
             this.Lbl_asignacioncurso.Name = "Lbl_asignacioncurso";
-            this.Lbl_asignacioncurso.Size = new System.Drawing.Size(195, 24);
+            this.Lbl_asignacioncurso.Size = new System.Drawing.Size(209, 23);
             this.Lbl_asignacioncurso.TabIndex = 0;
             this.Lbl_asignacioncurso.Text = "Asignación de Cursos";
             // 
             // Lbl_cod1
             // 
             this.Lbl_cod1.AutoSize = true;
-            this.Lbl_cod1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cod1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cod1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_cod1.Location = new System.Drawing.Point(58, 48);
             this.Lbl_cod1.Name = "Lbl_cod1";
-            this.Lbl_cod1.Size = new System.Drawing.Size(140, 16);
+            this.Lbl_cod1.Size = new System.Drawing.Size(151, 16);
             this.Lbl_cod1.TabIndex = 1;
             this.Lbl_cod1.Text = "Código de Curso No.1";
             // 
             // Lbl_curso1
             // 
             this.Lbl_curso1.AutoSize = true;
-            this.Lbl_curso1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_curso1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_curso1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_curso1.Location = new System.Drawing.Point(57, 74);
             this.Lbl_curso1.Name = "Lbl_curso1";
-            this.Lbl_curso1.Size = new System.Drawing.Size(105, 24);
+            this.Lbl_curso1.Size = new System.Drawing.Size(109, 23);
             this.Lbl_curso1.TabIndex = 2;
             this.Lbl_curso1.Text = "Curso No.1";
             // 
             // Lbl_horario1
             // 
             this.Lbl_horario1.AutoSize = true;
+            this.Lbl_horario1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_horario1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_horario1.Location = new System.Drawing.Point(58, 108);
             this.Lbl_horario1.Name = "Lbl_horario1";
-            this.Lbl_horario1.Size = new System.Drawing.Size(112, 13);
+            this.Lbl_horario1.Size = new System.Drawing.Size(126, 15);
             this.Lbl_horario1.TabIndex = 3;
             this.Lbl_horario1.Text = "Horario de Curso No.1";
             // 
             // Lbl_seccion1
             // 
             this.Lbl_seccion1.AutoSize = true;
-            this.Lbl_seccion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_seccion1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_seccion1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_seccion1.Location = new System.Drawing.Point(461, 60);
             this.Lbl_seccion1.Name = "Lbl_seccion1";
-            this.Lbl_seccion1.Size = new System.Drawing.Size(57, 16);
+            this.Lbl_seccion1.Size = new System.Drawing.Size(59, 16);
             this.Lbl_seccion1.TabIndex = 4;
             this.Lbl_seccion1.Text = "Sección";
             // 
@@ -127,39 +133,44 @@ namespace AsignaciondeCursos
             // Lbl_seccion2
             // 
             this.Lbl_seccion2.AutoSize = true;
-            this.Lbl_seccion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_seccion2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_seccion2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_seccion2.Location = new System.Drawing.Point(461, 162);
             this.Lbl_seccion2.Name = "Lbl_seccion2";
-            this.Lbl_seccion2.Size = new System.Drawing.Size(57, 16);
+            this.Lbl_seccion2.Size = new System.Drawing.Size(59, 16);
             this.Lbl_seccion2.TabIndex = 9;
             this.Lbl_seccion2.Text = "Sección";
             // 
             // Lbl_horario2
             // 
             this.Lbl_horario2.AutoSize = true;
+            this.Lbl_horario2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_horario2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_horario2.Location = new System.Drawing.Point(58, 210);
             this.Lbl_horario2.Name = "Lbl_horario2";
-            this.Lbl_horario2.Size = new System.Drawing.Size(112, 13);
+            this.Lbl_horario2.Size = new System.Drawing.Size(126, 15);
             this.Lbl_horario2.TabIndex = 8;
             this.Lbl_horario2.Text = "Horario de Curso No.2";
             // 
             // Lbl_curso2
             // 
             this.Lbl_curso2.AutoSize = true;
-            this.Lbl_curso2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_curso2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_curso2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_curso2.Location = new System.Drawing.Point(57, 176);
             this.Lbl_curso2.Name = "Lbl_curso2";
-            this.Lbl_curso2.Size = new System.Drawing.Size(105, 24);
+            this.Lbl_curso2.Size = new System.Drawing.Size(109, 23);
             this.Lbl_curso2.TabIndex = 7;
             this.Lbl_curso2.Text = "Curso No.2";
             // 
             // Lbl_cod2
             // 
             this.Lbl_cod2.AutoSize = true;
-            this.Lbl_cod2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cod2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cod2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_cod2.Location = new System.Drawing.Point(58, 150);
             this.Lbl_cod2.Name = "Lbl_cod2";
-            this.Lbl_cod2.Size = new System.Drawing.Size(140, 16);
+            this.Lbl_cod2.Size = new System.Drawing.Size(151, 16);
             this.Lbl_cod2.TabIndex = 6;
             this.Lbl_cod2.Text = "Código de Curso No.2";
             // 
@@ -179,66 +190,74 @@ namespace AsignaciondeCursos
             // Lbl_seccion3
             // 
             this.Lbl_seccion3.AutoSize = true;
-            this.Lbl_seccion3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_seccion3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_seccion3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_seccion3.Location = new System.Drawing.Point(461, 265);
             this.Lbl_seccion3.Name = "Lbl_seccion3";
-            this.Lbl_seccion3.Size = new System.Drawing.Size(57, 16);
+            this.Lbl_seccion3.Size = new System.Drawing.Size(59, 16);
             this.Lbl_seccion3.TabIndex = 14;
             this.Lbl_seccion3.Text = "Sección";
             // 
             // Lbl_horario3
             // 
             this.Lbl_horario3.AutoSize = true;
+            this.Lbl_horario3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_horario3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_horario3.Location = new System.Drawing.Point(58, 313);
             this.Lbl_horario3.Name = "Lbl_horario3";
-            this.Lbl_horario3.Size = new System.Drawing.Size(112, 13);
+            this.Lbl_horario3.Size = new System.Drawing.Size(126, 15);
             this.Lbl_horario3.TabIndex = 13;
             this.Lbl_horario3.Text = "Horario de Curso No.3";
             // 
             // Lbl_curso3
             // 
             this.Lbl_curso3.AutoSize = true;
-            this.Lbl_curso3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_curso3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_curso3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_curso3.Location = new System.Drawing.Point(57, 279);
             this.Lbl_curso3.Name = "Lbl_curso3";
-            this.Lbl_curso3.Size = new System.Drawing.Size(105, 24);
+            this.Lbl_curso3.Size = new System.Drawing.Size(109, 23);
             this.Lbl_curso3.TabIndex = 12;
             this.Lbl_curso3.Text = "Curso No.3";
             // 
             // Lbl_cod3
             // 
             this.Lbl_cod3.AutoSize = true;
-            this.Lbl_cod3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cod3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cod3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl_cod3.Location = new System.Drawing.Point(58, 253);
             this.Lbl_cod3.Name = "Lbl_cod3";
-            this.Lbl_cod3.Size = new System.Drawing.Size(140, 16);
+            this.Lbl_cod3.Size = new System.Drawing.Size(151, 16);
             this.Lbl_cod3.TabIndex = 11;
             this.Lbl_cod3.Text = "Código de Curso No.3";
             // 
             // Btn_asignar
             // 
-            this.Btn_asignar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_asignar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_asignar.Location = new System.Drawing.Point(259, 357);
             this.Btn_asignar.Name = "Btn_asignar";
             this.Btn_asignar.Size = new System.Drawing.Size(81, 34);
             this.Btn_asignar.TabIndex = 26;
             this.Btn_asignar.Text = "Asignar";
             this.Btn_asignar.UseVisualStyleBackColor = true;
+            this.Btn_asignar.Click += new System.EventHandler(this.Btn_asignar_Click);
             // 
             // Btn_regresar
             // 
-            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_regresar.Location = new System.Drawing.Point(21, 357);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(87, 34);
             this.Btn_regresar.TabIndex = 27;
             this.Btn_regresar.Text = "Regresar";
             this.Btn_regresar.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
             // Asignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(622, 426);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_asignar);

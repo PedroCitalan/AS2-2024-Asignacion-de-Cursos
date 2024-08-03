@@ -53,11 +53,11 @@ namespace AsignaciondeCursos
             this.Lbl_iniciosesion3.AutoSize = true;
             this.Lbl_iniciosesion3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_iniciosesion3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_iniciosesion3.Location = new System.Drawing.Point(163, 147);
+            this.Lbl_iniciosesion3.Location = new System.Drawing.Point(109, 148);
             this.Lbl_iniciosesion3.Name = "Lbl_iniciosesion3";
-            this.Lbl_iniciosesion3.Size = new System.Drawing.Size(288, 16);
+            this.Lbl_iniciosesion3.Size = new System.Drawing.Size(386, 16);
             this.Lbl_iniciosesion3.TabIndex = 20;
-            this.Lbl_iniciosesion3.Text = "Inicio de sesión de personal administrativo";
+            this.Lbl_iniciosesion3.Text = "Inicio de sesión de personal administrativo y catedráticos";
             // 
             // Btn_sesion2
             // 

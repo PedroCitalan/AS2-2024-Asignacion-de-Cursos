@@ -59,7 +59,7 @@ namespace AsignaciondeCursos
                                 Nombre = reader.GetString("NOMBRE"),
                                 Apellido = reader.GetString("APELLIDO"),
                                 FechaNac = reader.GetDateTime("FECHA_NAC"),
-                                Carne = reader.GetInt32("CARNE"),
+                                Carne = reader.GetString("CARNE"),
                                 CreditosAcumulados = reader.GetInt32("CREDITOS_ACUMULADOS")
                             };
                             estudiantes.Add(estudiante);
@@ -222,7 +222,7 @@ namespace AsignaciondeCursos
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNac { get; set; }
-        public int Carne { get; set; }
+        public string Carne { get; set; }
         public int CreditosAcumulados { get; set; }
     }
 }
