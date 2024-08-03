@@ -16,7 +16,7 @@ namespace AsignaciondeCursos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InicioSesión());
+            Application.Run(new Listado_Cursos());
         }
     }
 }

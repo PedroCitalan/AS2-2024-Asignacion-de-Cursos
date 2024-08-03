@@ -10,7 +10,7 @@ namespace AsignaciondeCursos
     {
         protected string server = "localhost";
         protected string database = "asignacion";
-        protected string user = "usuario1";
-        protected string password = "123456";
+        protected string user = "root";
+        protected string password = "1234";
     }
 }

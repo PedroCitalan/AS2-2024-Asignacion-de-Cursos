@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace AsignaciondeCursos
 {
@@ -44,5 +46,46 @@ namespace AsignaciondeCursos
                 MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Btn_buscar_Click(object sender, EventArgs e)
+        {
+            BuscarCursos(Convert.ToInt32(Txt_codCarrera.Text));
+        }
+        ConexionMySQL con = new ConexionMySQL(); private void BuscarCursos(int idfacultad)
+        {
+
+            try
+            {
+                string sql = "select * from TBL_CURSOS where id_facultad =" + idfacultad + "";
+                MySqlDataAdapter datatable = new MySqlDataAdapter(sql, con.GetConnection());
+
+                DataTable table = new DataTable();
+                datatable.Fill(table);
+                Dgv_curso.DataSource = table;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error en llenado de tabla:" + e);
+            }
+
+        }
+
+        private void Btn_limpiar_Click(object sender, EventArgs e)
+        {
+            Txt_codCarrera.Clear();
+
+            Dgv_curso.DataSource = null;
+            Dgv_curso.Rows.Clear();
+            Dgv_curso.Refresh();
+        }
+
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+
     }
 }
+
