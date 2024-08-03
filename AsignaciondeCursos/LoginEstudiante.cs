@@ -69,7 +69,10 @@ namespace AsignaciondeCursos
         }
         private void Btn_cambiocontra_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            CambioContraEstudiante cambioContraEstudiante = new CambioContraEstudiante();
+            cambioContraEstudiante.ShowDialog();
+            this.Close();
         }
 
         private void Btn_regresar_Click(object sender, EventArgs e)
