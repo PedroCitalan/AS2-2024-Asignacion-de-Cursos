@@ -122,22 +122,27 @@ namespace AsignaciondeCursos
 
         internal bool agregarUsuarioCatedratico(Admin_catedratico mAdmin)
         {
-            string INSERT = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO)" +
-                "values (@Nombre, @Contra, @Correo, 'CATEDRATICO');";
+            string IDCATEDRATICO = "SELECT LAST_INSERT_ID()";
+            string INSERT = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, ID_CATEDRATICO)" +
+                "values (@Nombre, @Contra, @Correo, 'CATEDRATICO', @Idcatedratico);";
 
-            MySqlCommand mCommand = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
+            MySqlCommand mCommand = new MySqlCommand(IDCATEDRATICO, ConexionMySQL.GetConnection());
+            int Idcatedratico = Convert.ToInt32(mCommand.ExecuteScalar());
 
-            mCommand.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
-            mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
+            MySqlCommand mCommand2 = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
 
-            return mCommand.ExecuteNonQuery() > 0;
+            mCommand2.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
+            mCommand2.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand2.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
+            mCommand2.Parameters.Add(new MySqlParameter("@Idcatedratico", Idcatedratico));
+
+            return mCommand2.ExecuteNonQuery() > 0;
         }
 
         internal bool agregarCatedratico(RegistroCatedratico.Catedratico mCatedratico)
         {
-            string INSERT = "INSERT INTO TBL_CATEDRATICO (NOMBRE, APELLIDO, FECHA_NAC, CARNE, CORREO_ELECTRONICO, TELEFONO, ID_CURSOS)" +
-                "values (@Nombre, @Apellido, @Fecha_nac, @Carne, @Correo, @Telefono, @IDCurso);";
+            string INSERT = "INSERT INTO TBL_CATEDRATICO (NOMBRE, APELLIDO, FECHA_NAC, CARNE, CORREO_ELECTRONICO, TELEFONO, ID_CURSOS, ID_CARRERA)" +
+                "values (@Nombre, @Apellido, @Fecha_nac, @Carne, @Correo, @Telefono, @IDCurso, @IDCarrera);";
 
             MySqlCommand mCommand = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
 
@@ -148,6 +153,7 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mCatedratico.Correo_electronico));
             mCommand.Parameters.Add(new MySqlParameter("@Telefono", mCatedratico.Telefono));
             mCommand.Parameters.Add(new MySqlParameter("@IDCurso", mCatedratico.idCurso));
+            mCommand.Parameters.Add(new MySqlParameter("@IDCarrera", mCatedratico.idCarrera));
 
             return mCommand.ExecuteNonQuery() > 0;
         }

@@ -37,13 +37,16 @@ namespace AsignaciondeCursos
                 {
                     if(ValidarUsuario(user, password))
                     {
-                        MessageBox.Show("Inicio de sesion exitoso");
+                        MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        Ayuda Ayuda = new Ayuda();
+                        Ayuda.ShowDialog();
+                        this.Close();
                     }
                     else
                     {
                         MessageBox.Show("Usuario/Contraseña Incorrecto");
                     }
-                    MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 Txt_contra.Clear();

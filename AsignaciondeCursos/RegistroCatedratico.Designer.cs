@@ -52,6 +52,8 @@ namespace AsignaciondeCursos
             this.picker_fechanac = new System.Windows.Forms.DateTimePicker();
             this.Txt_idcurso = new System.Windows.Forms.TextBox();
             this.Lbl_idcurso = new System.Windows.Forms.Label();
+            this.Txt_idcarrera = new System.Windows.Forms.TextBox();
+            this.Lbl_idcarrera = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lbl_registrocatedratico
@@ -207,7 +209,7 @@ namespace AsignaciondeCursos
             // Btn_registrar
             // 
             this.Btn_registrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_registrar.Location = new System.Drawing.Point(268, 439);
+            this.Btn_registrar.Location = new System.Drawing.Point(272, 482);
             this.Btn_registrar.Name = "Btn_registrar";
             this.Btn_registrar.Size = new System.Drawing.Size(82, 31);
             this.Btn_registrar.TabIndex = 23;
@@ -218,7 +220,7 @@ namespace AsignaciondeCursos
             // Btn_regresar
             // 
             this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_regresar.Location = new System.Drawing.Point(17, 439);
+            this.Btn_regresar.Location = new System.Drawing.Point(20, 482);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(84, 31);
             this.Btn_regresar.TabIndex = 24;
@@ -275,12 +277,33 @@ namespace AsignaciondeCursos
             this.Lbl_idcurso.TabIndex = 25;
             this.Lbl_idcurso.Text = "ID de curso:";
             // 
+            // Txt_idcarrera
+            // 
+            this.Txt_idcarrera.Location = new System.Drawing.Point(172, 440);
+            this.Txt_idcarrera.Name = "Txt_idcarrera";
+            this.Txt_idcarrera.Size = new System.Drawing.Size(310, 20);
+            this.Txt_idcarrera.TabIndex = 28;
+            this.Txt_idcarrera.UseSystemPasswordChar = true;
+            // 
+            // Lbl_idcarrera
+            // 
+            this.Lbl_idcarrera.AutoSize = true;
+            this.Lbl_idcarrera.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_idcarrera.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_idcarrera.Location = new System.Drawing.Point(67, 441);
+            this.Lbl_idcarrera.Name = "Lbl_idcarrera";
+            this.Lbl_idcarrera.Size = new System.Drawing.Size(99, 16);
+            this.Lbl_idcarrera.TabIndex = 27;
+            this.Lbl_idcarrera.Text = "ID de carrera:";
+            // 
             // RegistroCatedratico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(620, 491);
+            this.ClientSize = new System.Drawing.Size(620, 534);
+            this.Controls.Add(this.Txt_idcarrera);
+            this.Controls.Add(this.Lbl_idcarrera);
             this.Controls.Add(this.Txt_idcurso);
             this.Controls.Add(this.Lbl_idcurso);
             this.Controls.Add(this.picker_fechanac);
@@ -336,5 +359,7 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.DateTimePicker picker_fechanac;
         private System.Windows.Forms.TextBox Txt_idcurso;
         private System.Windows.Forms.Label Lbl_idcurso;
+        private System.Windows.Forms.TextBox Txt_idcarrera;
+        private System.Windows.Forms.Label Lbl_idcarrera;
     }
 }

@@ -38,10 +38,11 @@ namespace AsignaciondeCursos
                 string passwordconfirm = Txt_confirmarcontra.Text;
                 string email = Txt_correo.Text;
                 string course = Txt_idcurso.Text;
+                string career = Txt_idcarrera.Text;
 
                 Match matchEspeciales = Regex.Match(Txt_correo.Text, @"[@]");
 
-                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(lastname) || string.IsNullOrWhiteSpace(carne) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(course))
+                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(lastname) || string.IsNullOrWhiteSpace(carne) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(course) || string.IsNullOrWhiteSpace(career))
                 {
                     MessageBox.Show("Todos los campos son obligatorios.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -71,6 +72,7 @@ namespace AsignaciondeCursos
                         Txt_contra.Clear();
                         Txt_confirmarcontra.Clear();
                         Txt_idcurso.Clear();
+                        Txt_idcarrera.Clear();
                     }
                 }
             }
@@ -91,6 +93,7 @@ namespace AsignaciondeCursos
             mCatedratico.Correo_electronico = Txt_correo.Text.Trim();
             mCatedratico.Telefono = Convert.ToInt32(Txt_telefono.Text.Trim());
             mCatedratico.idCurso = Convert.ToInt32(Txt_idcurso.Text.Trim());
+            mCatedratico.idCarrera = Convert.ToInt32(Txt_idcarrera.Text.Trim());
         }
 
         private void obtenerDatosAdmin()
@@ -140,6 +143,7 @@ namespace AsignaciondeCursos
             public string Correo_electronico { get; set; }
             public int Telefono { get; set; }
             public int idCurso { get; set; }
+            public int idCarrera { get; set; }
         }
     }
 }
