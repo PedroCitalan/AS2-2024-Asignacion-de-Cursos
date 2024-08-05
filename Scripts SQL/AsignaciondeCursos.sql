@@ -1,3 +1,5 @@
+-- En usuario root dentro de la máquina virtual
+-- IP de servidor: 192.168.1.250
 CREATE USER 'usuario1'@'%' IDENTIFIED BY '123456';
 
 CREATE DATABASE asignacion;
@@ -6,6 +8,8 @@ USE asignacion;
 GRANT ALL ON asignacion.* TO 'usuario1'@'%';
 FLUSH PRIVILEGES;
 
+-- Después de otorgar permisos, se conecta al usuario mediante MySQL Workbench
+-- para ejecutar los comandos que continuan
 #CREACION DE LAS JORNADAS
 CREATE TABLE TBL_JORNADA(
 ID_JORNADA INT AUTO_INCREMENT PRIMARY KEY,

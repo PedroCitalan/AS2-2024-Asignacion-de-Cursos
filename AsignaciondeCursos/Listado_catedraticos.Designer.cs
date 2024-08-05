@@ -43,7 +43,7 @@ namespace AsignaciondeCursos
             // 
             this.Dgv_catedratico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_catedratico.Location = new System.Drawing.Point(9, 240);
-            this.Dgv_catedratico.Margin = new System.Windows.Forms.Padding(2);
+            this.Dgv_catedratico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Dgv_catedratico.Name = "Dgv_catedratico";
             this.Dgv_catedratico.RowHeadersWidth = 51;
             this.Dgv_catedratico.RowTemplate.Height = 24;
@@ -54,8 +54,8 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_listCat.AutoSize = true;
             this.Lbl_listCat.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_listCat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_listCat.Location = new System.Drawing.Point(264, 9);
+            this.Lbl_listCat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_listCat.Location = new System.Drawing.Point(277, 9);
             this.Lbl_listCat.Name = "Lbl_listCat";
             this.Lbl_listCat.Size = new System.Drawing.Size(228, 23);
             this.Lbl_listCat.TabIndex = 2;
@@ -66,8 +66,8 @@ namespace AsignaciondeCursos
             // 
             this.Lbl_codCar.AutoSize = true;
             this.Lbl_codCar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_codCar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_codCar.Location = new System.Drawing.Point(16, 67);
+            this.Lbl_codCar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_codCar.Location = new System.Drawing.Point(46, 68);
             this.Lbl_codCar.Name = "Lbl_codCar";
             this.Lbl_codCar.Size = new System.Drawing.Size(134, 16);
             this.Lbl_codCar.TabIndex = 3;
@@ -75,29 +75,30 @@ namespace AsignaciondeCursos
             // 
             // Txt_codCarrera
             // 
-            this.Txt_codCarrera.Location = new System.Drawing.Point(155, 66);
-            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(2);
+            this.Txt_codCarrera.Location = new System.Drawing.Point(185, 67);
+            this.Txt_codCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Txt_codCarrera.Name = "Txt_codCarrera";
-            this.Txt_codCarrera.Size = new System.Drawing.Size(128, 20);
+            this.Txt_codCarrera.Size = new System.Drawing.Size(163, 20);
             this.Txt_codCarrera.TabIndex = 4;
             this.Txt_codCarrera.TextChanged += new System.EventHandler(this.Txt_codCarrera_TextChanged);
             // 
             // Btn_buscar
             // 
             this.Btn_buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_buscar.Location = new System.Drawing.Point(587, 64);
-            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_buscar.Location = new System.Drawing.Point(609, 67);
+            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_buscar.Name = "Btn_buscar";
             this.Btn_buscar.Size = new System.Drawing.Size(89, 32);
             this.Btn_buscar.TabIndex = 9;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
+            this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
             // Btn_limpiar
             // 
             this.Btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_limpiar.Location = new System.Drawing.Point(587, 115);
-            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_limpiar.Location = new System.Drawing.Point(609, 115);
+            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_limpiar.Name = "Btn_limpiar";
             this.Btn_limpiar.Size = new System.Drawing.Size(89, 34);
             this.Btn_limpiar.TabIndex = 10;
@@ -107,20 +108,19 @@ namespace AsignaciondeCursos
             // Btn_regresar
             // 
             this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_regresar.Location = new System.Drawing.Point(587, 167);
-            this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_regresar.Location = new System.Drawing.Point(609, 164);
+            this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(89, 36);
             this.Btn_regresar.TabIndex = 11;
             this.Btn_regresar.Text = "Regresar";
             this.Btn_regresar.UseVisualStyleBackColor = true;
-            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
             // Listado_catedraticos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(803, 568);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_limpiar);
@@ -129,7 +129,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Lbl_codCar);
             this.Controls.Add(this.Lbl_listCat);
             this.Controls.Add(this.Dgv_catedratico);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Listado_catedraticos";
             this.Text = "Listado de catedráticos";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_catedratico)).EndInit();
