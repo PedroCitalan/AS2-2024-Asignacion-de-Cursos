@@ -37,6 +37,7 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_catedraticos
             this.Hide();
             Listado_catedraticos listadoCatedraticosForm = new Listado_catedraticos();
+            listadoCatedraticosForm.correo = correo;
             listadoCatedraticosForm.ShowDialog();
             this.Close();
         }
@@ -46,6 +47,7 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_cursos
             this.Hide();
             Listado_Cursos listadoCursosForm = new Listado_Cursos();
+            listadoCursosForm.correo = correo;
             listadoCursosForm.ShowDialog();
             this.Close();
         }

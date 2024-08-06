@@ -55,6 +55,7 @@ namespace AsignaciondeCursos
 
             // Muestra el formulario Certificacion
             certificacion.ShowDialog();
+            this.Close();
         }
 
         private void Btn_ayuda4_Click(object sender, EventArgs e)
@@ -64,7 +65,7 @@ namespace AsignaciondeCursos
             Validacion validacion = new Validacion();
 
             // Muestra el formulario Validacion
-            validacion.Show();
+            validacion.ShowDialog();
             this.Close();
         }
 

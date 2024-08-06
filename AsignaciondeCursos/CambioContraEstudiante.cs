@@ -110,7 +110,7 @@ namespace AsignaciondeCursos
                     {
                         string actualizarcontraseña = "UPDATE TBL_USUARIOS SET CONTRASEÑA = @Contraseña WHERE CORREO_ELECTRONICO = @Correo;";
                         MySqlCommand mCommand = new MySqlCommand(actualizarcontraseña, ConexionMySQL.GetConnection());
-                        mCommand.Parameters.Add(new MySqlParameter("@Contraseña", mEstudiantes.Contraseña));
+                        mCommand.Parameters.Add(new MySqlParameter("@Contraseña", Hash.HashString(mEstudiantes.Contraseña)));
                         mCommand.Parameters.Add(new MySqlParameter("@Correo", mEstudiantes.Correo_electronico));
 
                         if (mCommand.ExecuteNonQuery() > 0)

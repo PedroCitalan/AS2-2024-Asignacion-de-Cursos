@@ -9,6 +9,7 @@ namespace AsignaciondeCursos
 {
     public partial class Listado_catedraticos : Form
     {
+        public string correo { get; set; }
         private readonly ConexionMySQL ConexionaMySQL;
 
         public Listado_catedraticos()
@@ -104,8 +105,9 @@ namespace AsignaciondeCursos
         private void Btn_regresar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Ayuda Ayuda = new Ayuda();
-            Ayuda.ShowDialog();
+            AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
+            AyudaAdmin.ShowDialog();
             this.Close();
         }
 

@@ -63,7 +63,7 @@ namespace AsignaciondeCursos
             MySqlDataReader mReader;
             MySqlCommand cmd = new MySqlCommand(query, conexionSQL.GetConnection());
             cmd.Parameters.AddWithValue("@usuario", user);
-            cmd.Parameters.AddWithValue("@contraseña", password);
+            cmd.Parameters.AddWithValue("@contraseña", Hash.HashString(password));
 
             mReader = cmd.ExecuteReader();
             mReader.Close();

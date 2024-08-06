@@ -37,7 +37,7 @@ namespace AsignaciondeCursos
             string INSERT = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, CARNE)" + " VALUES (@Nombre_usuario, @Contraseña, @Correo_electronico, 'ESTUDIANTE', @Carne);";
             MySqlCommand mCommand = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
             mCommand.Parameters.Add(new MySqlParameter("@Nombre_usuario", mEstudiantes.Nombre_usuario));
-            mCommand.Parameters.Add(new MySqlParameter("@Contraseña", mEstudiantes.Contraseña));
+            mCommand.Parameters.Add(new MySqlParameter("@Contraseña", Hash.HashString(mEstudiantes.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo_electronico", mEstudiantes.Correo_electronico));
             mCommand.Parameters.Add(new MySqlParameter("@Carne", mEstudiantes.Carne));
 

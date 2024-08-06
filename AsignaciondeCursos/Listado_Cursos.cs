@@ -14,6 +14,8 @@ namespace AsignaciondeCursos
 {
     public partial class Listado_Cursos : Form
     {
+        public string correo { get; set; }
+
         public Listado_Cursos()
         {
             InitializeComponent();
@@ -81,8 +83,11 @@ namespace AsignaciondeCursos
 
         private void Btn_regresar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
+            AyudaAdmin.ShowDialog();
             this.Close();
-
         }
 
 

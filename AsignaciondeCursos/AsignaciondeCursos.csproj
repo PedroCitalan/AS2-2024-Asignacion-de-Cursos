@@ -179,6 +179,7 @@
     </Compile>
     <Compile Include="EstudianteCRUD.cs" />
     <Compile Include="Estudiantes.cs" />
+    <Compile Include="Hash.cs" />
     <Compile Include="InicioSesión.cs">
       <SubType>Form</SubType>
     </Compile>

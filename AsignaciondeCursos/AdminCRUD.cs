@@ -25,7 +25,7 @@ namespace AsignaciondeCursos
             MySqlCommand mCommand = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
 
             mCommand.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
             return mCommand.ExecuteNonQuery() > 0;
@@ -38,7 +38,7 @@ namespace AsignaciondeCursos
             MySqlDataReader mReader;
             MySqlCommand mCommand = new MySqlCommand(BUSCAR, ConexionMySQL.GetConnection());
 
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
             mReader = mCommand.ExecuteReader();
@@ -135,7 +135,7 @@ namespace AsignaciondeCursos
             MySqlCommand mCommand2 = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
 
             mCommand2.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
-            mCommand2.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand2.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand2.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
             mCommand2.Parameters.Add(new MySqlParameter("@Idcatedratico", Idcatedratico));
 
@@ -193,7 +193,7 @@ namespace AsignaciondeCursos
 
             MySqlCommand mCommand = new MySqlCommand(UPDATE, ConexionMySQL.GetConnection());
 
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
             return mCommand.ExecuteNonQuery() > 0;

@@ -80,6 +80,7 @@ namespace AsignaciondeCursos
             AyudaAdmin AyudaAdmin = new AyudaAdmin();
             AyudaAdmin.correo = correo;
             AyudaAdmin.ShowDialog();
+            this.Close();
         }
     }
 }

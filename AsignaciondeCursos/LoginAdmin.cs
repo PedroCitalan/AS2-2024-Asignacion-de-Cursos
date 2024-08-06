@@ -44,7 +44,7 @@ namespace AsignaciondeCursos
                 else
                 {
                     obtenerDatosAdmin();
-                    if (mAdminCRUD.buscarUsuarioAdmin(mAdmin))
+                    if (mAdminCRUD.verificarUsuarioAdmin(mAdmin))
                     {
                         MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
