@@ -139,6 +139,8 @@
     <Compile Include="Boleta.Designer.cs">
       <DependentUpon>Boleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoletaCRUD.cs" />
+    <Compile Include="Boleta_propiedades.cs" />
     <Compile Include="CambioContraAdmin.cs">
       <SubType>Form</SubType>
     </Compile>

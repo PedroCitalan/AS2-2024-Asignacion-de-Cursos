@@ -12,6 +12,7 @@ namespace AsignaciondeCursos
 {
     public partial class Ayuda : Form
     {
+        public string user { get; set; }
         public Ayuda()
         {
             InitializeComponent();
@@ -41,10 +42,11 @@ namespace AsignaciondeCursos
             this.Hide();
             // Crea una instancia del formulario Boleta
             Boleta boleta = new Boleta();
-
+            boleta.user = user;
             // Muestra el formulario Boleta
             boleta.ShowDialog();
             this.Close();
+
         }
 
         private void Btn_ayuda3_Click(object sender, EventArgs e)

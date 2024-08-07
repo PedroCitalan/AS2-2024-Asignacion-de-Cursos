@@ -40,6 +40,7 @@ namespace AsignaciondeCursos
                         MessageBox.Show("Inicio de sesión exitoso.", "Sesión Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
                         Ayuda Ayuda = new Ayuda();
+                        Ayuda.user = user;
                         Ayuda.ShowDialog();
                         this.Close();
                     }
