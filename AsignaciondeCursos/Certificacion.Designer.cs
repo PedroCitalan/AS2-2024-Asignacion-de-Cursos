@@ -3,15 +3,8 @@ namespace AsignaciondeCursos
 {
     partial class Certificacion
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,10 +16,6 @@ namespace AsignaciondeCursos
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.Dgv_cert = new System.Windows.Forms.DataGridView();
@@ -64,7 +53,7 @@ namespace AsignaciondeCursos
             // Lbl_carnet
             // 
             this.Lbl_carnet.AutoSize = true;
-            this.Lbl_carnet.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_carnet.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_carnet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Lbl_carnet.Location = new System.Drawing.Point(201, 66);
             this.Lbl_carnet.Name = "Lbl_carnet";
@@ -82,7 +71,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_buscar
             // 
-            this.Btn_buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_buscar.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_buscar.Location = new System.Drawing.Point(585, 58);
             this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_buscar.Name = "Btn_buscar";
@@ -94,7 +83,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_limpiar
             // 
-            this.Btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_limpiar.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_limpiar.Location = new System.Drawing.Point(585, 105);
             this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_limpiar.Name = "Btn_limpiar";
@@ -106,7 +95,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_regresar
             // 
-            this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_regresar.Location = new System.Drawing.Point(585, 150);
             this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_regresar.Name = "Btn_regresar";
