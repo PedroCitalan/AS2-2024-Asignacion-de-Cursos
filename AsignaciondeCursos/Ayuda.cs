@@ -18,14 +18,6 @@ namespace AsignaciondeCursos
             InitializeComponent();
         }
 
-        private void Btn_ayuda8_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LoginAdmin LoginAdmin = new LoginAdmin();
-            LoginAdmin.ShowDialog();
-            this.Close();
-        }
-
         private void Btn_ayuda_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -54,7 +46,6 @@ namespace AsignaciondeCursos
             this.Hide();
             // Crea una instancia del formulario Certificacion
             Certificacion certificacion = new Certificacion();
-
             // Muestra el formulario Certificacion
             certificacion.ShowDialog();
             this.Close();

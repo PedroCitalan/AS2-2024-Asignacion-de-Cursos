@@ -61,6 +61,25 @@ namespace AsignaciondeCursos
             this.Close();
         }
 
+        private void Btn_ayuda4_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario de aprobación de cursos
+            this.Hide();
+
+            // Crear una instancia del formulario de aprobación de cursos
+            aprobacion_cursos aprobacionCursosForm = new aprobacion_cursos();
+
+            // Asignar el valor de correo a la propiedad del formulario
+            aprobacionCursosForm.Correo = correo; // Asegúrate de que 'correo' esté definido y tenga un valor
+
+            // Mostrar el formulario como un cuadro de diálogo
+            aprobacionCursosForm.ShowDialog();
+
+            // Cerrar el formulario actual
+            this.Close();
+        }
+
+
         private void AyudaAdm1_Click(object sender, EventArgs e)
         {
             // Muestra un mensaje de ayuda para la búsqueda de estudiantes
@@ -77,6 +96,12 @@ namespace AsignaciondeCursos
         {
             // Muestra un mensaje de ayuda para generar la lista de cursos
             MessageBox.Show("Para generar la lista de cursos, ingrese el código de carrera. Luego, haga clic en 'Buscar' para ver los resultados.");
+        }
+
+        private void AyudaAdm4_Click(object sender, EventArgs e)
+        {
+            // Muestra un mensaje de ayuda para la aprobación de cursos
+            MessageBox.Show("En la aprobación de cursos se puede realizar búsquedas por carnet de alumnos e ingresar notas por curso de estudiante.");
         }
 
         private void Btn_cambiocontra2_Click(object sender, EventArgs e)
@@ -160,4 +185,3 @@ namespace AsignaciondeCursos
         }
     }
 }
-
