@@ -12,6 +12,7 @@ namespace AsignaciondeCursos
 {
     public partial class Ayuda : Form
     {
+        public string correo { get; set; }
         public Ayuda()
         {
             InitializeComponent();

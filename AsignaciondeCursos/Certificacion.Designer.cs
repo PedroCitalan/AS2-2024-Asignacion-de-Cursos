@@ -30,13 +30,14 @@ namespace AsignaciondeCursos
             // 
             // Dgv_cert
             // 
+            this.Dgv_cert.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Dgv_cert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_cert.Location = new System.Drawing.Point(9, 229);
-            this.Dgv_cert.Margin = new System.Windows.Forms.Padding(2);
+            this.Dgv_cert.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Dgv_cert.Location = new System.Drawing.Point(14, 352);
             this.Dgv_cert.Name = "Dgv_cert";
             this.Dgv_cert.RowHeadersWidth = 51;
             this.Dgv_cert.RowTemplate.Height = 24;
-            this.Dgv_cert.Size = new System.Drawing.Size(781, 326);
+            this.Dgv_cert.Size = new System.Drawing.Size(1352, 502);
             this.Dgv_cert.TabIndex = 3;
             // 
             // Lbl_certificacion
@@ -44,38 +45,40 @@ namespace AsignaciondeCursos
             this.Lbl_certificacion.AutoSize = true;
             this.Lbl_certificacion.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_certificacion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_certificacion.Location = new System.Drawing.Point(243, 9);
+            this.Lbl_certificacion.Location = new System.Drawing.Point(489, 9);
+            this.Lbl_certificacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl_certificacion.Name = "Lbl_certificacion";
-            this.Lbl_certificacion.Size = new System.Drawing.Size(319, 32);
+            this.Lbl_certificacion.Size = new System.Drawing.Size(481, 47);
             this.Lbl_certificacion.TabIndex = 4;
             this.Lbl_certificacion.Text = "Certificacion de Cursos";
             // 
             // Lbl_carnet
             // 
             this.Lbl_carnet.AutoSize = true;
-            this.Lbl_carnet.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_carnet.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_carnet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_carnet.Location = new System.Drawing.Point(201, 66);
+            this.Lbl_carnet.Location = new System.Drawing.Point(125, 102);
+            this.Lbl_carnet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl_carnet.Name = "Lbl_carnet";
-            this.Lbl_carnet.Size = new System.Drawing.Size(144, 23);
+            this.Lbl_carnet.Size = new System.Drawing.Size(221, 36);
             this.Lbl_carnet.TabIndex = 5;
             this.Lbl_carnet.Text = "No. de Carnet:";
             // 
             // Txt_carnetCer1
             // 
-            this.Txt_carnetCer1.Location = new System.Drawing.Point(365, 66);
+            this.Txt_carnetCer1.Location = new System.Drawing.Point(354, 113);
+            this.Txt_carnetCer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Txt_carnetCer1.Name = "Txt_carnetCer1";
-            this.Txt_carnetCer1.Size = new System.Drawing.Size(129, 20);
+            this.Txt_carnetCer1.Size = new System.Drawing.Size(192, 26);
             this.Txt_carnetCer1.TabIndex = 6;
             this.Txt_carnetCer1.TextChanged += new System.EventHandler(this.Txt_carnetCer1_TextChanged);
             // 
             // Btn_buscar
             // 
-            this.Btn_buscar.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_buscar.Location = new System.Drawing.Point(585, 58);
-            this.Btn_buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_buscar.Location = new System.Drawing.Point(606, 85);
             this.Btn_buscar.Name = "Btn_buscar";
-            this.Btn_buscar.Size = new System.Drawing.Size(88, 43);
+            this.Btn_buscar.Size = new System.Drawing.Size(132, 66);
             this.Btn_buscar.TabIndex = 11;
             this.Btn_buscar.Text = "Buscar";
             this.Btn_buscar.UseVisualStyleBackColor = true;
@@ -83,11 +86,10 @@ namespace AsignaciondeCursos
             // 
             // Btn_limpiar
             // 
-            this.Btn_limpiar.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_limpiar.Location = new System.Drawing.Point(585, 105);
-            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_limpiar.Location = new System.Drawing.Point(606, 158);
             this.Btn_limpiar.Name = "Btn_limpiar";
-            this.Btn_limpiar.Size = new System.Drawing.Size(88, 41);
+            this.Btn_limpiar.Size = new System.Drawing.Size(132, 63);
             this.Btn_limpiar.TabIndex = 12;
             this.Btn_limpiar.Text = "Limpiar";
             this.Btn_limpiar.UseVisualStyleBackColor = true;
@@ -95,11 +97,10 @@ namespace AsignaciondeCursos
             // 
             // Btn_regresar
             // 
-            this.Btn_regresar.Font = new System.Drawing.Font(new System.Drawing.FontFamily("Century Gothic"), 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_regresar.Location = new System.Drawing.Point(585, 150);
-            this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Location = new System.Drawing.Point(606, 227);
             this.Btn_regresar.Name = "Btn_regresar";
-            this.Btn_regresar.Size = new System.Drawing.Size(88, 44);
+            this.Btn_regresar.Size = new System.Drawing.Size(132, 68);
             this.Btn_regresar.TabIndex = 13;
             this.Btn_regresar.Text = "Regresar";
             this.Btn_regresar.UseVisualStyleBackColor = true;
@@ -107,10 +108,10 @@ namespace AsignaciondeCursos
             // 
             // Certificacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 565);
+            this.ClientSize = new System.Drawing.Size(1423, 869);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_limpiar);
             this.Controls.Add(this.Btn_buscar);
@@ -118,7 +119,6 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Lbl_carnet);
             this.Controls.Add(this.Lbl_certificacion);
             this.Controls.Add(this.Dgv_cert);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Certificacion";
             this.Text = "Certificacion";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_cert)).EndInit();

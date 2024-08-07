@@ -115,6 +115,12 @@
   <ItemGroup>
     <Compile Include="AdminCRUD.cs" />
     <Compile Include="Admin_catedratico.cs" />
+    <Compile Include="aprobacion_cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aprobacion_cursos.Designer.cs">
+      <DependentUpon>aprobacion_cursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asignacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     <Compile Include="Validacion.Designer.cs">
       <DependentUpon>Validacion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="aprobacion_cursos.resx">
+      <DependentUpon>aprobacion_cursos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asignacion.resx">
       <DependentUpon>Asignacion.cs</DependentUpon>
     </EmbeddedResource>

@@ -30,11 +30,24 @@ namespace AsignaciondeCursos
             }
 
             string query = @"
-                SELECT c.NOMBRE_C, c.HORARIO, c.REQUISITOS, c.CREDITOS, c.SALON, c.SECCION, c.LABORATORIO
-                FROM TBL_CURSOS c
-                INNER JOIN TBL_ESTUDIANTE e ON e.ID_CURSOS = c.ID_CURSOS
-                WHERE e.CARNE = @Carnet
-            ";
+        SELECT 
+            c.NOMBRE_C, 
+            c.HORARIO, 
+            c.REQUISITOS, 
+            c.CREDITOS, 
+            c.SALON, 
+            c.SECCION, 
+            c.LABORATORIO, 
+            n.NOTA
+        FROM 
+            TBL_CURSOS c
+        INNER JOIN 
+            TBL_NOTAS n ON c.ID_CURSOS = n.ID_CURSOS
+        INNER JOIN 
+            TBL_ESTUDIANTE e ON n.ID_ESTUDIANTE = e.ID_ESTUDIANTE
+        WHERE 
+            e.CARNE = @Carnet
+            AND n.NOTA >= 61";  // Filtra solo las notas aprobadas
 
             MySqlConnection connection = null;
 
@@ -72,11 +85,12 @@ namespace AsignaciondeCursos
         private void Btn_regresar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AyudaAdmin AyudaAdmin = new AyudaAdmin();
-            AyudaAdmin.correo = correo;
-            AyudaAdmin.ShowDialog();
+            Ayuda ayuda = new Ayuda(); // Cambia AyudaAdmin por Ayuda
+            ayuda.correo = correo;
+            ayuda.ShowDialog();
             this.Close();
         }
+
 
         private void Txt_carnetCer1_TextChanged(object sender, EventArgs e)
         {
@@ -89,4 +103,3 @@ namespace AsignaciondeCursos
         }
     }
 }
-
