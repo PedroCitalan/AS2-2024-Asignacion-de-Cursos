@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace AsignaciondeCursos
 {
@@ -56,6 +57,28 @@ namespace AsignaciondeCursos
             Ayuda Ayuda = new Ayuda();
             Ayuda.ShowDialog();
             this.Close();
+        }
+
+        private void Btn_Validar_Click(object sender, EventArgs e)
+        {
+            Validar(Convert.ToInt32(Txt_carnetCer1.Text.Trim()));
+        }
+        ConexionMySQL con = new ConexionMySQL();
+        private void Validar(int idboleta)
+        {
+            try
+            {
+                string sql = "select * from TBL_BOLETA where ID_BOLETA =" + idboleta + "";
+                MySqlDataAdapter datatable = new MySqlDataAdapter(sql, con.GetConnection());
+
+                DataTable table = new DataTable();
+                datatable.Fill(table);
+                Dgv_validacion.DataSource = table;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error en llenado de tabla:" + e);
+            }
         }
     }
 }

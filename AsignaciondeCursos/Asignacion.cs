@@ -29,5 +29,10 @@ namespace AsignaciondeCursos
         {
 
         }
+
+        private void Asignacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
