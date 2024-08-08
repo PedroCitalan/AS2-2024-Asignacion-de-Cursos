@@ -21,8 +21,8 @@ namespace AsignaciondeCursos
         {
             InitializeComponent();
             mAdminCRUD = new AdminCRUD();
-            mCatedratico = new Catedratico();
             mAdmin = new Admin_catedratico();
+            mCatedratico = new Catedratico();
         }
 
         private void Btn_registrar_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace AsignaciondeCursos
                 else
                 {
                     obtenerDatosCatedratico();
-                    obtenerDatosAdmin();
+                    obtenerDatosUsuarioCatedratico();
                     if (mAdmin.Contraseña != passwordconfirm)
                     {
                         MessageBox.Show("Las contraseñas no coinciden.", "Error de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -73,6 +73,10 @@ namespace AsignaciondeCursos
                         Txt_confirmarcontra.Clear();
                         Txt_idcurso.Clear();
                         Txt_idcarrera.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocurrió un error en el ingreso de datos, vuelva a intentarlo de nuevo.", "Registro Fallido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
@@ -96,7 +100,7 @@ namespace AsignaciondeCursos
             mCatedratico.idCarrera = Convert.ToInt32(Txt_idcarrera.Text.Trim());
         }
 
-        private void obtenerDatosAdmin()
+        private void obtenerDatosUsuarioCatedratico()
         {
             mAdmin.Nombre_usuario = Txt_username.Text.Trim();
             mAdmin.Contraseña = Txt_contra.Text.Trim();
@@ -119,7 +123,7 @@ namespace AsignaciondeCursos
             }
             catch (FormatException)
             {
-                MessageBox.Show("Por favor, ingrese solo números.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, ingrese solo números para el teléfono.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox.Text = new string(textBox.Text.Where(char.IsDigit).ToArray());
                 textBox.SelectionStart = textBox.Text.Length;
             }

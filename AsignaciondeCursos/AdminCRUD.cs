@@ -122,22 +122,26 @@ namespace AsignaciondeCursos
 
         internal bool agregarUsuarioCatedratico(Admin_catedratico mAdmin)
         {
-            string IDCATEDRATICO = "SELECT LAST_INSERT_ID()";
-            string INSERT = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, ID_CATEDRATICO)" +
+            string SELECT = "SELECT MAX(ID_CATEDRATICO) FROM TBL_CATEDRATICO;";
+            string INSERT_B = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, ID_CATEDRATICO)" +
                 "values (@Nombre, @Contra, @Correo, 'CATEDRATICO', @Idcatedratico);";
 
-            MySqlDataReader mReader;
-            MySqlCommand mCommand = new MySqlCommand(IDCATEDRATICO, ConexionMySQL.GetConnection());
-            mReader = mCommand.ExecuteReader();
-            mReader.Close();
-            int Idcatedratico = Convert.ToInt32(mCommand.ExecuteScalar());
+            MySqlCommand mCommand = new MySqlCommand(SELECT, ConexionMySQL.GetConnection());
+            object resultado = mCommand.ExecuteScalar();
 
-            MySqlCommand mCommand2 = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
+            if (resultado == null || resultado == DBNull.Value)
+            {
+                throw new Exception("No se pudo obtener el ID de catedrático.");
+            }
+
+            int ID_catedratico = Convert.ToInt32(resultado);
+
+            MySqlCommand mCommand2 = new MySqlCommand(INSERT_B, ConexionMySQL.GetConnection());
 
             mCommand2.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
             mCommand2.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand2.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
-            mCommand2.Parameters.Add(new MySqlParameter("@Idcatedratico", Idcatedratico));
+            mCommand2.Parameters.Add(new MySqlParameter("@Idcatedratico", ID_catedratico));
 
             return mCommand2.ExecuteNonQuery() > 0;
         }
