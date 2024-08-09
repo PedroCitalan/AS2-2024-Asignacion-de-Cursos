@@ -28,7 +28,16 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @NombreUsuario, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Usuario de administrador agregado");
+            command.Parameters.AddWithValue("@NombreUsuario", mAdmin.Nombre_usuario);
+            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
+
+            return mCommand.ExecuteNonQuery() > 0 && command.ExecuteNonQuery() > 0;
         }
 
         internal bool buscarUsuarioAdmin(Admin_catedratico mAdmin)
@@ -55,7 +64,15 @@ namespace AsignaciondeCursos
             }
             mReader.Close();
 
-            return rows > 0;
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Inicio de sesion de usuario administrador/catedrático");
+            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
+
+            return rows > 0 && command.ExecuteNonQuery() > 0;
         }
 
         internal bool deleteUsuarioEstudiante(Admin_catedratico mAdmin)
@@ -66,7 +83,15 @@ namespace AsignaciondeCursos
 
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Usuario de estudiante eliminado");
+            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
+
+            return mCommand.ExecuteNonQuery() > 0 && command.ExecuteNonQuery() > 0;
         }
 
         internal bool deleteEstudiante(DeleteEstudiante.EstudianteDelete mEstudiante)
@@ -90,6 +115,14 @@ namespace AsignaciondeCursos
 
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
             mCommand2.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
+
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Usuario de catedrático eliminado");
+            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
 
             return mCommand.ExecuteNonQuery() > 0 && mCommand2.ExecuteNonQuery() > 0;
         }
@@ -143,7 +176,16 @@ namespace AsignaciondeCursos
             mCommand2.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
             mCommand2.Parameters.Add(new MySqlParameter("@Idcatedratico", ID_catedratico));
 
-            return mCommand2.ExecuteNonQuery() > 0;
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @NombreUsuario, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Usuario de catedrático agregado");
+            mCommand2.Parameters.AddWithValue("@NombreUsuario", mAdmin.Nombre_usuario);
+            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
+
+            return mCommand2.ExecuteNonQuery() > 0 && command.ExecuteNonQuery() > 0;
         }
 
         internal bool agregarCatedratico(RegistroCatedratico.Catedratico mCatedratico)
@@ -200,7 +242,15 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Contraseña de usuario administrador/catedrático actualizado");
+            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
+
+            return mCommand.ExecuteNonQuery() > 0 && command.ExecuteNonQuery() > 0;
         }
 
         internal bool verificarUsuarioAdmin(Admin_catedratico mAdmin)

@@ -23,7 +23,7 @@ namespace AsignaciondeCursos
             this.Hide();
             // Crea una instancia del formulario Asignacion
             Asignacion asignacion = new Asignacion();
-
+            asignacion.user = user;
             // Muestra el formulario Asignacion
             asignacion.ShowDialog();
             this.Close();
@@ -46,6 +46,7 @@ namespace AsignaciondeCursos
             this.Hide();
             // Crea una instancia del formulario Certificacion
             Certificacion certificacion = new Certificacion();
+            certificacion.user = user;
             // Muestra el formulario Certificacion
             certificacion.ShowDialog();
             this.Close();
@@ -56,7 +57,7 @@ namespace AsignaciondeCursos
             this.Hide();
             // Crea una instancia del formulario Validacion
             Validacion validacion = new Validacion();
-
+            validacion.user = user;
             // Muestra el formulario Validacion
             validacion.ShowDialog();
             this.Close();

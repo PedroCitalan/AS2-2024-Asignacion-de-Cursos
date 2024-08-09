@@ -203,7 +203,7 @@ namespace AsignaciondeCursos
             this.Btn_regresar.Location = new System.Drawing.Point(103, 513);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(84, 31);
-            this.Btn_regresar.TabIndex = 23;
+            this.Btn_regresar.TabIndex = 32;
             this.Btn_regresar.Text = "Regresar";
             this.Btn_regresar.UseVisualStyleBackColor = true;
             this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
@@ -214,7 +214,7 @@ namespace AsignaciondeCursos
             this.Btn_registrar.Location = new System.Drawing.Point(310, 513);
             this.Btn_registrar.Name = "Btn_registrar";
             this.Btn_registrar.Size = new System.Drawing.Size(82, 31);
-            this.Btn_registrar.TabIndex = 24;
+            this.Btn_registrar.TabIndex = 30;
             this.Btn_registrar.Text = "Registrar";
             this.Btn_registrar.UseVisualStyleBackColor = true;
             this.Btn_registrar.Click += new System.EventHandler(this.Btn_registrar_Click);
@@ -234,7 +234,7 @@ namespace AsignaciondeCursos
             this.Txt_contra.Location = new System.Drawing.Point(207, 421);
             this.Txt_contra.Name = "Txt_contra";
             this.Txt_contra.Size = new System.Drawing.Size(310, 20);
-            this.Txt_contra.TabIndex = 26;
+            this.Txt_contra.TabIndex = 27;
             this.Txt_contra.UseSystemPasswordChar = true;
             // 
             // Lbl_confirmarcontra
@@ -252,7 +252,7 @@ namespace AsignaciondeCursos
             this.Txt_confirmarcontra.Location = new System.Drawing.Point(208, 459);
             this.Txt_confirmarcontra.Name = "Txt_confirmarcontra";
             this.Txt_confirmarcontra.Size = new System.Drawing.Size(310, 20);
-            this.Txt_confirmarcontra.TabIndex = 28;
+            this.Txt_confirmarcontra.TabIndex = 29;
             this.Txt_confirmarcontra.UseSystemPasswordChar = true;
             // 
             // Lbl_nombreusuario
@@ -270,14 +270,14 @@ namespace AsignaciondeCursos
             this.Txt_nombreusuario.Location = new System.Drawing.Point(208, 344);
             this.Txt_nombreusuario.Name = "Txt_nombreusuario";
             this.Txt_nombreusuario.Size = new System.Drawing.Size(310, 20);
-            this.Txt_nombreusuario.TabIndex = 30;
+            this.Txt_nombreusuario.TabIndex = 23;
             // 
             // picker_fechanac
             // 
             this.picker_fechanac.Location = new System.Drawing.Point(207, 120);
             this.picker_fechanac.Name = "picker_fechanac";
             this.picker_fechanac.Size = new System.Drawing.Size(311, 20);
-            this.picker_fechanac.TabIndex = 31;
+            this.picker_fechanac.TabIndex = 12;
             // 
             // Lbl_correoelectronico
             // 
@@ -294,7 +294,7 @@ namespace AsignaciondeCursos
             this.Txt_correoelectronico.Location = new System.Drawing.Point(207, 382);
             this.Txt_correoelectronico.Name = "Txt_correoelectronico";
             this.Txt_correoelectronico.Size = new System.Drawing.Size(310, 20);
-            this.Txt_correoelectronico.TabIndex = 33;
+            this.Txt_correoelectronico.TabIndex = 25;
             // 
             // RegistroEstudiante
             // 

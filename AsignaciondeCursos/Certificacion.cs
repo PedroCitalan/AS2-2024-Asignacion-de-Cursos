@@ -7,7 +7,7 @@ namespace AsignaciondeCursos
 {
     public partial class Certificacion : Form
     {
-        public string correo { get; set; }
+        public string user { get; set; }
         private readonly ConexionMySQL ConexionaMySQL;
 
         public Certificacion()

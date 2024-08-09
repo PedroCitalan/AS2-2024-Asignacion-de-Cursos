@@ -13,6 +13,7 @@ namespace AsignaciondeCursos
 {
     public partial class Validacion : Form
     {
+        public string user { get; set; }
         public Validacion()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace AsignaciondeCursos
             catch (FormatException ex)
             {
 
-                MessageBox.Show(ex.Message, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Entrada inválida, solo se permite ingresar números.", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
                 Txt_carnetCer1.Text = new string(Txt_carnetCer1.Text.Where(char.IsDigit).ToArray());
