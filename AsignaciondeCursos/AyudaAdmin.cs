@@ -183,5 +183,25 @@ namespace AsignaciondeCursos
                 this.Close();
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_bitacora_Click(object sender, EventArgs e)
+        {
+                obtenerCorreo();
+                if (mAdminCRUD.verificarUsuarioAdmin(mAdmin))
+                {
+                    this.Hide();
+                    Bitacora Bitacora = new Bitacora();
+                    Bitacora.correo = correo;
+                    Bitacora.ShowDialog();
+                    this.Close();
+                }
+            }
+        }
     }
-}
+
+
