@@ -80,7 +80,23 @@ namespace AsignaciondeCursos
             mCommand_B.Parameters.AddWithValue("@Id_tesoreria", ID_tesoreria);
             mCommand_B.Parameters.AddWithValue("@Id_semestre", Id_semestre);
 
-            return mCommand_B.ExecuteNonQuery() > 0;
+            bool boletaInsertada = mCommand_B.ExecuteNonQuery() > 0;
+
+            if (boletaInsertada)
+            {
+                string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO)
+                    VALUES (@Accion, @NombreUsuario)";
+
+                MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+                command.Parameters.AddWithValue("@Accion", "Boleta creada para el estudiante");
+                command.Parameters.AddWithValue("@NombreUsuario", boleta_Propiedades.Nombre_usuario);
+                command.ExecuteNonQuery();
+            }
+
+            return boletaInsertada;
+
         }
     }
 }
+

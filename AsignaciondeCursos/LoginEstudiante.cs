@@ -69,7 +69,16 @@ namespace AsignaciondeCursos
             mReader = cmd.ExecuteReader();
             mReader.Close();
             int count = Convert.ToInt32(cmd.ExecuteScalar());
-            return count > 0;
+
+            string query2 = @"
+                    INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO)
+                    VALUES (@Accion, @NombreUsuario)";
+
+            MySqlCommand command = new MySqlCommand(query2, conexionSQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Inicio de sesión de estudiante");
+            command.Parameters.AddWithValue("@NombreUsuario", user);
+
+            return count > 0 && command.ExecuteNonQuery() > 0;
         }
         private void Btn_cambiocontra_Click(object sender, EventArgs e)
         {
