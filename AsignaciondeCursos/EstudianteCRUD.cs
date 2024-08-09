@@ -29,7 +29,9 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@ID_Cursos", mEstudiantes.ID_Cursos));
             mCommand.Parameters.Add(new MySqlParameter("@Seccion", mEstudiantes.Seccion));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            bool estudianteAgregado = mCommand.ExecuteNonQuery() > 0;
+
+            return estudianteAgregado;
         }
 
         internal bool agregarUsuarioEstudiante(Estudiantes mEstudiantes)
@@ -41,7 +43,23 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@Correo_electronico", mEstudiantes.Correo_electronico));
             mCommand.Parameters.Add(new MySqlParameter("@Carne", mEstudiantes.Carne));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            bool usuarioAgregado = mCommand.ExecuteNonQuery() > 0;
+
+            if (usuarioAgregado)
+            {
+                // Insertar en TBL_BITACORA después de agregar al usuario estudiante
+                string query = @"
+            INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO, CORREO_ELECTRONICO)
+            VALUES (@Accion, @NombreUsuario, @CorreoElectronico)";
+
+                MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+                command.Parameters.AddWithValue("@Accion", "Creación de usuario de estudiante");
+                command.Parameters.AddWithValue("@NombreUsuario", mEstudiantes.Nombre_usuario);
+                command.Parameters.AddWithValue("@CorreoElectronico", mEstudiantes.Correo_electronico);
+                command.ExecuteNonQuery();
+            }
+
+            return usuarioAgregado;
         }
     }
 }

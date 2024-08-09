@@ -12,6 +12,7 @@ namespace AsignaciondeCursos
 {
     public partial class Asignacion : Form
     {
+        public string user { get; set; }
         public Asignacion()
         {
             InitializeComponent();

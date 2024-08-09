@@ -264,7 +264,6 @@ namespace AsignaciondeCursos
             this.Txt_idcurso.Name = "Txt_idcurso";
             this.Txt_idcurso.Size = new System.Drawing.Size(310, 20);
             this.Txt_idcurso.TabIndex = 26;
-            this.Txt_idcurso.UseSystemPasswordChar = true;
             // 
             // Lbl_idcurso
             // 
@@ -283,7 +282,6 @@ namespace AsignaciondeCursos
             this.Txt_idcarrera.Name = "Txt_idcarrera";
             this.Txt_idcarrera.Size = new System.Drawing.Size(310, 20);
             this.Txt_idcarrera.TabIndex = 28;
-            this.Txt_idcarrera.UseSystemPasswordChar = true;
             // 
             // Lbl_idcarrera
             // 
