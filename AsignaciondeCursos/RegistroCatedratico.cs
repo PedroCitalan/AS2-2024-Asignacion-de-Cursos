@@ -13,6 +13,7 @@ namespace AsignaciondeCursos
 {
     public partial class RegistroCatedratico : Form
     {
+        public string correo { get; set; }
         private Catedratico mCatedratico;
         private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
@@ -20,8 +21,8 @@ namespace AsignaciondeCursos
         {
             InitializeComponent();
             mAdminCRUD = new AdminCRUD();
-            mCatedratico = new Catedratico();
             mAdmin = new Admin_catedratico();
+            mCatedratico = new Catedratico();
         }
 
         private void Btn_registrar_Click(object sender, EventArgs e)
@@ -35,11 +36,13 @@ namespace AsignaciondeCursos
                 string username = Txt_username.Text;
                 string password = Txt_contra.Text;
                 string passwordconfirm = Txt_confirmarcontra.Text;
-                string email = Lbl_correo.Text;
+                string email = Txt_correo.Text;
+                string course = Txt_idcurso.Text;
+                string career = Txt_idcarrera.Text;
 
-                Match matchEspeciales = Regex.Match(Lbl_correo.Text, @"[@]");
+                Match matchEspeciales = Regex.Match(Txt_correo.Text, @"[@]");
 
-                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(lastname) || string.IsNullOrWhiteSpace(carne) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email))
+                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(lastname) || string.IsNullOrWhiteSpace(carne) || string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordconfirm) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(course) || string.IsNullOrWhiteSpace(career))
                 {
                     MessageBox.Show("Todos los campos son obligatorios.", "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -52,7 +55,7 @@ namespace AsignaciondeCursos
                 else
                 {
                     obtenerDatosCatedratico();
-                    obtenerDatosAdmin();
+                    obtenerDatosUsuarioCatedratico();
                     if (mAdmin.Contraseña != passwordconfirm)
                     {
                         MessageBox.Show("Las contraseñas no coinciden.", "Error de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -68,6 +71,12 @@ namespace AsignaciondeCursos
                         Txt_username.Clear();
                         Txt_contra.Clear();
                         Txt_confirmarcontra.Clear();
+                        Txt_idcurso.Clear();
+                        Txt_idcarrera.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocurrió un error en el ingreso de datos, vuelva a intentarlo de nuevo.", "Registro Fallido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
@@ -87,9 +96,11 @@ namespace AsignaciondeCursos
             mCatedratico.Carne = Convert.ToInt32(Txt_carne.Text.Trim());
             mCatedratico.Correo_electronico = Txt_correo.Text.Trim();
             mCatedratico.Telefono = Convert.ToInt32(Txt_telefono.Text.Trim());
+            mCatedratico.idCurso = Convert.ToInt32(Txt_idcurso.Text.Trim());
+            mCatedratico.idCarrera = Convert.ToInt32(Txt_idcarrera.Text.Trim());
         }
 
-        private void obtenerDatosAdmin()
+        private void obtenerDatosUsuarioCatedratico()
         {
             mAdmin.Nombre_usuario = Txt_username.Text.Trim();
             mAdmin.Contraseña = Txt_contra.Text.Trim();
@@ -112,7 +123,7 @@ namespace AsignaciondeCursos
             }
             catch (FormatException)
             {
-                MessageBox.Show("Por favor, ingrese solo números.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, ingrese solo números para el teléfono.", "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox.Text = new string(textBox.Text.Where(char.IsDigit).ToArray());
                 textBox.SelectionStart = textBox.Text.Length;
             }
@@ -122,7 +133,9 @@ namespace AsignaciondeCursos
         {
             this.Hide();
             AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
             AyudaAdmin.ShowDialog();
+            this.Close();
         }
 
         public class Catedratico
@@ -134,6 +147,8 @@ namespace AsignaciondeCursos
             public int Carne { get; set; }
             public string Correo_electronico { get; set; }
             public int Telefono { get; set; }
+            public int idCurso { get; set; }
+            public int idCarrera { get; set; }
         }
     }
 }

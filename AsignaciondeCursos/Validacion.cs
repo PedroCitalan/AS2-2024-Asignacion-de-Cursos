@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace AsignaciondeCursos
 {
@@ -16,8 +17,6 @@ namespace AsignaciondeCursos
         {
             InitializeComponent();
             Txt_carnetCer1.TextChanged += new EventHandler(Txt_carnetCer1_TextChanged);
-            Txt_carnetCer2.TextChanged += new EventHandler(Txt_carnetCer2_TextChanged);
-            Txt_carnetCer3.TextChanged += new EventHandler(Txt_carnetCer3_TextChanged);
         }
 
         private void Txt_carnetCer1_TextChanged(object sender, EventArgs e)
@@ -47,57 +46,38 @@ namespace AsignaciondeCursos
             }
         }
 
-        private void Txt_carnetCer2_TextChanged(object sender, EventArgs e)
+        private void Validacion_Load(object sender, EventArgs e)
         {
-            try
-            {
 
-                if (!string.IsNullOrEmpty(Txt_carnetCer2.Text))
-                {
-                    long.Parse(Txt_carnetCer2.Text);
-                }
-            }
-            catch (FormatException ex)
-            {
-
-                MessageBox.Show(ex.Message, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-                Txt_carnetCer2.Text = new string(Txt_carnetCer2.Text.Where(char.IsDigit).ToArray());
-
-                Txt_carnetCer2.SelectionStart = Txt_carnetCer2.Text.Length;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
-        private void Txt_carnetCer3_TextChanged(object sender, EventArgs e)
+        private void Btn_regresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ayuda Ayuda = new Ayuda();
+            Ayuda.ShowDialog();
+            this.Close();
+        }
+
+        private void Btn_Validar_Click(object sender, EventArgs e)
+        {
+            Validar(Convert.ToInt32(Txt_carnetCer1.Text.Trim()));
+        }
+        ConexionMySQL con = new ConexionMySQL();
+        private void Validar(int idboleta)
         {
             try
             {
+                string sql = "select * from TBL_BOLETA where ID_BOLETA =" + idboleta + "";
+                MySqlDataAdapter datatable = new MySqlDataAdapter(sql, con.GetConnection());
 
-                    if (!string.IsNullOrEmpty(Txt_carnetCer3.Text))
-                    {
-                    long.Parse(Txt_carnetCer3.Text);
-                    }
+                DataTable table = new DataTable();
+                datatable.Fill(table);
+                Dgv_validacion.DataSource = table;
             }
-            catch (FormatException ex)
+            catch (Exception e)
             {
-
-                MessageBox.Show(ex.Message, "Entrada inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-                Txt_carnetCer3.Text = new string(Txt_carnetCer3.Text.Where(char.IsDigit).ToArray());
-
-                Txt_carnetCer3.SelectionStart = Txt_carnetCer3.Text.Length;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error en llenado de tabla:" + e);
             }
         }
     }

@@ -27,7 +27,9 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_alumnos
             this.Hide();
             Listado_alumnos listadoAlumnosForm = new Listado_alumnos();
-            listadoAlumnosForm.Show();
+            listadoAlumnosForm.correo = correo;
+            listadoAlumnosForm.ShowDialog();
+            this.Close();
         }
 
         private void Btn_ayudaAdmin2_Click(object sender, EventArgs e)
@@ -35,7 +37,9 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_catedraticos
             this.Hide();
             Listado_catedraticos listadoCatedraticosForm = new Listado_catedraticos();
-            listadoCatedraticosForm.Show();
+            listadoCatedraticosForm.correo = correo;
+            listadoCatedraticosForm.ShowDialog();
+            this.Close();
         }
 
         private void Btn_ayudaAdmin3_Click(object sender, EventArgs e)
@@ -43,7 +47,9 @@ namespace AsignaciondeCursos
             // Abre el formulario de Listado_cursos
             this.Hide();
             Listado_Cursos listadoCursosForm = new Listado_Cursos();
-            listadoCursosForm.Show();
+            listadoCursosForm.correo = correo;
+            listadoCursosForm.ShowDialog();
+            this.Close();
         }
 
         private void Btn_ayudaAdmin4_Click(object sender, EventArgs e)
@@ -54,6 +60,25 @@ namespace AsignaciondeCursos
             inicioSesionForm.ShowDialog();
             this.Close();
         }
+
+        private void Btn_ayuda4_Click(object sender, EventArgs e)
+        {
+            // Abre el formulario de aprobación de cursos
+            this.Hide();
+
+            // Crear una instancia del formulario de aprobación de cursos
+            aprobacion_cursos aprobacionCursosForm = new aprobacion_cursos();
+
+            // Asignar el valor de correo a la propiedad del formulario
+            aprobacionCursosForm.Correo = correo; // Asegúrate de que 'correo' esté definido y tenga un valor
+
+            // Mostrar el formulario como un cuadro de diálogo
+            aprobacionCursosForm.ShowDialog();
+
+            // Cerrar el formulario actual
+            this.Close();
+        }
+
 
         private void AyudaAdm1_Click(object sender, EventArgs e)
         {
@@ -73,12 +98,20 @@ namespace AsignaciondeCursos
             MessageBox.Show("Para generar la lista de cursos, ingrese el código de carrera. Luego, haga clic en 'Buscar' para ver los resultados.");
         }
 
+        private void AyudaAdm4_Click(object sender, EventArgs e)
+        {
+            // Muestra un mensaje de ayuda para la aprobación de cursos
+            MessageBox.Show("En la aprobación de cursos se puede realizar búsquedas por carnet de alumnos e ingresar notas por curso de estudiante.");
+        }
+
         private void Btn_cambiocontra2_Click(object sender, EventArgs e)
         {
             // Abre el formulario de cambio de contraseña para catedráticos
-            this.Close();
+            this.Hide();
             CambioContraCatedratico CambioContraCatedratico = new CambioContraCatedratico();
+            CambioContraCatedratico.correo = correo;
             CambioContraCatedratico.ShowDialog();
+            this.Close();
         }
 
         private void obtenerCorreo()
@@ -93,7 +126,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 RegistroAdmin RegistroAdmin = new RegistroAdmin();
+                RegistroAdmin.correo = correo;
                 RegistroAdmin.ShowDialog();
+                this.Close();
             }
         }
 
@@ -104,7 +139,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 RegistroCatedratico RegistroCatedratico = new RegistroCatedratico();
+                RegistroCatedratico.correo = correo;
                 RegistroCatedratico.ShowDialog();
+                this.Close();
             }
         }
 
@@ -115,7 +152,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 CambioContraAdmin CambioContraAdmin = new CambioContraAdmin();
+                CambioContraAdmin.correo = correo;
                 CambioContraAdmin.ShowDialog();
+                this.Close();
             }
         }
 
@@ -126,7 +165,9 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 DeleteCatedratico DeleteCatedratico = new DeleteCatedratico();
+                DeleteCatedratico.correo = correo;
                 DeleteCatedratico.ShowDialog();
+                this.Close();
             }
         }
 
@@ -137,9 +178,10 @@ namespace AsignaciondeCursos
             {
                 this.Hide();
                 DeleteEstudiante DeleteEstudiante = new DeleteEstudiante();
+                DeleteEstudiante.correo = correo;
                 DeleteEstudiante.ShowDialog();
+                this.Close();
             }
         }
     }
 }
-

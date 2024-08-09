@@ -115,6 +115,12 @@
   <ItemGroup>
     <Compile Include="AdminCRUD.cs" />
     <Compile Include="Admin_catedratico.cs" />
+    <Compile Include="aprobacion_cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aprobacion_cursos.Designer.cs">
+      <DependentUpon>aprobacion_cursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Asignacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,8 @@
     <Compile Include="Boleta.Designer.cs">
       <DependentUpon>Boleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoletaCRUD.cs" />
+    <Compile Include="Boleta_propiedades.cs" />
     <Compile Include="CambioContraAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +158,12 @@
     </Compile>
     <Compile Include="CambioContraCatedratico.Designer.cs">
       <DependentUpon>CambioContraCatedratico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambioContraEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioContraEstudiante.Designer.cs">
+      <DependentUpon>CambioContraEstudiante.cs</DependentUpon>
     </Compile>
     <Compile Include="Certificacion.cs">
       <SubType>Form</SubType>
@@ -171,6 +185,9 @@
     <Compile Include="DeleteEstudiante.Designer.cs">
       <DependentUpon>DeleteEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstudianteCRUD.cs" />
+    <Compile Include="Estudiantes.cs" />
+    <Compile Include="Hash.cs" />
     <Compile Include="InicioSesión.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,12 +238,21 @@
     <Compile Include="RegistroCatedratico.Designer.cs">
       <DependentUpon>RegistroCatedratico.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEstudiante.Designer.cs">
+      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Validacion.Designer.cs">
       <DependentUpon>Validacion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="aprobacion_cursos.resx">
+      <DependentUpon>aprobacion_cursos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asignacion.resx">
       <DependentUpon>Asignacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CambioContraCatedratico.resx">
       <DependentUpon>CambioContraCatedratico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioContraEstudiante.resx">
+      <DependentUpon>CambioContraEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Certificacion.resx">
       <DependentUpon>Certificacion.cs</DependentUpon>
@@ -286,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroCatedratico.resx">
       <DependentUpon>RegistroCatedratico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroEstudiante.resx">
+      <DependentUpon>RegistroEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Validacion.resx">
       <DependentUpon>Validacion.cs</DependentUpon>

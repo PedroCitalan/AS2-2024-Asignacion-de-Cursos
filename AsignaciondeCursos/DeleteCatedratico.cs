@@ -13,6 +13,7 @@ namespace AsignaciondeCursos
 {
     public partial class DeleteCatedratico : Form
     {
+        public string correo { get; set; }
         private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
         public DeleteCatedratico()
@@ -63,6 +64,7 @@ namespace AsignaciondeCursos
         {
             this.Hide();
             AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
             AyudaAdmin.ShowDialog();
             this.Close();
         }

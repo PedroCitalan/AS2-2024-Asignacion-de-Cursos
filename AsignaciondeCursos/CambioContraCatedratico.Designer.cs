@@ -81,6 +81,7 @@ namespace AsignaciondeCursos
             this.Txt_confirmarcontra.Name = "Txt_confirmarcontra";
             this.Txt_confirmarcontra.Size = new System.Drawing.Size(310, 20);
             this.Txt_confirmarcontra.TabIndex = 29;
+            this.Txt_confirmarcontra.UseSystemPasswordChar = true;
             this.Txt_confirmarcontra.Visible = false;
             // 
             // Lbl_confirmarcontra
@@ -101,6 +102,7 @@ namespace AsignaciondeCursos
             this.Txt_contra.Name = "Txt_contra";
             this.Txt_contra.Size = new System.Drawing.Size(310, 20);
             this.Txt_contra.TabIndex = 28;
+            this.Txt_contra.UseSystemPasswordChar = true;
             this.Txt_contra.Visible = false;
             // 
             // Lbl_contraseña

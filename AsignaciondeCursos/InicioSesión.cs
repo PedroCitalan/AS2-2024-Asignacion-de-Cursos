@@ -35,7 +35,7 @@ namespace AsignaciondeCursos
 
         private void Btn_salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

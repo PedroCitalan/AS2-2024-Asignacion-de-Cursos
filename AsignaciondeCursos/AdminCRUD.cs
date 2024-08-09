@@ -25,7 +25,7 @@ namespace AsignaciondeCursos
             MySqlCommand mCommand = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
 
             mCommand.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
             return mCommand.ExecuteNonQuery() > 0;
@@ -38,7 +38,7 @@ namespace AsignaciondeCursos
             MySqlDataReader mReader;
             MySqlCommand mCommand = new MySqlCommand(BUSCAR, ConexionMySQL.GetConnection());
 
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
             mReader = mCommand.ExecuteReader();
@@ -96,7 +96,7 @@ namespace AsignaciondeCursos
 
         internal bool buscarCorreoCatedratico(Admin_catedratico mAdmin)
         {
-            string BUSCARCORREO = "SELECT * FROM TBL_USUARIOS WHERE CORREO_ELECTRONICO = @Correo WHERE TIPO_USUARIO = 'CATEDRATICO';";
+            string BUSCARCORREO = "SELECT * FROM TBL_USUARIOS WHERE CORREO_ELECTRONICO = @Correo AND TIPO_USUARIO = 'CATEDRATICO';";
 
             MySqlDataReader mReader;
             MySqlCommand mCommand = new MySqlCommand(BUSCARCORREO, ConexionMySQL.GetConnection());
@@ -122,22 +122,34 @@ namespace AsignaciondeCursos
 
         internal bool agregarUsuarioCatedratico(Admin_catedratico mAdmin)
         {
-            string INSERT = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO)" +
-                "values (@Nombre, @Contra, @Correo, 'CATEDRATICO');";
+            string SELECT = "SELECT MAX(ID_CATEDRATICO) FROM TBL_CATEDRATICO;";
+            string INSERT_B = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, ID_CATEDRATICO)" +
+                "values (@Nombre, @Contra, @Correo, 'CATEDRATICO', @Idcatedratico);";
 
-            MySqlCommand mCommand = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
+            MySqlCommand mCommand = new MySqlCommand(SELECT, ConexionMySQL.GetConnection());
+            object resultado = mCommand.ExecuteScalar();
 
-            mCommand.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
-            mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
+            if (resultado == null || resultado == DBNull.Value)
+            {
+                throw new Exception("No se pudo obtener el ID de catedrático.");
+            }
 
-            return mCommand.ExecuteNonQuery() > 0;
+            int ID_catedratico = Convert.ToInt32(resultado);
+
+            MySqlCommand mCommand2 = new MySqlCommand(INSERT_B, ConexionMySQL.GetConnection());
+
+            mCommand2.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
+            mCommand2.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
+            mCommand2.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
+            mCommand2.Parameters.Add(new MySqlParameter("@Idcatedratico", ID_catedratico));
+
+            return mCommand2.ExecuteNonQuery() > 0;
         }
 
         internal bool agregarCatedratico(RegistroCatedratico.Catedratico mCatedratico)
         {
-            string INSERT = "INSERT INTO TBL_CATEDRATICO (NOMBRE, APELLIDO, FECHA_NAC, CARNE, CORREO_ELECTRONICO, TELEFONO)" +
-                "values (@Nombre, @Apellido, @Fecha_nac, @Carne, @Correo, @Telefono);";
+            string INSERT = "INSERT INTO TBL_CATEDRATICO (NOMBRE, APELLIDO, FECHA_NAC, CARNE, CORREO_ELECTRONICO, TELEFONO, ID_CURSOS, ID_CARRERA)" +
+                "values (@Nombre, @Apellido, @Fecha_nac, @Carne, @Correo, @Telefono, @IDCurso, @IDCarrera);";
 
             MySqlCommand mCommand = new MySqlCommand(INSERT, ConexionMySQL.GetConnection());
 
@@ -147,13 +159,15 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@Carne", mCatedratico.Carne));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mCatedratico.Correo_electronico));
             mCommand.Parameters.Add(new MySqlParameter("@Telefono", mCatedratico.Telefono));
+            mCommand.Parameters.Add(new MySqlParameter("@IDCurso", mCatedratico.idCurso));
+            mCommand.Parameters.Add(new MySqlParameter("@IDCarrera", mCatedratico.idCarrera));
 
             return mCommand.ExecuteNonQuery() > 0;
         }
 
         internal bool buscarCorreoAdmin(Admin_catedratico mAdmin)
         {
-            string BUSCARCORREO = "SELECT * FROM TBL_USUARIOS WHERE CORREO_ELECTRONICO = @Correo WHERE TIPO_USUARIO = 'ADMINISTRADOR';";
+            string BUSCARCORREO = "SELECT * FROM TBL_USUARIOS WHERE CORREO_ELECTRONICO = @Correo AND TIPO_USUARIO = 'ADMINISTRADOR';";
 
             MySqlDataReader mReader;
             MySqlCommand mCommand = new MySqlCommand(BUSCARCORREO, ConexionMySQL.GetConnection());
@@ -183,7 +197,7 @@ namespace AsignaciondeCursos
 
             MySqlCommand mCommand = new MySqlCommand(UPDATE, ConexionMySQL.GetConnection());
 
-            mCommand.Parameters.Add(new MySqlParameter("@Contra", mAdmin.Contraseña));
+            mCommand.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
             mCommand.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
 
             return mCommand.ExecuteNonQuery() > 0;
@@ -191,7 +205,7 @@ namespace AsignaciondeCursos
 
         internal bool verificarUsuarioAdmin(Admin_catedratico mAdmin)
         {
-            string BUSCARCORREO = "SELECT * FROM TBL_USUARIOS WHERE CORREO_ELECTRONICO = @Correo WHERE TIPO_USUARIO = 'ADMINISTRADOR';";
+            string BUSCARCORREO = "SELECT * FROM TBL_USUARIOS WHERE CORREO_ELECTRONICO = @Correo AND TIPO_USUARIO = 'ADMINISTRADOR';";
 
             MySqlDataReader mReader;
             MySqlCommand mCommand = new MySqlCommand(BUSCARCORREO, ConexionMySQL.GetConnection());

@@ -9,6 +9,7 @@ namespace AsignaciondeCursos
 {
     public partial class Listado_alumnos : Form
     {
+        public string correo { get; set; }
         private readonly ConexionMySQL ConexionaMySQL;
 
         public Listado_alumnos()
@@ -58,7 +59,7 @@ namespace AsignaciondeCursos
                                 Nombre = reader.GetString("NOMBRE"),
                                 Apellido = reader.GetString("APELLIDO"),
                                 FechaNac = reader.GetDateTime("FECHA_NAC"),
-                                Carne = reader.GetInt32("CARNE"),
+                                Carne = reader.GetString("CARNE"),
                                 CreditosAcumulados = reader.GetInt32("CREDITOS_ACUMULADOS")
                             };
                             estudiantes.Add(estudiante);
@@ -172,6 +173,10 @@ namespace AsignaciondeCursos
 
         private void Btn_regresar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            AyudaAdmin AyudaAdmin = new AyudaAdmin();
+            AyudaAdmin.correo = correo;
+            AyudaAdmin.ShowDialog();
             this.Close();
         }
 
@@ -217,7 +222,7 @@ namespace AsignaciondeCursos
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNac { get; set; }
-        public int Carne { get; set; }
+        public string Carne { get; set; }
         public int CreditosAcumulados { get; set; }
     }
 }

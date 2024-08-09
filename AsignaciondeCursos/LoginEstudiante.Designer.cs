@@ -37,25 +37,28 @@ namespace AsignaciondeCursos
             this.Btn_ingreso = new System.Windows.Forms.Button();
             this.Btn_cambiocontra = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
+            this.Btn_registroEstudiante = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_loginestudiante
             // 
             this.Lbl_loginestudiante.AutoSize = true;
-            this.Lbl_loginestudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_loginestudiante.Location = new System.Drawing.Point(135, 9);
+            this.Lbl_loginestudiante.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_loginestudiante.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_loginestudiante.Location = new System.Drawing.Point(130, 9);
             this.Lbl_loginestudiante.Name = "Lbl_loginestudiante";
-            this.Lbl_loginestudiante.Size = new System.Drawing.Size(241, 24);
+            this.Lbl_loginestudiante.Size = new System.Drawing.Size(261, 23);
             this.Lbl_loginestudiante.TabIndex = 0;
             this.Lbl_loginestudiante.Text = "Inicio de sesión estudiantes";
             // 
             // Lbl_usuario
             // 
             this.Lbl_usuario.AutoSize = true;
-            this.Lbl_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_usuario.Location = new System.Drawing.Point(46, 57);
+            this.Lbl_usuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_usuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_usuario.Location = new System.Drawing.Point(35, 57);
             this.Lbl_usuario.Name = "Lbl_usuario";
-            this.Lbl_usuario.Size = new System.Drawing.Size(126, 16);
+            this.Lbl_usuario.Size = new System.Drawing.Size(137, 16);
             this.Lbl_usuario.TabIndex = 1;
             this.Lbl_usuario.Text = "Nombre de usuario:";
             // 
@@ -72,20 +75,22 @@ namespace AsignaciondeCursos
             this.Txt_contra.Name = "Txt_contra";
             this.Txt_contra.Size = new System.Drawing.Size(213, 20);
             this.Txt_contra.TabIndex = 4;
+            this.Txt_contra.UseSystemPasswordChar = true;
             // 
             // Lbl_contraseña
             // 
             this.Lbl_contraseña.AutoSize = true;
-            this.Lbl_contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_contraseña.Location = new System.Drawing.Point(92, 93);
+            this.Lbl_contraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_contraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_contraseña.Location = new System.Drawing.Point(85, 93);
             this.Lbl_contraseña.Name = "Lbl_contraseña";
-            this.Lbl_contraseña.Size = new System.Drawing.Size(80, 16);
+            this.Lbl_contraseña.Size = new System.Drawing.Size(87, 16);
             this.Lbl_contraseña.TabIndex = 3;
             this.Lbl_contraseña.Text = "Contraseña:";
             // 
             // Btn_ingreso
             // 
-            this.Btn_ingreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ingreso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ingreso.Location = new System.Drawing.Point(160, 143);
             this.Btn_ingreso.Name = "Btn_ingreso";
             this.Btn_ingreso.Size = new System.Drawing.Size(91, 33);
@@ -96,8 +101,8 @@ namespace AsignaciondeCursos
             // 
             // Btn_cambiocontra
             // 
-            this.Btn_cambiocontra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_cambiocontra.Location = new System.Drawing.Point(283, 143);
+            this.Btn_cambiocontra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_cambiocontra.Location = new System.Drawing.Point(373, 134);
             this.Btn_cambiocontra.Name = "Btn_cambiocontra";
             this.Btn_cambiocontra.Size = new System.Drawing.Size(108, 50);
             this.Btn_cambiocontra.TabIndex = 6;
@@ -107,7 +112,7 @@ namespace AsignaciondeCursos
             // 
             // Btn_regresar
             // 
-            this.Btn_regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_regresar.Location = new System.Drawing.Point(21, 143);
             this.Btn_regresar.Name = "Btn_regresar";
             this.Btn_regresar.Size = new System.Drawing.Size(91, 33);
@@ -116,12 +121,24 @@ namespace AsignaciondeCursos
             this.Btn_regresar.UseVisualStyleBackColor = true;
             this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
+            // Btn_registroEstudiante
+            // 
+            this.Btn_registroEstudiante.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_registroEstudiante.Location = new System.Drawing.Point(266, 143);
+            this.Btn_registroEstudiante.Name = "Btn_registroEstudiante";
+            this.Btn_registroEstudiante.Size = new System.Drawing.Size(91, 33);
+            this.Btn_registroEstudiante.TabIndex = 8;
+            this.Btn_registroEstudiante.Text = "Registro";
+            this.Btn_registroEstudiante.UseVisualStyleBackColor = true;
+            this.Btn_registroEstudiante.Click += new System.EventHandler(this.Btn_registroEstudiante_Click);
+            // 
             // LoginEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(493, 216);
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(504, 209);
+            this.Controls.Add(this.Btn_registroEstudiante);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_cambiocontra);
             this.Controls.Add(this.Btn_ingreso);
@@ -147,5 +164,6 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Button Btn_ingreso;
         private System.Windows.Forms.Button Btn_cambiocontra;
         private System.Windows.Forms.Button Btn_regresar;
+        private System.Windows.Forms.Button Btn_registroEstudiante;
     }
 }
