@@ -55,7 +55,21 @@ namespace AsignaciondeCursos
             }
             mReader.Close();
 
-            return rows > 0;
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+
+            command.Parameters.AddWithValue("@Accion", "Inicio de sesion de usuario");
+
+            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
+
+            
+
+            return command.ExecuteNonQuery() > 0;
+
+
         }
 
         internal bool deleteUsuarioEstudiante(Admin_catedratico mAdmin)

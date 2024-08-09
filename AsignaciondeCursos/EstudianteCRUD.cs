@@ -29,7 +29,27 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@ID_Cursos", mEstudiantes.ID_Cursos));
             mCommand.Parameters.Add(new MySqlParameter("@Seccion", mEstudiantes.Seccion));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            bool estudianteAgregado = mCommand.ExecuteNonQuery() > 0;
+
+            if (estudianteAgregado)
+            {
+                // Insertar en TBL_BITACORA después de agregar al estudiante
+                string query = @"
+            INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO, CORREO_ELECTRONICO)
+            VALUES (@Accion, @CorreoElectronico)";
+
+                MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+                string accion = $"Creación de estudiante por el usuario {mEstudiantes.Correo_electronico}";
+                command.Parameters.AddWithValue("@Accion", "Agregar usuario");
+                command.Parameters.AddWithValue("@Nombre", mEstudiantes.Nombre);
+                command.Parameters.AddWithValue("@CorreoElectronico", mEstudiantes.Correo_electronico);
+
+                command.ExecuteNonQuery();
+            }
+
+            return estudianteAgregado;
+
+
         }
 
         internal bool agregarUsuarioEstudiante(Estudiantes mEstudiantes)
@@ -41,7 +61,28 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@Correo_electronico", mEstudiantes.Correo_electronico));
             mCommand.Parameters.Add(new MySqlParameter("@Carne", mEstudiantes.Carne));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            bool usuarioAgregado = mCommand.ExecuteNonQuery() > 0;
+
+            if (usuarioAgregado)
+            {
+                // Insertar en TBL_BITACORA después de agregar al usuario estudiante
+                string query = @"
+            INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO, CORREO_ELECTRONICO)
+            VALUES (@Accion, @CorreoElectronico)";
+
+                MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+                string accion = $"Creación de usuario estudiante por el usuario {mEstudiantes.Correo_electronico}";
+                command.Parameters.AddWithValue("@Accion", "Agregar usuario estudiantes");
+                command.Parameters.AddWithValue("@Nombre_usuario", mEstudiantes.Nombre_usuario);
+                command.Parameters.AddWithValue("@CorreoElectronico", mEstudiantes.Correo_electronico);
+
+                command.ExecuteNonQuery();
+            }
+
+            return usuarioAgregado;
+
+
+
         }
     }
 }

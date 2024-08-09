@@ -139,6 +139,7 @@
     <Compile Include="AyudaAdmin.Designer.cs">
       <DependentUpon>AyudaAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BitacoraHelper.cs" />
     <Compile Include="Boleta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +188,12 @@
     </Compile>
     <Compile Include="EstudianteCRUD.cs" />
     <Compile Include="Estudiantes.cs" />
+    <Compile Include="Bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora.Designer.cs">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hash.cs" />
     <Compile Include="InicioSesión.cs">
       <SubType>Form</SubType>
@@ -261,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AyudaAdmin.resx">
       <DependentUpon>AyudaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Boleta.resx">
       <DependentUpon>Boleta.cs</DependentUpon>
