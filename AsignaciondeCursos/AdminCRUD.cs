@@ -153,41 +153,6 @@ namespace AsignaciondeCursos
             return rows > 0;
         }
 
-        internal bool agregarUsuarioCatedratico(Admin_catedratico mAdmin)
-        {
-            string SELECT = "SELECT MAX(ID_CATEDRATICO) FROM TBL_CATEDRATICO;";
-            string INSERT_B = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, ID_CATEDRATICO)" +
-                "values (@Nombre, @Contra, @Correo, 'CATEDRATICO', @Idcatedratico);";
-
-            MySqlCommand mCommand = new MySqlCommand(SELECT, ConexionMySQL.GetConnection());
-            object resultado = mCommand.ExecuteScalar();
-
-            if (resultado == null || resultado == DBNull.Value)
-            {
-                throw new Exception("No se pudo obtener el ID de catedrático.");
-            }
-
-            int ID_catedratico = Convert.ToInt32(resultado);
-
-            MySqlCommand mCommand2 = new MySqlCommand(INSERT_B, ConexionMySQL.GetConnection());
-
-            mCommand2.Parameters.Add(new MySqlParameter("@Nombre", mAdmin.Nombre_usuario));
-            mCommand2.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mAdmin.Contraseña)));
-            mCommand2.Parameters.Add(new MySqlParameter("@Correo", mAdmin.Correo_electronico));
-            mCommand2.Parameters.Add(new MySqlParameter("@Idcatedratico", ID_catedratico));
-
-            string query = @"
-                    INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO, CORREO_ELECTRONICO)
-                    VALUES (@Accion, @NombreUsuario, @CorreoElectronico)";
-
-            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
-            command.Parameters.AddWithValue("@Accion", "Usuario de catedrático agregado");
-            mCommand2.Parameters.AddWithValue("@NombreUsuario", mAdmin.Nombre_usuario);
-            command.Parameters.AddWithValue("@CorreoElectronico", mAdmin.Correo_electronico);
-
-            return mCommand2.ExecuteNonQuery() > 0 && command.ExecuteNonQuery() > 0;
-        }
-
         internal bool agregarCatedratico(RegistroCatedratico.Catedratico mCatedratico)
         {
             string INSERT = "INSERT INTO TBL_CATEDRATICO (NOMBRE, APELLIDO, FECHA_NAC, CARNE, CORREO_ELECTRONICO, TELEFONO, ID_CURSOS, ID_CARRERA)" +
@@ -204,7 +169,41 @@ namespace AsignaciondeCursos
             mCommand.Parameters.Add(new MySqlParameter("@IDCurso", mCatedratico.idCurso));
             mCommand.Parameters.Add(new MySqlParameter("@IDCarrera", mCatedratico.idCarrera));
 
-            return mCommand.ExecuteNonQuery() > 0;
+            int execute1 = mCommand.ExecuteNonQuery();
+
+            string SELECT = "SELECT MAX(ID_CATEDRATICO) FROM TBL_CATEDRATICO;";
+            string INSERT_B = "INSERT INTO TBL_USUARIOS (NOMBRE_USUARIO, CONTRASEÑA, CORREO_ELECTRONICO, TIPO_USUARIO, ID_CATEDRATICO)" +
+                "values (@Nombre, @Contra, @Correo, 'CATEDRATICO', @Idcatedratico);";
+
+            MySqlCommand mCommand2 = new MySqlCommand(SELECT, ConexionMySQL.GetConnection());
+            object resultado = mCommand2.ExecuteScalar();
+
+            if (resultado == null || resultado == DBNull.Value)
+            {
+                throw new Exception("No se pudo obtener el ID de catedrático.");
+            }
+
+            int ID_catedratico = Convert.ToInt32(resultado);
+
+            MySqlCommand mCommand3 = new MySqlCommand(INSERT_B, ConexionMySQL.GetConnection());
+
+            mCommand3.Parameters.Add(new MySqlParameter("@Nombre", mCatedratico.Nombre_usuario));
+            mCommand3.Parameters.Add(new MySqlParameter("@Contra", Hash.HashString(mCatedratico.Contraseña)));
+            mCommand3.Parameters.Add(new MySqlParameter("@Correo", mCatedratico.Correo_electronico));
+            mCommand3.Parameters.Add(new MySqlParameter("@Idcatedratico", ID_catedratico));
+
+            int execute2 = mCommand3.ExecuteNonQuery();
+
+            string query = @"
+                    INSERT INTO TBL_BITACORA (ACCION, NOMBRE_USUARIO, CORREO_ELECTRONICO)
+                    VALUES (@Accion, @NombreUsuario, @CorreoElectronico)";
+
+            MySqlCommand command = new MySqlCommand(query, ConexionMySQL.GetConnection());
+            command.Parameters.AddWithValue("@Accion", "Usuario de catedrático agregado");
+            command.Parameters.AddWithValue("@NombreUsuario", mCatedratico.Nombre_usuario);
+            command.Parameters.AddWithValue("@CorreoElectronico", mCatedratico.Correo_electronico);
+
+            return execute1 > 0 && execute2 > 0 && command.ExecuteNonQuery() > 0;
         }
 
         internal bool buscarCorreoAdmin(Admin_catedratico mAdmin)

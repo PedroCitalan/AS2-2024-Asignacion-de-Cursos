@@ -42,7 +42,7 @@ namespace AsignaciondeCursos
         FROM 
             TBL_CURSOS c
         INNER JOIN 
-            TBL_NOTAS n ON c.ID_CURSOS = n.ID_CURSO
+            TBL_NOTAS n ON c.ID_CURSOS = n.ID_CURSOS
         INNER JOIN 
             TBL_ESTUDIANTE e ON n.ID_ESTUDIANTE = e.ID_ESTUDIANTE
         WHERE 

@@ -92,7 +92,7 @@ namespace AsignaciondeCursos
                 string checkQuery = @"
                     SELECT COUNT(*) FROM TBL_NOTAS 
                     WHERE ID_ESTUDIANTE = (SELECT ID_ESTUDIANTE FROM TBL_ESTUDIANTE WHERE CARNE = @Carnet) 
-                    AND ID_CURSO = @CursoId";
+                    AND ID_CURSOS = @CursoId";
 
                 using (MySqlCommand checkCommand = new MySqlCommand(checkQuery, connection))
                 {
@@ -109,7 +109,7 @@ namespace AsignaciondeCursos
 
                 // Insertar la nota
                 string query = @"
-                    INSERT INTO TBL_NOTAS (ID_ESTUDIANTE, ID_CURSO, NOTA, FECHA_REGISTRO)
+                    INSERT INTO TBL_NOTAS (ID_ESTUDIANTE, ID_CURSOS, NOTA, FECHA_REGISTRO)
                     VALUES ((SELECT ID_ESTUDIANTE FROM TBL_ESTUDIANTE WHERE CARNE = @Carnet), @CursoId, @Nota, NOW())";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
@@ -151,7 +151,7 @@ namespace AsignaciondeCursos
                     SELECT E.NOMBRE, E.APELLIDO, C.NOMBRE_C, C.SALON, C.SECCION, N.NOTA
                     FROM TBL_ESTUDIANTE E
                     JOIN TBL_NOTAS N ON E.ID_ESTUDIANTE = N.ID_ESTUDIANTE
-                    JOIN TBL_CURSOS C ON N.ID_CURSO = C.ID_CURSOS
+                    JOIN TBL_CURSOS C ON N.ID_CURSOS = C.ID_CURSOS
                     WHERE E.CARNE = @Carnet";
 
                 using (MySqlCommand command = new MySqlCommand(query, connection))
@@ -209,7 +209,7 @@ namespace AsignaciondeCursos
                 string checkQuery = @"
             SELECT COUNT(*) FROM TBL_NOTAS 
             WHERE ID_ESTUDIANTE = (SELECT ID_ESTUDIANTE FROM TBL_ESTUDIANTE WHERE CARNE = @Carnet) 
-            AND ID_CURSO = @CursoId";
+            AND ID_CURSOS = @CursoId";
 
                 using (MySqlCommand checkCommand = new MySqlCommand(checkQuery, connection))
                 {
@@ -229,7 +229,7 @@ namespace AsignaciondeCursos
             UPDATE TBL_NOTAS
             SET NOTA = @Nota
             WHERE ID_ESTUDIANTE = (SELECT ID_ESTUDIANTE FROM TBL_ESTUDIANTE WHERE CARNE = @Carnet) 
-            AND ID_CURSO = @CursoId";
+            AND ID_CURSOS = @CursoId";
 
                 using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection))
                 {

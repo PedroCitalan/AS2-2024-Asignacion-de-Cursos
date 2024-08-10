@@ -15,13 +15,11 @@ namespace AsignaciondeCursos
     {
         public string correo { get; set; }
         private Catedratico mCatedratico;
-        private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
         public RegistroCatedratico()
         {
             InitializeComponent();
             mAdminCRUD = new AdminCRUD();
-            mAdmin = new Admin_catedratico();
             mCatedratico = new Catedratico();
         }
 
@@ -56,11 +54,11 @@ namespace AsignaciondeCursos
                 {
                     obtenerDatosCatedratico();
                     obtenerDatosUsuarioCatedratico();
-                    if (mAdmin.Contraseña != passwordconfirm)
+                    if (mCatedratico.Contraseña != passwordconfirm)
                     {
                         MessageBox.Show("Las contraseñas no coinciden.", "Error de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    else if (mAdminCRUD.agregarCatedratico(mCatedratico) && mAdminCRUD.agregarUsuarioCatedratico(mAdmin))
+                    else if (mAdminCRUD.agregarCatedratico(mCatedratico))
                     {
                         MessageBox.Show("Usuario registrado exitosamente.", "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Txt_nombre.Clear();
@@ -102,9 +100,8 @@ namespace AsignaciondeCursos
 
         private void obtenerDatosUsuarioCatedratico()
         {
-            mAdmin.Nombre_usuario = Txt_username.Text.Trim();
-            mAdmin.Contraseña = Txt_contra.Text.Trim();
-            mAdmin.Correo_electronico = Txt_correo.Text.Trim();
+            mCatedratico.Nombre_usuario = Txt_username.Text.Trim();
+            mCatedratico.Contraseña = Txt_contra.Text.Trim();
         }
 
         private void Txt_telefono_TextChanged(object sender, EventArgs e)
@@ -149,6 +146,8 @@ namespace AsignaciondeCursos
             public int Telefono { get; set; }
             public int idCurso { get; set; }
             public int idCarrera { get; set; }
+            public string Nombre_usuario { get; set; }
+            public string Contraseña { get; set; }
         }
     }
 }
