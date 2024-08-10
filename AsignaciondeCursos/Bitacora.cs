@@ -32,7 +32,7 @@ namespace AsignaciondeCursos
                     {
                         DataTable dataTable = new DataTable();
                         adapter.Fill(dataTable);
-                        Data_bitacora.DataSource = dataTable;
+                        Dgv_bitacora.DataSource = dataTable;
                     }
                 }
             }
@@ -46,7 +46,7 @@ namespace AsignaciondeCursos
             }
         }
 
-        private void btn_regresar_Click(object sender, EventArgs e)
+        private void Btn_regresar_Click(object sender, EventArgs e)
         {
             this.Hide();
             AyudaAdmin AyudaAdmin = new AyudaAdmin();
@@ -55,7 +55,7 @@ namespace AsignaciondeCursos
             this.Close();
         }
 
-        private void btn_actualizar_Click(object sender, EventArgs e)
+        private void Btn_actualizar_Click(object sender, EventArgs e)
         {
             CargarBitacora();
         }

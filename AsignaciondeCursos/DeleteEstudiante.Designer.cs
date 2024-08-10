@@ -31,7 +31,7 @@ namespace AsignaciondeCursos
         {
             this.Btn_regresar = new System.Windows.Forms.Button();
             this.Btn_buscar = new System.Windows.Forms.Button();
-            this.Lbl_loginadmin = new System.Windows.Forms.Label();
+            this.Lbl_eliminarest = new System.Windows.Forms.Label();
             this.Lbl_correo = new System.Windows.Forms.Label();
             this.Txt_correo = new System.Windows.Forms.TextBox();
             this.Txt_carne = new System.Windows.Forms.TextBox();
@@ -60,16 +60,16 @@ namespace AsignaciondeCursos
             this.Btn_buscar.UseVisualStyleBackColor = true;
             this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
             // 
-            // Lbl_loginadmin
+            // Lbl_eliminarest
             // 
-            this.Lbl_loginadmin.AutoSize = true;
-            this.Lbl_loginadmin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_loginadmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_loginadmin.Location = new System.Drawing.Point(142, 22);
-            this.Lbl_loginadmin.Name = "Lbl_loginadmin";
-            this.Lbl_loginadmin.Size = new System.Drawing.Size(286, 23);
-            this.Lbl_loginadmin.TabIndex = 39;
-            this.Lbl_loginadmin.Text = "Eliminar usuario de estudiante";
+            this.Lbl_eliminarest.AutoSize = true;
+            this.Lbl_eliminarest.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_eliminarest.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_eliminarest.Location = new System.Drawing.Point(142, 22);
+            this.Lbl_eliminarest.Name = "Lbl_eliminarest";
+            this.Lbl_eliminarest.Size = new System.Drawing.Size(286, 23);
+            this.Lbl_eliminarest.TabIndex = 39;
+            this.Lbl_eliminarest.Text = "Eliminar usuario de estudiante";
             // 
             // Lbl_correo
             // 
@@ -119,7 +119,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Btn_buscar);
             this.Controls.Add(this.Txt_correo);
             this.Controls.Add(this.Lbl_correo);
-            this.Controls.Add(this.Lbl_loginadmin);
+            this.Controls.Add(this.Lbl_eliminarest);
             this.Name = "DeleteEstudiante";
             this.Text = "Eliminar usuario de estudiante";
             this.ResumeLayout(false);
@@ -131,7 +131,7 @@ namespace AsignaciondeCursos
 
         private System.Windows.Forms.Button Btn_regresar;
         private System.Windows.Forms.Button Btn_buscar;
-        private System.Windows.Forms.Label Lbl_loginadmin;
+        private System.Windows.Forms.Label Lbl_eliminarest;
         private System.Windows.Forms.Label Lbl_correo;
         private System.Windows.Forms.TextBox Txt_correo;
         private System.Windows.Forms.TextBox Txt_carne;

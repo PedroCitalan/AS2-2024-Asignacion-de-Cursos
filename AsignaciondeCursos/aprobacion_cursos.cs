@@ -34,7 +34,7 @@ namespace AsignaciondeCursos
             Btn_cargarNotas.Click += Btn_cargarNotas_Click;
             Btn_buscarcarnet.Click += BtnBuscar_carnet_Click;
             Btn_limpiar.Click += Btn_limpiar_Click;
-            btn_mod.Click += Btn_mod_Click;
+            Btn_mod.Click += Btn_mod_Click;
         }
 
         private void CargarCursos()

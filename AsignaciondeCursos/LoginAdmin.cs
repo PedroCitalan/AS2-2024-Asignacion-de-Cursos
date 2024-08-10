@@ -15,13 +15,11 @@ namespace AsignaciondeCursos
     {
         private Admin_catedratico mAdmin;
         private AdminCRUD mAdminCRUD;
-        private BitacoraHelper Bitacora;
         public LoginAdmin()
         {
             InitializeComponent();
             mAdminCRUD = new AdminCRUD();
             mAdmin = new Admin_catedratico();
-            Bitacora = new BitacoraHelper();
         }
 
         private void Btn_ingreso_Click(object sender, EventArgs e)

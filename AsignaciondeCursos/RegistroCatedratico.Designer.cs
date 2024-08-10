@@ -44,7 +44,7 @@ namespace AsignaciondeCursos
             this.Txt_confirmarcontra = new System.Windows.Forms.TextBox();
             this.Lbl_confirmarcontra = new System.Windows.Forms.Label();
             this.Txt_username = new System.Windows.Forms.TextBox();
-            this.Lbl_username = new System.Windows.Forms.Label();
+            this.Lbl_usuario = new System.Windows.Forms.Label();
             this.Btn_registrar = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
             this.Txt_telefono = new System.Windows.Forms.TextBox();
@@ -195,16 +195,16 @@ namespace AsignaciondeCursos
             this.Txt_username.Size = new System.Drawing.Size(310, 20);
             this.Txt_username.TabIndex = 20;
             // 
-            // Lbl_username
+            // Lbl_usuario
             // 
-            this.Lbl_username.AutoSize = true;
-            this.Lbl_username.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_username.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_username.Location = new System.Drawing.Point(29, 291);
-            this.Lbl_username.Name = "Lbl_username";
-            this.Lbl_username.Size = new System.Drawing.Size(137, 16);
-            this.Lbl_username.TabIndex = 19;
-            this.Lbl_username.Text = "Nombre de usuario:";
+            this.Lbl_usuario.AutoSize = true;
+            this.Lbl_usuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_usuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_usuario.Location = new System.Drawing.Point(29, 291);
+            this.Lbl_usuario.Name = "Lbl_usuario";
+            this.Lbl_usuario.Size = new System.Drawing.Size(137, 16);
+            this.Lbl_usuario.TabIndex = 19;
+            this.Lbl_usuario.Text = "Nombre de usuario:";
             // 
             // Btn_registrar
             // 
@@ -310,7 +310,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_registrar);
             this.Controls.Add(this.Txt_username);
-            this.Controls.Add(this.Lbl_username);
+            this.Controls.Add(this.Lbl_usuario);
             this.Controls.Add(this.Txt_confirmarcontra);
             this.Controls.Add(this.Lbl_confirmarcontra);
             this.Controls.Add(this.Txt_contra);
@@ -349,7 +349,7 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.TextBox Txt_confirmarcontra;
         private System.Windows.Forms.Label Lbl_confirmarcontra;
         private System.Windows.Forms.TextBox Txt_username;
-        private System.Windows.Forms.Label Lbl_username;
+        private System.Windows.Forms.Label Lbl_usuario;
         private System.Windows.Forms.Button Btn_registrar;
         private System.Windows.Forms.Button Btn_regresar;
         private System.Windows.Forms.TextBox Txt_telefono;

@@ -24,10 +24,10 @@ namespace AsignaciondeCursos
             this.ver_curso = new System.Windows.Forms.Label();
             this.Btn_buscarcarnet = new System.Windows.Forms.Button();
             this.Nocarne = new System.Windows.Forms.Label();
-            this.aprob_curso = new System.Windows.Forms.Label();
+            this.Lbl_aprobcurso = new System.Windows.Forms.Label();
             this.Dgv_notas = new System.Windows.Forms.DataGridView();
             this.Btn_limpiar = new System.Windows.Forms.Button();
-            this.btn_mod = new System.Windows.Forms.Button();
+            this.Btn_mod = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_notas)).BeginInit();
             this.SuspendLayout();
@@ -35,7 +35,7 @@ namespace AsignaciondeCursos
             // Txt_carnet
             // 
             this.Txt_carnet.Location = new System.Drawing.Point(145, 77);
-            this.Txt_carnet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_carnet.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_carnet.Name = "Txt_carnet";
             this.Txt_carnet.Size = new System.Drawing.Size(117, 20);
             this.Txt_carnet.TabIndex = 0;
@@ -44,7 +44,7 @@ namespace AsignaciondeCursos
             // 
             this.Btn_cargarNotas.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_cargarNotas.Location = new System.Drawing.Point(401, 117);
-            this.Btn_cargarNotas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_cargarNotas.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_cargarNotas.Name = "Btn_cargarNotas";
             this.Btn_cargarNotas.Size = new System.Drawing.Size(78, 34);
             this.Btn_cargarNotas.TabIndex = 6;
@@ -54,7 +54,7 @@ namespace AsignaciondeCursos
             // Txt_nota
             // 
             this.Txt_nota.Location = new System.Drawing.Point(266, 125);
-            this.Txt_nota.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Txt_nota.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_nota.Name = "Txt_nota";
             this.Txt_nota.Size = new System.Drawing.Size(117, 20);
             this.Txt_nota.TabIndex = 7;
@@ -75,7 +75,7 @@ namespace AsignaciondeCursos
             // 
             this.Cbo_cursos.FormattingEnabled = true;
             this.Cbo_cursos.Location = new System.Drawing.Point(74, 125);
-            this.Cbo_cursos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Cbo_cursos.Margin = new System.Windows.Forms.Padding(2);
             this.Cbo_cursos.Name = "Cbo_cursos";
             this.Cbo_cursos.Size = new System.Drawing.Size(82, 21);
             this.Cbo_cursos.TabIndex = 9;
@@ -96,7 +96,7 @@ namespace AsignaciondeCursos
             // 
             this.Btn_buscarcarnet.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_buscarcarnet.Location = new System.Drawing.Point(287, 68);
-            this.Btn_buscarcarnet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_buscarcarnet.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_buscarcarnet.Name = "Btn_buscarcarnet";
             this.Btn_buscarcarnet.Size = new System.Drawing.Size(60, 34);
             this.Btn_buscarcarnet.TabIndex = 14;
@@ -115,24 +115,24 @@ namespace AsignaciondeCursos
             this.Nocarne.TabIndex = 16;
             this.Nocarne.Text = "Carnet Alumno";
             // 
-            // aprob_curso
+            // Lbl_aprobcurso
             // 
-            this.aprob_curso.AutoSize = true;
-            this.aprob_curso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aprob_curso.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.aprob_curso.Location = new System.Drawing.Point(215, 18);
-            this.aprob_curso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.aprob_curso.Name = "aprob_curso";
-            this.aprob_curso.Size = new System.Drawing.Size(181, 19);
-            this.aprob_curso.TabIndex = 17;
-            this.aprob_curso.Text = "Aprobación de Cursos";
+            this.Lbl_aprobcurso.AutoSize = true;
+            this.Lbl_aprobcurso.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_aprobcurso.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_aprobcurso.Location = new System.Drawing.Point(202, 19);
+            this.Lbl_aprobcurso.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_aprobcurso.Name = "Lbl_aprobcurso";
+            this.Lbl_aprobcurso.Size = new System.Drawing.Size(181, 19);
+            this.Lbl_aprobcurso.TabIndex = 17;
+            this.Lbl_aprobcurso.Text = "Aprobación de Cursos";
             // 
             // Dgv_notas
             // 
             this.Dgv_notas.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.Dgv_notas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_notas.Location = new System.Drawing.Point(35, 162);
-            this.Dgv_notas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Dgv_notas.Margin = new System.Windows.Forms.Padding(2);
             this.Dgv_notas.Name = "Dgv_notas";
             this.Dgv_notas.RowHeadersWidth = 51;
             this.Dgv_notas.RowTemplate.Height = 29;
@@ -143,23 +143,23 @@ namespace AsignaciondeCursos
             // 
             this.Btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_limpiar.Location = new System.Drawing.Point(369, 68);
-            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_limpiar.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_limpiar.Name = "Btn_limpiar";
             this.Btn_limpiar.Size = new System.Drawing.Size(60, 34);
             this.Btn_limpiar.TabIndex = 19;
             this.Btn_limpiar.Text = "Limpiar";
             this.Btn_limpiar.UseVisualStyleBackColor = true;
             // 
-            // btn_mod
+            // Btn_mod
             // 
-            this.btn_mod.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mod.Location = new System.Drawing.Point(483, 117);
-            this.btn_mod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_mod.Name = "btn_mod";
-            this.btn_mod.Size = new System.Drawing.Size(97, 34);
-            this.btn_mod.TabIndex = 20;
-            this.btn_mod.Text = "Modificar Nota";
-            this.btn_mod.UseVisualStyleBackColor = true;
+            this.Btn_mod.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_mod.Location = new System.Drawing.Point(483, 117);
+            this.Btn_mod.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_mod.Name = "Btn_mod";
+            this.Btn_mod.Size = new System.Drawing.Size(97, 34);
+            this.Btn_mod.TabIndex = 20;
+            this.Btn_mod.Text = "Modificar Nota";
+            this.Btn_mod.UseVisualStyleBackColor = true;
             // 
             // Btn_regresar
             // 
@@ -180,10 +180,10 @@ namespace AsignaciondeCursos
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(591, 421);
             this.Controls.Add(this.Btn_regresar);
-            this.Controls.Add(this.btn_mod);
+            this.Controls.Add(this.Btn_mod);
             this.Controls.Add(this.Btn_limpiar);
             this.Controls.Add(this.Dgv_notas);
-            this.Controls.Add(this.aprob_curso);
+            this.Controls.Add(this.Lbl_aprobcurso);
             this.Controls.Add(this.Nocarne);
             this.Controls.Add(this.Btn_buscarcarnet);
             this.Controls.Add(this.ver_curso);
@@ -192,7 +192,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Txt_nota);
             this.Controls.Add(this.Btn_cargarNotas);
             this.Controls.Add(this.Txt_carnet);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "aprobacion_cursos";
             this.Text = "Aprobación de Cursos";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_notas)).EndInit();
@@ -209,10 +209,10 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label ver_curso;
         private System.Windows.Forms.Button Btn_buscarcarnet;
         private System.Windows.Forms.Label Nocarne;
-        private System.Windows.Forms.Label aprob_curso;
+        private System.Windows.Forms.Label Lbl_aprobcurso;
         private System.Windows.Forms.DataGridView Dgv_notas;
         private System.Windows.Forms.Button Btn_limpiar;
-        private System.Windows.Forms.Button btn_mod;
+        private System.Windows.Forms.Button Btn_mod;
         private System.Windows.Forms.Button Btn_regresar;
     }
 }

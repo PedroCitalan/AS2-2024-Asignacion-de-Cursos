@@ -26,10 +26,10 @@ namespace AsignaciondeCursos
             this.Lbl_menuayuda5 = new System.Windows.Forms.Label();
             this.Btn_ayuda4 = new System.Windows.Forms.Button();
             this.Btn_ayuda5 = new System.Windows.Forms.Button();
-            this.AyudaEst1 = new System.Windows.Forms.Button();
-            this.AyudaEst2 = new System.Windows.Forms.Button();
-            this.AyudaEst3 = new System.Windows.Forms.Button();
-            this.AyudaEst4 = new System.Windows.Forms.Button();
+            this.Btn_ayudaEst1 = new System.Windows.Forms.Button();
+            this.Btn_ayudaEst2 = new System.Windows.Forms.Button();
+            this.Btn_ayudaEst3 = new System.Windows.Forms.Button();
+            this.Btn_ayudaEst4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_menuayuda
@@ -142,49 +142,49 @@ namespace AsignaciondeCursos
             this.Btn_ayuda5.UseVisualStyleBackColor = true;
             this.Btn_ayuda5.Click += new System.EventHandler(this.Btn_ayuda5_Click);
             // 
-            // AyudaEst1
+            // Btn_ayudaEst1
             // 
-            this.AyudaEst1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaEst1.Location = new System.Drawing.Point(180, 89);
-            this.AyudaEst1.Name = "AyudaEst1";
-            this.AyudaEst1.Size = new System.Drawing.Size(75, 23);
-            this.AyudaEst1.TabIndex = 20;
-            this.AyudaEst1.Text = "Ayuda 1";
-            this.AyudaEst1.UseVisualStyleBackColor = true;
-            this.AyudaEst1.Click += new System.EventHandler(this.AyudaEst1_Click);
+            this.Btn_ayudaEst1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaEst1.Location = new System.Drawing.Point(180, 89);
+            this.Btn_ayudaEst1.Name = "Btn_ayudaEst1";
+            this.Btn_ayudaEst1.Size = new System.Drawing.Size(75, 23);
+            this.Btn_ayudaEst1.TabIndex = 20;
+            this.Btn_ayudaEst1.Text = "Ayuda 1";
+            this.Btn_ayudaEst1.UseVisualStyleBackColor = true;
+            this.Btn_ayudaEst1.Click += new System.EventHandler(this.AyudaEst1_Click);
             // 
-            // AyudaEst2
+            // Btn_ayudaEst2
             // 
-            this.AyudaEst2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaEst2.Location = new System.Drawing.Point(467, 89);
-            this.AyudaEst2.Name = "AyudaEst2";
-            this.AyudaEst2.Size = new System.Drawing.Size(75, 23);
-            this.AyudaEst2.TabIndex = 21;
-            this.AyudaEst2.Text = "Ayuda 2";
-            this.AyudaEst2.UseVisualStyleBackColor = true;
-            this.AyudaEst2.Click += new System.EventHandler(this.AyudaEst2_Click);
+            this.Btn_ayudaEst2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaEst2.Location = new System.Drawing.Point(467, 89);
+            this.Btn_ayudaEst2.Name = "Btn_ayudaEst2";
+            this.Btn_ayudaEst2.Size = new System.Drawing.Size(75, 23);
+            this.Btn_ayudaEst2.TabIndex = 21;
+            this.Btn_ayudaEst2.Text = "Ayuda 2";
+            this.Btn_ayudaEst2.UseVisualStyleBackColor = true;
+            this.Btn_ayudaEst2.Click += new System.EventHandler(this.AyudaEst2_Click);
             // 
-            // AyudaEst3
+            // Btn_ayudaEst3
             // 
-            this.AyudaEst3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaEst3.Location = new System.Drawing.Point(201, 176);
-            this.AyudaEst3.Name = "AyudaEst3";
-            this.AyudaEst3.Size = new System.Drawing.Size(75, 23);
-            this.AyudaEst3.TabIndex = 22;
-            this.AyudaEst3.Text = "Ayuda 3";
-            this.AyudaEst3.UseVisualStyleBackColor = true;
-            this.AyudaEst3.Click += new System.EventHandler(this.AyudaEst3_Click);
+            this.Btn_ayudaEst3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaEst3.Location = new System.Drawing.Point(201, 176);
+            this.Btn_ayudaEst3.Name = "Btn_ayudaEst3";
+            this.Btn_ayudaEst3.Size = new System.Drawing.Size(75, 23);
+            this.Btn_ayudaEst3.TabIndex = 22;
+            this.Btn_ayudaEst3.Text = "Ayuda 3";
+            this.Btn_ayudaEst3.UseVisualStyleBackColor = true;
+            this.Btn_ayudaEst3.Click += new System.EventHandler(this.AyudaEst3_Click);
             // 
-            // AyudaEst4
+            // Btn_ayudaEst4
             // 
-            this.AyudaEst4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaEst4.Location = new System.Drawing.Point(494, 176);
-            this.AyudaEst4.Name = "AyudaEst4";
-            this.AyudaEst4.Size = new System.Drawing.Size(75, 23);
-            this.AyudaEst4.TabIndex = 23;
-            this.AyudaEst4.Text = "Ayuda 4";
-            this.AyudaEst4.UseVisualStyleBackColor = true;
-            this.AyudaEst4.Click += new System.EventHandler(this.AyudaEst4_Click);
+            this.Btn_ayudaEst4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaEst4.Location = new System.Drawing.Point(494, 176);
+            this.Btn_ayudaEst4.Name = "Btn_ayudaEst4";
+            this.Btn_ayudaEst4.Size = new System.Drawing.Size(75, 23);
+            this.Btn_ayudaEst4.TabIndex = 23;
+            this.Btn_ayudaEst4.Text = "Ayuda 4";
+            this.Btn_ayudaEst4.UseVisualStyleBackColor = true;
+            this.Btn_ayudaEst4.Click += new System.EventHandler(this.AyudaEst4_Click);
             // 
             // Ayuda
             // 
@@ -192,10 +192,10 @@ namespace AsignaciondeCursos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(600, 300);
-            this.Controls.Add(this.AyudaEst4);
-            this.Controls.Add(this.AyudaEst3);
-            this.Controls.Add(this.AyudaEst2);
-            this.Controls.Add(this.AyudaEst1);
+            this.Controls.Add(this.Btn_ayudaEst4);
+            this.Controls.Add(this.Btn_ayudaEst3);
+            this.Controls.Add(this.Btn_ayudaEst2);
+            this.Controls.Add(this.Btn_ayudaEst1);
             this.Controls.Add(this.Btn_ayuda5);
             this.Controls.Add(this.Lbl_menuayuda5);
             this.Controls.Add(this.Btn_ayuda4);
@@ -223,9 +223,9 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_menuayuda5;
         private System.Windows.Forms.Button Btn_ayuda4;
         private System.Windows.Forms.Button Btn_ayuda5;
-        private System.Windows.Forms.Button AyudaEst1;
-        private System.Windows.Forms.Button AyudaEst2;
-        private System.Windows.Forms.Button AyudaEst3;
-        private System.Windows.Forms.Button AyudaEst4;
+        private System.Windows.Forms.Button Btn_ayudaEst1;
+        private System.Windows.Forms.Button Btn_ayudaEst2;
+        private System.Windows.Forms.Button Btn_ayudaEst3;
+        private System.Windows.Forms.Button Btn_ayudaEst4;
     }
 }

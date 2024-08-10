@@ -62,7 +62,7 @@ namespace AsignaciondeCursos
                     else
                     {
                         MessageBox.Show("Correo electronico encontrado");
-                        Lbl_contraseña.Visible = true;
+                        Lbl_contra.Visible = true;
                         Lbl_confirmarcontra.Visible = true;
                         Txt_contra.Visible = true;
                         Txt_confirmarcontra.Visible = true;

@@ -8,7 +8,7 @@ namespace AsignaciondeCursos
 {
     class Conexion
     {
-        protected string server = "localhost";
+        protected string server = "192.168.1.250";
         protected string database = "asignacion";
         protected string user = "usuario1";
         protected string password = "123456";

@@ -34,23 +34,23 @@ namespace AsignaciondeCursos
             this.Btn_generar = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
             this.Cbo_semestre = new System.Windows.Forms.ComboBox();
-            this.txtNombrePago = new System.Windows.Forms.TextBox();
-            this.LblNombrePago = new System.Windows.Forms.Label();
-            this.LblMonto = new System.Windows.Forms.Label();
-            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.Txt_NombrePago = new System.Windows.Forms.TextBox();
+            this.Lbl_NombrePago = new System.Windows.Forms.Label();
+            this.Lbl_Monto = new System.Windows.Forms.Label();
+            this.Txt_Monto = new System.Windows.Forms.TextBox();
             this.Txt_carnetCer1 = new System.Windows.Forms.TextBox();
-            this.LblCarne = new System.Windows.Forms.Label();
-            this.LblNombreEstudiante = new System.Windows.Forms.Label();
-            this.txtNombreEstudiante = new System.Windows.Forms.TextBox();
-            this.txtApellidoEstudiante = new System.Windows.Forms.TextBox();
-            this.LblApellidoEstudiante = new System.Windows.Forms.Label();
-            this.Lbl_ID_boleta = new System.Windows.Forms.Label();
+            this.Lbl_Carne = new System.Windows.Forms.Label();
+            this.Lbl_NombreEstudiante = new System.Windows.Forms.Label();
+            this.Txt_NombreEstudiante = new System.Windows.Forms.TextBox();
+            this.Txt_ApellidoEstudiante = new System.Windows.Forms.TextBox();
+            this.Lbl_ApellidoEstudiante = new System.Windows.Forms.Label();
+            this.Lbl_idboleta = new System.Windows.Forms.Label();
             this.LblNoBoleta = new System.Windows.Forms.Label();
-            this.LblCodigoCarrera = new System.Windows.Forms.Label();
-            this.txtCodigoCarrera = new System.Windows.Forms.TextBox();
-            this.LblIDFacultad = new System.Windows.Forms.Label();
-            this.txtIDFacultad = new System.Windows.Forms.TextBox();
-            this.LblFecha = new System.Windows.Forms.Label();
+            this.Lbl_CodigoCarrera = new System.Windows.Forms.Label();
+            this.Txt_CodigoCarrera = new System.Windows.Forms.TextBox();
+            this.Lbl_idfacultad = new System.Windows.Forms.Label();
+            this.Txt_IDFacultad = new System.Windows.Forms.TextBox();
+            this.Lbl_fecha = new System.Windows.Forms.Label();
             this.Cbo_anio = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -70,7 +70,7 @@ namespace AsignaciondeCursos
             this.Lbl_semestre.AutoSize = true;
             this.Lbl_semestre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_semestre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_semestre.Location = new System.Drawing.Point(88, 540);
+            this.Lbl_semestre.Location = new System.Drawing.Point(89, 531);
             this.Lbl_semestre.Name = "Lbl_semestre";
             this.Lbl_semestre.Size = new System.Drawing.Size(79, 18);
             this.Lbl_semestre.TabIndex = 5;
@@ -113,111 +113,111 @@ namespace AsignaciondeCursos
             "8",
             "9",
             "10"});
-            this.Cbo_semestre.Location = new System.Drawing.Point(91, 577);
+            this.Cbo_semestre.Location = new System.Drawing.Point(91, 562);
             this.Cbo_semestre.Name = "Cbo_semestre";
             this.Cbo_semestre.Size = new System.Drawing.Size(121, 21);
             this.Cbo_semestre.TabIndex = 9;
             // 
-            // txtNombrePago
+            // Txt_NombrePago
             // 
-            this.txtNombrePago.Location = new System.Drawing.Point(91, 134);
-            this.txtNombrePago.Name = "txtNombrePago";
-            this.txtNombrePago.Size = new System.Drawing.Size(100, 20);
-            this.txtNombrePago.TabIndex = 11;
+            this.Txt_NombrePago.Location = new System.Drawing.Point(92, 119);
+            this.Txt_NombrePago.Name = "Txt_NombrePago";
+            this.Txt_NombrePago.Size = new System.Drawing.Size(100, 20);
+            this.Txt_NombrePago.TabIndex = 11;
             // 
-            // LblNombrePago
+            // Lbl_NombrePago
             // 
-            this.LblNombrePago.AutoSize = true;
-            this.LblNombrePago.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombrePago.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblNombrePago.Location = new System.Drawing.Point(88, 98);
-            this.LblNombrePago.Name = "LblNombrePago";
-            this.LblNombrePago.Size = new System.Drawing.Size(136, 18);
-            this.LblNombrePago.TabIndex = 12;
-            this.LblNombrePago.Text = "Nombre de pago";
+            this.Lbl_NombrePago.AutoSize = true;
+            this.Lbl_NombrePago.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_NombrePago.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_NombrePago.Location = new System.Drawing.Point(89, 98);
+            this.Lbl_NombrePago.Name = "Lbl_NombrePago";
+            this.Lbl_NombrePago.Size = new System.Drawing.Size(136, 18);
+            this.Lbl_NombrePago.TabIndex = 12;
+            this.Lbl_NombrePago.Text = "Nombre de pago";
             // 
-            // LblMonto
+            // Lbl_Monto
             // 
-            this.LblMonto.AutoSize = true;
-            this.LblMonto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMonto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblMonto.Location = new System.Drawing.Point(89, 164);
-            this.LblMonto.Name = "LblMonto";
-            this.LblMonto.Size = new System.Drawing.Size(55, 18);
-            this.LblMonto.TabIndex = 13;
-            this.LblMonto.Text = "Monto";
+            this.Lbl_Monto.AutoSize = true;
+            this.Lbl_Monto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Monto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_Monto.Location = new System.Drawing.Point(89, 155);
+            this.Lbl_Monto.Name = "Lbl_Monto";
+            this.Lbl_Monto.Size = new System.Drawing.Size(55, 18);
+            this.Lbl_Monto.TabIndex = 13;
+            this.Lbl_Monto.Text = "Monto";
             // 
-            // txtMonto
+            // Txt_Monto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(92, 188);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(100, 20);
-            this.txtMonto.TabIndex = 14;
+            this.Txt_Monto.Location = new System.Drawing.Point(91, 176);
+            this.Txt_Monto.Name = "Txt_Monto";
+            this.Txt_Monto.Size = new System.Drawing.Size(100, 20);
+            this.Txt_Monto.TabIndex = 14;
             // 
             // Txt_carnetCer1
             // 
-            this.Txt_carnetCer1.Location = new System.Drawing.Point(91, 259);
+            this.Txt_carnetCer1.Location = new System.Drawing.Point(91, 242);
             this.Txt_carnetCer1.Name = "Txt_carnetCer1";
             this.Txt_carnetCer1.Size = new System.Drawing.Size(100, 20);
             this.Txt_carnetCer1.TabIndex = 17;
             // 
-            // LblCarne
+            // Lbl_Carne
             // 
-            this.LblCarne.AutoSize = true;
-            this.LblCarne.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCarne.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblCarne.Location = new System.Drawing.Point(88, 232);
-            this.LblCarne.Name = "LblCarne";
-            this.LblCarne.Size = new System.Drawing.Size(54, 18);
-            this.LblCarne.TabIndex = 18;
-            this.LblCarne.Text = "Carne";
+            this.Lbl_Carne.AutoSize = true;
+            this.Lbl_Carne.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Carne.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_Carne.Location = new System.Drawing.Point(88, 221);
+            this.Lbl_Carne.Name = "Lbl_Carne";
+            this.Lbl_Carne.Size = new System.Drawing.Size(54, 18);
+            this.Lbl_Carne.TabIndex = 18;
+            this.Lbl_Carne.Text = "Carne";
             // 
-            // LblNombreEstudiante
+            // Lbl_NombreEstudiante
             // 
-            this.LblNombreEstudiante.AutoSize = true;
-            this.LblNombreEstudiante.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombreEstudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblNombreEstudiante.Location = new System.Drawing.Point(88, 299);
-            this.LblNombreEstudiante.Name = "LblNombreEstudiante";
-            this.LblNombreEstudiante.Size = new System.Drawing.Size(146, 18);
-            this.LblNombreEstudiante.TabIndex = 19;
-            this.LblNombreEstudiante.Text = "Nombre Estudiante";
+            this.Lbl_NombreEstudiante.AutoSize = true;
+            this.Lbl_NombreEstudiante.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_NombreEstudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_NombreEstudiante.Location = new System.Drawing.Point(88, 285);
+            this.Lbl_NombreEstudiante.Name = "Lbl_NombreEstudiante";
+            this.Lbl_NombreEstudiante.Size = new System.Drawing.Size(146, 18);
+            this.Lbl_NombreEstudiante.TabIndex = 19;
+            this.Lbl_NombreEstudiante.Text = "Nombre Estudiante";
             // 
-            // txtNombreEstudiante
+            // Txt_NombreEstudiante
             // 
-            this.txtNombreEstudiante.Location = new System.Drawing.Point(91, 320);
-            this.txtNombreEstudiante.Name = "txtNombreEstudiante";
-            this.txtNombreEstudiante.Size = new System.Drawing.Size(129, 20);
-            this.txtNombreEstudiante.TabIndex = 20;
+            this.Txt_NombreEstudiante.Location = new System.Drawing.Point(91, 306);
+            this.Txt_NombreEstudiante.Name = "Txt_NombreEstudiante";
+            this.Txt_NombreEstudiante.Size = new System.Drawing.Size(129, 20);
+            this.Txt_NombreEstudiante.TabIndex = 20;
             // 
-            // txtApellidoEstudiante
+            // Txt_ApellidoEstudiante
             // 
-            this.txtApellidoEstudiante.Location = new System.Drawing.Point(91, 383);
-            this.txtApellidoEstudiante.Name = "txtApellidoEstudiante";
-            this.txtApellidoEstudiante.Size = new System.Drawing.Size(129, 20);
-            this.txtApellidoEstudiante.TabIndex = 21;
+            this.Txt_ApellidoEstudiante.Location = new System.Drawing.Point(91, 362);
+            this.Txt_ApellidoEstudiante.Name = "Txt_ApellidoEstudiante";
+            this.Txt_ApellidoEstudiante.Size = new System.Drawing.Size(129, 20);
+            this.Txt_ApellidoEstudiante.TabIndex = 21;
             // 
-            // LblApellidoEstudiante
+            // Lbl_ApellidoEstudiante
             // 
-            this.LblApellidoEstudiante.AutoSize = true;
-            this.LblApellidoEstudiante.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblApellidoEstudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblApellidoEstudiante.Location = new System.Drawing.Point(89, 353);
-            this.LblApellidoEstudiante.Name = "LblApellidoEstudiante";
-            this.LblApellidoEstudiante.Size = new System.Drawing.Size(149, 18);
-            this.LblApellidoEstudiante.TabIndex = 22;
-            this.LblApellidoEstudiante.Text = "Apellido Estudiante";
+            this.Lbl_ApellidoEstudiante.AutoSize = true;
+            this.Lbl_ApellidoEstudiante.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ApellidoEstudiante.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_ApellidoEstudiante.Location = new System.Drawing.Point(88, 341);
+            this.Lbl_ApellidoEstudiante.Name = "Lbl_ApellidoEstudiante";
+            this.Lbl_ApellidoEstudiante.Size = new System.Drawing.Size(149, 18);
+            this.Lbl_ApellidoEstudiante.TabIndex = 22;
+            this.Lbl_ApellidoEstudiante.Text = "Apellido Estudiante";
             // 
-            // Lbl_ID_boleta
+            // Lbl_idboleta
             // 
-            this.Lbl_ID_boleta.AutoSize = true;
-            this.Lbl_ID_boleta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ID_boleta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_ID_boleta.Location = new System.Drawing.Point(88, 52);
-            this.Lbl_ID_boleta.Name = "Lbl_ID_boleta";
-            this.Lbl_ID_boleta.Size = new System.Drawing.Size(84, 18);
-            this.Lbl_ID_boleta.TabIndex = 1;
-            this.Lbl_ID_boleta.Text = "No. Boleta";
+            this.Lbl_idboleta.AutoSize = true;
+            this.Lbl_idboleta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_idboleta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_idboleta.Location = new System.Drawing.Point(88, 52);
+            this.Lbl_idboleta.Name = "Lbl_idboleta";
+            this.Lbl_idboleta.Size = new System.Drawing.Size(84, 18);
+            this.Lbl_idboleta.TabIndex = 1;
+            this.Lbl_idboleta.Text = "No. Boleta";
             // 
             // LblNoBoleta
             // 
@@ -230,52 +230,52 @@ namespace AsignaciondeCursos
             this.LblNoBoleta.TabIndex = 23;
             this.LblNoBoleta.Text = "No generado";
             // 
-            // LblCodigoCarrera
+            // Lbl_CodigoCarrera
             // 
-            this.LblCodigoCarrera.AutoSize = true;
-            this.LblCodigoCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCodigoCarrera.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblCodigoCarrera.Location = new System.Drawing.Point(89, 416);
-            this.LblCodigoCarrera.Name = "LblCodigoCarrera";
-            this.LblCodigoCarrera.Size = new System.Drawing.Size(125, 18);
-            this.LblCodigoCarrera.TabIndex = 24;
-            this.LblCodigoCarrera.Text = "Codigo Carrera";
+            this.Lbl_CodigoCarrera.AutoSize = true;
+            this.Lbl_CodigoCarrera.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_CodigoCarrera.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_CodigoCarrera.Location = new System.Drawing.Point(88, 404);
+            this.Lbl_CodigoCarrera.Name = "Lbl_CodigoCarrera";
+            this.Lbl_CodigoCarrera.Size = new System.Drawing.Size(125, 18);
+            this.Lbl_CodigoCarrera.TabIndex = 24;
+            this.Lbl_CodigoCarrera.Text = "Codigo Carrera";
             // 
-            // txtCodigoCarrera
+            // Txt_CodigoCarrera
             // 
-            this.txtCodigoCarrera.Location = new System.Drawing.Point(91, 437);
-            this.txtCodigoCarrera.Name = "txtCodigoCarrera";
-            this.txtCodigoCarrera.Size = new System.Drawing.Size(129, 20);
-            this.txtCodigoCarrera.TabIndex = 25;
+            this.Txt_CodigoCarrera.Location = new System.Drawing.Point(91, 425);
+            this.Txt_CodigoCarrera.Name = "Txt_CodigoCarrera";
+            this.Txt_CodigoCarrera.Size = new System.Drawing.Size(129, 20);
+            this.Txt_CodigoCarrera.TabIndex = 25;
             // 
-            // LblIDFacultad
+            // Lbl_idfacultad
             // 
-            this.LblIDFacultad.AutoSize = true;
-            this.LblIDFacultad.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblIDFacultad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblIDFacultad.Location = new System.Drawing.Point(89, 475);
-            this.LblIDFacultad.Name = "LblIDFacultad";
-            this.LblIDFacultad.Size = new System.Drawing.Size(92, 18);
-            this.LblIDFacultad.TabIndex = 26;
-            this.LblIDFacultad.Text = "ID_facultad";
+            this.Lbl_idfacultad.AutoSize = true;
+            this.Lbl_idfacultad.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_idfacultad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_idfacultad.Location = new System.Drawing.Point(89, 463);
+            this.Lbl_idfacultad.Name = "Lbl_idfacultad";
+            this.Lbl_idfacultad.Size = new System.Drawing.Size(92, 18);
+            this.Lbl_idfacultad.TabIndex = 26;
+            this.Lbl_idfacultad.Text = "ID_facultad";
             // 
-            // txtIDFacultad
+            // Txt_IDFacultad
             // 
-            this.txtIDFacultad.Location = new System.Drawing.Point(91, 496);
-            this.txtIDFacultad.Name = "txtIDFacultad";
-            this.txtIDFacultad.Size = new System.Drawing.Size(129, 20);
-            this.txtIDFacultad.TabIndex = 27;
+            this.Txt_IDFacultad.Location = new System.Drawing.Point(91, 484);
+            this.Txt_IDFacultad.Name = "Txt_IDFacultad";
+            this.Txt_IDFacultad.Size = new System.Drawing.Size(129, 20);
+            this.Txt_IDFacultad.TabIndex = 27;
             // 
-            // LblFecha
+            // Lbl_fecha
             // 
-            this.LblFecha.AutoSize = true;
-            this.LblFecha.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblFecha.Location = new System.Drawing.Point(278, 540);
-            this.LblFecha.Name = "LblFecha";
-            this.LblFecha.Size = new System.Drawing.Size(54, 18);
-            this.LblFecha.TabIndex = 28;
-            this.LblFecha.Text = "Fecha";
+            this.Lbl_fecha.AutoSize = true;
+            this.Lbl_fecha.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_fecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_fecha.Location = new System.Drawing.Point(278, 531);
+            this.Lbl_fecha.Name = "Lbl_fecha";
+            this.Lbl_fecha.Size = new System.Drawing.Size(54, 18);
+            this.Lbl_fecha.TabIndex = 28;
+            this.Lbl_fecha.Text = "Fecha";
             // 
             // Cbo_anio
             // 
@@ -286,7 +286,7 @@ namespace AsignaciondeCursos
             "2022-01-01",
             "2023-01-01",
             "2024-01-01"});
-            this.Cbo_anio.Location = new System.Drawing.Point(281, 577);
+            this.Cbo_anio.Location = new System.Drawing.Point(281, 562);
             this.Cbo_anio.Name = "Cbo_anio";
             this.Cbo_anio.Size = new System.Drawing.Size(121, 21);
             this.Cbo_anio.TabIndex = 10;
@@ -297,28 +297,28 @@ namespace AsignaciondeCursos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(635, 616);
-            this.Controls.Add(this.LblFecha);
-            this.Controls.Add(this.txtIDFacultad);
-            this.Controls.Add(this.LblIDFacultad);
-            this.Controls.Add(this.txtCodigoCarrera);
-            this.Controls.Add(this.LblCodigoCarrera);
+            this.Controls.Add(this.Lbl_fecha);
+            this.Controls.Add(this.Txt_IDFacultad);
+            this.Controls.Add(this.Lbl_idfacultad);
+            this.Controls.Add(this.Txt_CodigoCarrera);
+            this.Controls.Add(this.Lbl_CodigoCarrera);
             this.Controls.Add(this.LblNoBoleta);
-            this.Controls.Add(this.LblApellidoEstudiante);
-            this.Controls.Add(this.txtApellidoEstudiante);
-            this.Controls.Add(this.txtNombreEstudiante);
-            this.Controls.Add(this.LblNombreEstudiante);
-            this.Controls.Add(this.LblCarne);
+            this.Controls.Add(this.Lbl_ApellidoEstudiante);
+            this.Controls.Add(this.Txt_ApellidoEstudiante);
+            this.Controls.Add(this.Txt_NombreEstudiante);
+            this.Controls.Add(this.Lbl_NombreEstudiante);
+            this.Controls.Add(this.Lbl_Carne);
             this.Controls.Add(this.Txt_carnetCer1);
-            this.Controls.Add(this.txtMonto);
-            this.Controls.Add(this.LblMonto);
-            this.Controls.Add(this.LblNombrePago);
-            this.Controls.Add(this.txtNombrePago);
+            this.Controls.Add(this.Txt_Monto);
+            this.Controls.Add(this.Lbl_Monto);
+            this.Controls.Add(this.Lbl_NombrePago);
+            this.Controls.Add(this.Txt_NombrePago);
             this.Controls.Add(this.Cbo_anio);
             this.Controls.Add(this.Cbo_semestre);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_generar);
             this.Controls.Add(this.Lbl_semestre);
-            this.Controls.Add(this.Lbl_ID_boleta);
+            this.Controls.Add(this.Lbl_idboleta);
             this.Controls.Add(this.Lbl_generarb);
             this.Name = "Boleta";
             this.Text = "Boleta de inscripción";
@@ -335,23 +335,23 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Button Btn_generar;
         private System.Windows.Forms.Button Btn_regresar;
         private System.Windows.Forms.ComboBox Cbo_semestre;
-        private System.Windows.Forms.TextBox txtNombrePago;
-        private System.Windows.Forms.Label LblNombrePago;
-        private System.Windows.Forms.Label LblMonto;
-        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.TextBox Txt_NombrePago;
+        private System.Windows.Forms.Label Lbl_NombrePago;
+        private System.Windows.Forms.Label Lbl_Monto;
+        private System.Windows.Forms.TextBox Txt_Monto;
         private System.Windows.Forms.TextBox Txt_carnetCer1;
-        private System.Windows.Forms.Label LblCarne;
-        private System.Windows.Forms.Label LblNombreEstudiante;
-        private System.Windows.Forms.TextBox txtNombreEstudiante;
-        private System.Windows.Forms.TextBox txtApellidoEstudiante;
-        private System.Windows.Forms.Label LblApellidoEstudiante;
-        private System.Windows.Forms.Label Lbl_ID_boleta;
+        private System.Windows.Forms.Label Lbl_Carne;
+        private System.Windows.Forms.Label Lbl_NombreEstudiante;
+        private System.Windows.Forms.TextBox Txt_NombreEstudiante;
+        private System.Windows.Forms.TextBox Txt_ApellidoEstudiante;
+        private System.Windows.Forms.Label Lbl_ApellidoEstudiante;
+        private System.Windows.Forms.Label Lbl_idboleta;
         private System.Windows.Forms.Label LblNoBoleta;
-        private System.Windows.Forms.Label LblCodigoCarrera;
-        private System.Windows.Forms.TextBox txtCodigoCarrera;
-        private System.Windows.Forms.Label LblIDFacultad;
-        private System.Windows.Forms.TextBox txtIDFacultad;
-        private System.Windows.Forms.Label LblFecha;
+        private System.Windows.Forms.Label Lbl_CodigoCarrera;
+        private System.Windows.Forms.TextBox Txt_CodigoCarrera;
+        private System.Windows.Forms.Label Lbl_idfacultad;
+        private System.Windows.Forms.TextBox Txt_IDFacultad;
+        private System.Windows.Forms.Label Lbl_fecha;
         private System.Windows.Forms.ComboBox Cbo_anio;
     }
 }

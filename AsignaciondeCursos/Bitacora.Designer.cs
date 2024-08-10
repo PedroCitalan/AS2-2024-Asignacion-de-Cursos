@@ -29,60 +29,60 @@ namespace AsignaciondeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.Data_bitacora = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_actualizar = new System.Windows.Forms.Button();
-            this.btn_regresar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Data_bitacora)).BeginInit();
+            this.Dgv_bitacora = new System.Windows.Forms.DataGridView();
+            this.Lbl_bitacora = new System.Windows.Forms.Label();
+            this.Btn_actualizar = new System.Windows.Forms.Button();
+            this.Btn_regresar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_bitacora)).BeginInit();
             this.SuspendLayout();
             // 
-            // Data_bitacora
+            // Dgv_bitacora
             // 
-            this.Data_bitacora.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Data_bitacora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Data_bitacora.Location = new System.Drawing.Point(1, 82);
-            this.Data_bitacora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Data_bitacora.Name = "Data_bitacora";
-            this.Data_bitacora.RowHeadersWidth = 51;
-            this.Data_bitacora.RowTemplate.Height = 24;
-            this.Data_bitacora.Size = new System.Drawing.Size(598, 283);
-            this.Data_bitacora.TabIndex = 0;
+            this.Dgv_bitacora.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Dgv_bitacora.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_bitacora.Location = new System.Drawing.Point(1, 82);
+            this.Dgv_bitacora.Margin = new System.Windows.Forms.Padding(2);
+            this.Dgv_bitacora.Name = "Dgv_bitacora";
+            this.Dgv_bitacora.RowHeadersWidth = 51;
+            this.Dgv_bitacora.RowTemplate.Height = 24;
+            this.Dgv_bitacora.Size = new System.Drawing.Size(598, 283);
+            this.Dgv_bitacora.TabIndex = 0;
             // 
-            // label1
+            // Lbl_bitacora
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(245, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 26);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bitacora";
+            this.Lbl_bitacora.AutoSize = true;
+            this.Lbl_bitacora.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_bitacora.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_bitacora.Location = new System.Drawing.Point(245, 7);
+            this.Lbl_bitacora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_bitacora.Name = "Lbl_bitacora";
+            this.Lbl_bitacora.Size = new System.Drawing.Size(102, 26);
+            this.Lbl_bitacora.TabIndex = 1;
+            this.Lbl_bitacora.Text = "Bitacora";
             // 
-            // btn_actualizar
+            // Btn_actualizar
             // 
-            this.btn_actualizar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_actualizar.Location = new System.Drawing.Point(501, 51);
-            this.btn_actualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_actualizar.Name = "btn_actualizar";
-            this.btn_actualizar.Size = new System.Drawing.Size(90, 25);
-            this.btn_actualizar.TabIndex = 2;
-            this.btn_actualizar.Text = "Actualizar";
-            this.btn_actualizar.UseVisualStyleBackColor = true;
-            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
+            this.Btn_actualizar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_actualizar.Location = new System.Drawing.Point(501, 51);
+            this.Btn_actualizar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_actualizar.Name = "Btn_actualizar";
+            this.Btn_actualizar.Size = new System.Drawing.Size(90, 25);
+            this.Btn_actualizar.TabIndex = 2;
+            this.Btn_actualizar.Text = "Actualizar";
+            this.Btn_actualizar.UseVisualStyleBackColor = true;
+            this.Btn_actualizar.Click += new System.EventHandler(this.Btn_actualizar_Click);
             // 
-            // btn_regresar
+            // Btn_regresar
             // 
-            this.btn_regresar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_regresar.Location = new System.Drawing.Point(9, 51);
-            this.btn_regresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_regresar.Name = "btn_regresar";
-            this.btn_regresar.Size = new System.Drawing.Size(90, 26);
-            this.btn_regresar.TabIndex = 3;
-            this.btn_regresar.Text = "Regresar";
-            this.btn_regresar.UseVisualStyleBackColor = true;
-            this.btn_regresar.Click += new System.EventHandler(this.btn_regresar_Click);
+            this.Btn_regresar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_regresar.Location = new System.Drawing.Point(9, 51);
+            this.Btn_regresar.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_regresar.Name = "Btn_regresar";
+            this.Btn_regresar.Size = new System.Drawing.Size(90, 26);
+            this.Btn_regresar.TabIndex = 3;
+            this.Btn_regresar.Text = "Regresar";
+            this.Btn_regresar.UseVisualStyleBackColor = true;
+            this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
             // Bitacora
             // 
@@ -90,14 +90,14 @@ namespace AsignaciondeCursos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.btn_regresar);
-            this.Controls.Add(this.btn_actualizar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Data_bitacora);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.Btn_regresar);
+            this.Controls.Add(this.Btn_actualizar);
+            this.Controls.Add(this.Lbl_bitacora);
+            this.Controls.Add(this.Dgv_bitacora);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Bitacora";
             this.Text = "Bitacora";
-            ((System.ComponentModel.ISupportInitialize)(this.Data_bitacora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_bitacora)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,9 +105,9 @@ namespace AsignaciondeCursos
 
         #endregion
 
-        private System.Windows.Forms.DataGridView Data_bitacora;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_actualizar;
-        private System.Windows.Forms.Button btn_regresar;
+        private System.Windows.Forms.DataGridView Dgv_bitacora;
+        private System.Windows.Forms.Label Lbl_bitacora;
+        private System.Windows.Forms.Button Btn_actualizar;
+        private System.Windows.Forms.Button Btn_regresar;
     }
 }

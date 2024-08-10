@@ -30,16 +30,16 @@ namespace AsignaciondeCursos
         private void InitializeComponent()
         {
             this.Lbl_menuayudaAdmin = new System.Windows.Forms.Label();
+            this.Lbl_menuayudaAdmin4 = new System.Windows.Forms.Label();
+            this.Btn_ayudaAdmin4 = new System.Windows.Forms.Button();
             this.Lbl_menuayudaAdmin3 = new System.Windows.Forms.Label();
             this.Btn_ayudaAdmin3 = new System.Windows.Forms.Button();
-            this.Lbl_menuayudaAdmin2 = new System.Windows.Forms.Label();
-            this.Btn_ayudaAdmin2 = new System.Windows.Forms.Button();
             this.Lbl_menuayudaAdmin1 = new System.Windows.Forms.Label();
             this.Btn_ayudaAdmin1 = new System.Windows.Forms.Button();
-            this.Btn_ayudaAdmin4 = new System.Windows.Forms.Button();
-            this.AyudaAdm1 = new System.Windows.Forms.Button();
-            this.AyudaAdm2 = new System.Windows.Forms.Button();
-            this.AyudaAdm3 = new System.Windows.Forms.Button();
+            this.Btn_ayudaAdmin5 = new System.Windows.Forms.Button();
+            this.Btn_ayudaAdm1 = new System.Windows.Forms.Button();
+            this.Btn_ayudaAdm3 = new System.Windows.Forms.Button();
+            this.Btn_ayudaAdm4 = new System.Windows.Forms.Button();
             this.Btn_registrar1 = new System.Windows.Forms.Button();
             this.Btn_registrar2 = new System.Windows.Forms.Button();
             this.Btn_cambiocontra1 = new System.Windows.Forms.Button();
@@ -47,14 +47,14 @@ namespace AsignaciondeCursos
             this.Lbl_registrocatedratico = new System.Windows.Forms.Label();
             this.Tblcontrol_administradorcatedratico = new System.Windows.Forms.TabControl();
             this.tabPage_menuayuda = new System.Windows.Forms.TabPage();
-            this.Menu_aprob = new System.Windows.Forms.Label();
-            this.AyudaAdm4 = new System.Windows.Forms.Button();
-            this.Btn_ayuda4 = new System.Windows.Forms.Button();
+            this.Lbl_menuayudaAdmin2 = new System.Windows.Forms.Label();
+            this.Btn_ayudaAdm2 = new System.Windows.Forms.Button();
+            this.Btn_ayudaAdmin2 = new System.Windows.Forms.Button();
             this.Lbl_cambiocontracatedratico = new System.Windows.Forms.Label();
             this.Btn_cambiocontra2 = new System.Windows.Forms.Button();
             this.tabPage_menuadministrador = new System.Windows.Forms.TabPage();
-            this.btn_bitacora = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Btn_bitacora = new System.Windows.Forms.Button();
+            this.Lbl_bitacora = new System.Windows.Forms.Label();
             this.Lbl_menuaccionadmin = new System.Windows.Forms.Label();
             this.Lbl_eliminarusuarioestudiante = new System.Windows.Forms.Label();
             this.Lbl_eliminarusuariocatedratico = new System.Windows.Forms.Label();
@@ -77,49 +77,49 @@ namespace AsignaciondeCursos
             this.Lbl_menuayudaAdmin.TabIndex = 1;
             this.Lbl_menuayudaAdmin.Text = "Menú de ayuda de personal administrativo/catedrático";
             // 
+            // Lbl_menuayudaAdmin4
+            // 
+            this.Lbl_menuayudaAdmin4.AutoSize = true;
+            this.Lbl_menuayudaAdmin4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayudaAdmin4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_menuayudaAdmin4.Location = new System.Drawing.Point(364, 144);
+            this.Lbl_menuayudaAdmin4.Name = "Lbl_menuayudaAdmin4";
+            this.Lbl_menuayudaAdmin4.Size = new System.Drawing.Size(179, 16);
+            this.Lbl_menuayudaAdmin4.TabIndex = 18;
+            this.Lbl_menuayudaAdmin4.Text = "Menú de listado de cursos";
+            // 
+            // Btn_ayudaAdmin4
+            // 
+            this.Btn_ayudaAdmin4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaAdmin4.Location = new System.Drawing.Point(351, 167);
+            this.Btn_ayudaAdmin4.Name = "Btn_ayudaAdmin4";
+            this.Btn_ayudaAdmin4.Size = new System.Drawing.Size(163, 31);
+            this.Btn_ayudaAdmin4.TabIndex = 17;
+            this.Btn_ayudaAdmin4.Text = "Listado de cursos";
+            this.Btn_ayudaAdmin4.UseVisualStyleBackColor = true;
+            this.Btn_ayudaAdmin4.Click += new System.EventHandler(this.Btn_ayudaAdmin3_Click);
+            // 
             // Lbl_menuayudaAdmin3
             // 
             this.Lbl_menuayudaAdmin3.AutoSize = true;
             this.Lbl_menuayudaAdmin3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_menuayudaAdmin3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_menuayudaAdmin3.Location = new System.Drawing.Point(364, 144);
+            this.Lbl_menuayudaAdmin3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_menuayudaAdmin3.Location = new System.Drawing.Point(62, 144);
             this.Lbl_menuayudaAdmin3.Name = "Lbl_menuayudaAdmin3";
-            this.Lbl_menuayudaAdmin3.Size = new System.Drawing.Size(179, 16);
-            this.Lbl_menuayudaAdmin3.TabIndex = 18;
-            this.Lbl_menuayudaAdmin3.Text = "Menú de listado de cursos";
+            this.Lbl_menuayudaAdmin3.Size = new System.Drawing.Size(220, 16);
+            this.Lbl_menuayudaAdmin3.TabIndex = 16;
+            this.Lbl_menuayudaAdmin3.Text = "Menú de listado de catedráticos";
             // 
             // Btn_ayudaAdmin3
             // 
             this.Btn_ayudaAdmin3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayudaAdmin3.Location = new System.Drawing.Point(351, 167);
+            this.Btn_ayudaAdmin3.Location = new System.Drawing.Point(55, 169);
             this.Btn_ayudaAdmin3.Name = "Btn_ayudaAdmin3";
-            this.Btn_ayudaAdmin3.Size = new System.Drawing.Size(163, 31);
-            this.Btn_ayudaAdmin3.TabIndex = 17;
-            this.Btn_ayudaAdmin3.Text = "Listado de cursos";
+            this.Btn_ayudaAdmin3.Size = new System.Drawing.Size(196, 31);
+            this.Btn_ayudaAdmin3.TabIndex = 15;
+            this.Btn_ayudaAdmin3.Text = "Listado de catedráticos";
             this.Btn_ayudaAdmin3.UseVisualStyleBackColor = true;
-            this.Btn_ayudaAdmin3.Click += new System.EventHandler(this.Btn_ayudaAdmin3_Click);
-            // 
-            // Lbl_menuayudaAdmin2
-            // 
-            this.Lbl_menuayudaAdmin2.AutoSize = true;
-            this.Lbl_menuayudaAdmin2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_menuayudaAdmin2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_menuayudaAdmin2.Location = new System.Drawing.Point(62, 144);
-            this.Lbl_menuayudaAdmin2.Name = "Lbl_menuayudaAdmin2";
-            this.Lbl_menuayudaAdmin2.Size = new System.Drawing.Size(220, 16);
-            this.Lbl_menuayudaAdmin2.TabIndex = 16;
-            this.Lbl_menuayudaAdmin2.Text = "Menú de listado de catedráticos";
-            // 
-            // Btn_ayudaAdmin2
-            // 
-            this.Btn_ayudaAdmin2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayudaAdmin2.Location = new System.Drawing.Point(55, 169);
-            this.Btn_ayudaAdmin2.Name = "Btn_ayudaAdmin2";
-            this.Btn_ayudaAdmin2.Size = new System.Drawing.Size(196, 31);
-            this.Btn_ayudaAdmin2.TabIndex = 15;
-            this.Btn_ayudaAdmin2.Text = "Listado de catedráticos";
-            this.Btn_ayudaAdmin2.UseVisualStyleBackColor = true;
-            this.Btn_ayudaAdmin2.Click += new System.EventHandler(this.Btn_ayudaAdmin2_Click);
+            this.Btn_ayudaAdmin3.Click += new System.EventHandler(this.Btn_ayudaAdmin2_Click);
             // 
             // Lbl_menuayudaAdmin1
             // 
@@ -143,49 +143,49 @@ namespace AsignaciondeCursos
             this.Btn_ayudaAdmin1.UseVisualStyleBackColor = true;
             this.Btn_ayudaAdmin1.Click += new System.EventHandler(this.Btn_ayudaAdmin1_Click);
             // 
-            // Btn_ayudaAdmin4
+            // Btn_ayudaAdmin5
             // 
-            this.Btn_ayudaAdmin4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayudaAdmin4.Location = new System.Drawing.Point(282, 354);
-            this.Btn_ayudaAdmin4.Name = "Btn_ayudaAdmin4";
-            this.Btn_ayudaAdmin4.Size = new System.Drawing.Size(116, 31);
-            this.Btn_ayudaAdmin4.TabIndex = 19;
-            this.Btn_ayudaAdmin4.Text = "Cerrar sesión";
-            this.Btn_ayudaAdmin4.UseVisualStyleBackColor = true;
-            this.Btn_ayudaAdmin4.Click += new System.EventHandler(this.Btn_ayudaAdmin4_Click);
+            this.Btn_ayudaAdmin5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaAdmin5.Location = new System.Drawing.Point(282, 354);
+            this.Btn_ayudaAdmin5.Name = "Btn_ayudaAdmin5";
+            this.Btn_ayudaAdmin5.Size = new System.Drawing.Size(116, 31);
+            this.Btn_ayudaAdmin5.TabIndex = 19;
+            this.Btn_ayudaAdmin5.Text = "Cerrar sesión";
+            this.Btn_ayudaAdmin5.UseVisualStyleBackColor = true;
+            this.Btn_ayudaAdmin5.Click += new System.EventHandler(this.Btn_ayudaAdmin4_Click);
             // 
-            // AyudaAdm1
+            // Btn_ayudaAdm1
             // 
-            this.AyudaAdm1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaAdm1.Location = new System.Drawing.Point(261, 92);
-            this.AyudaAdm1.Name = "AyudaAdm1";
-            this.AyudaAdm1.Size = new System.Drawing.Size(51, 31);
-            this.AyudaAdm1.TabIndex = 22;
-            this.AyudaAdm1.Text = "Ayuda";
-            this.AyudaAdm1.UseVisualStyleBackColor = true;
-            this.AyudaAdm1.Click += new System.EventHandler(this.AyudaAdm1_Click);
+            this.Btn_ayudaAdm1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaAdm1.Location = new System.Drawing.Point(261, 92);
+            this.Btn_ayudaAdm1.Name = "Btn_ayudaAdm1";
+            this.Btn_ayudaAdm1.Size = new System.Drawing.Size(51, 31);
+            this.Btn_ayudaAdm1.TabIndex = 22;
+            this.Btn_ayudaAdm1.Text = "Ayuda";
+            this.Btn_ayudaAdm1.UseVisualStyleBackColor = true;
+            this.Btn_ayudaAdm1.Click += new System.EventHandler(this.AyudaAdm1_Click);
             // 
-            // AyudaAdm2
+            // Btn_ayudaAdm3
             // 
-            this.AyudaAdm2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaAdm2.Location = new System.Drawing.Point(261, 169);
-            this.AyudaAdm2.Name = "AyudaAdm2";
-            this.AyudaAdm2.Size = new System.Drawing.Size(51, 31);
-            this.AyudaAdm2.TabIndex = 23;
-            this.AyudaAdm2.Text = "Ayuda";
-            this.AyudaAdm2.UseVisualStyleBackColor = true;
-            this.AyudaAdm2.Click += new System.EventHandler(this.AyudaAdm2_Click);
+            this.Btn_ayudaAdm3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaAdm3.Location = new System.Drawing.Point(261, 169);
+            this.Btn_ayudaAdm3.Name = "Btn_ayudaAdm3";
+            this.Btn_ayudaAdm3.Size = new System.Drawing.Size(51, 31);
+            this.Btn_ayudaAdm3.TabIndex = 23;
+            this.Btn_ayudaAdm3.Text = "Ayuda";
+            this.Btn_ayudaAdm3.UseVisualStyleBackColor = true;
+            this.Btn_ayudaAdm3.Click += new System.EventHandler(this.AyudaAdm2_Click);
             // 
-            // AyudaAdm3
+            // Btn_ayudaAdm4
             // 
-            this.AyudaAdm3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaAdm3.Location = new System.Drawing.Point(527, 169);
-            this.AyudaAdm3.Name = "AyudaAdm3";
-            this.AyudaAdm3.Size = new System.Drawing.Size(51, 31);
-            this.AyudaAdm3.TabIndex = 24;
-            this.AyudaAdm3.Text = "Ayuda";
-            this.AyudaAdm3.UseVisualStyleBackColor = true;
-            this.AyudaAdm3.Click += new System.EventHandler(this.AyudaAdm3_Click);
+            this.Btn_ayudaAdm4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaAdm4.Location = new System.Drawing.Point(527, 169);
+            this.Btn_ayudaAdm4.Name = "Btn_ayudaAdm4";
+            this.Btn_ayudaAdm4.Size = new System.Drawing.Size(51, 31);
+            this.Btn_ayudaAdm4.TabIndex = 24;
+            this.Btn_ayudaAdm4.Text = "Ayuda";
+            this.Btn_ayudaAdm4.UseVisualStyleBackColor = true;
+            this.Btn_ayudaAdm4.Click += new System.EventHandler(this.AyudaAdm3_Click);
             // 
             // Btn_registrar1
             // 
@@ -255,61 +255,61 @@ namespace AsignaciondeCursos
             // tabPage_menuayuda
             // 
             this.tabPage_menuayuda.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tabPage_menuayuda.Controls.Add(this.Menu_aprob);
-            this.tabPage_menuayuda.Controls.Add(this.AyudaAdm4);
-            this.tabPage_menuayuda.Controls.Add(this.Btn_ayuda4);
+            this.tabPage_menuayuda.Controls.Add(this.Lbl_menuayudaAdmin2);
+            this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdm2);
+            this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdmin2);
             this.tabPage_menuayuda.Controls.Add(this.Lbl_cambiocontracatedratico);
             this.tabPage_menuayuda.Controls.Add(this.Btn_cambiocontra2);
             this.tabPage_menuayuda.Controls.Add(this.Lbl_menuayudaAdmin);
             this.tabPage_menuayuda.Controls.Add(this.Lbl_menuayudaAdmin1);
             this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdmin1);
-            this.tabPage_menuayuda.Controls.Add(this.AyudaAdm1);
+            this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdm1);
+            this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdmin4);
             this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdmin3);
-            this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdmin2);
-            this.tabPage_menuayuda.Controls.Add(this.Lbl_menuayudaAdmin2);
-            this.tabPage_menuayuda.Controls.Add(this.AyudaAdm3);
             this.tabPage_menuayuda.Controls.Add(this.Lbl_menuayudaAdmin3);
-            this.tabPage_menuayuda.Controls.Add(this.AyudaAdm2);
+            this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdm4);
+            this.tabPage_menuayuda.Controls.Add(this.Lbl_menuayudaAdmin4);
+            this.tabPage_menuayuda.Controls.Add(this.Btn_ayudaAdm3);
             this.tabPage_menuayuda.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage_menuayuda.Location = new System.Drawing.Point(4, 22);
             this.tabPage_menuayuda.Name = "tabPage_menuayuda";
-            this.tabPage_menuayuda.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage_menuayuda.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_menuayuda.Size = new System.Drawing.Size(642, 299);
             this.tabPage_menuayuda.TabIndex = 0;
             this.tabPage_menuayuda.Text = "Menú de ayuda";
             // 
-            // Menu_aprob
+            // Lbl_menuayudaAdmin2
             // 
-            this.Menu_aprob.AutoSize = true;
-            this.Menu_aprob.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu_aprob.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Menu_aprob.Location = new System.Drawing.Point(350, 67);
-            this.Menu_aprob.Name = "Menu_aprob";
-            this.Menu_aprob.Size = new System.Drawing.Size(192, 16);
-            this.Menu_aprob.TabIndex = 37;
-            this.Menu_aprob.Text = "Menú Aprobación de cursos";
+            this.Lbl_menuayudaAdmin2.AutoSize = true;
+            this.Lbl_menuayudaAdmin2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_menuayudaAdmin2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_menuayudaAdmin2.Location = new System.Drawing.Point(350, 67);
+            this.Lbl_menuayudaAdmin2.Name = "Lbl_menuayudaAdmin2";
+            this.Lbl_menuayudaAdmin2.Size = new System.Drawing.Size(192, 16);
+            this.Lbl_menuayudaAdmin2.TabIndex = 37;
+            this.Lbl_menuayudaAdmin2.Text = "Menú Aprobación de cursos";
             // 
-            // AyudaAdm4
+            // Btn_ayudaAdm2
             // 
-            this.AyudaAdm4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AyudaAdm4.Location = new System.Drawing.Point(527, 92);
-            this.AyudaAdm4.Name = "AyudaAdm4";
-            this.AyudaAdm4.Size = new System.Drawing.Size(51, 31);
-            this.AyudaAdm4.TabIndex = 36;
-            this.AyudaAdm4.Text = "Ayuda";
-            this.AyudaAdm4.UseVisualStyleBackColor = true;
-            this.AyudaAdm4.Click += new System.EventHandler(this.AyudaAdm4_Click);
+            this.Btn_ayudaAdm2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaAdm2.Location = new System.Drawing.Point(527, 92);
+            this.Btn_ayudaAdm2.Name = "Btn_ayudaAdm2";
+            this.Btn_ayudaAdm2.Size = new System.Drawing.Size(51, 31);
+            this.Btn_ayudaAdm2.TabIndex = 36;
+            this.Btn_ayudaAdm2.Text = "Ayuda";
+            this.Btn_ayudaAdm2.UseVisualStyleBackColor = true;
+            this.Btn_ayudaAdm2.Click += new System.EventHandler(this.AyudaAdm4_Click);
             // 
-            // Btn_ayuda4
+            // Btn_ayudaAdmin2
             // 
-            this.Btn_ayuda4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ayuda4.Location = new System.Drawing.Point(351, 92);
-            this.Btn_ayuda4.Name = "Btn_ayuda4";
-            this.Btn_ayuda4.Size = new System.Drawing.Size(173, 31);
-            this.Btn_ayuda4.TabIndex = 35;
-            this.Btn_ayuda4.Text = "Aprobación de Cursos";
-            this.Btn_ayuda4.UseVisualStyleBackColor = true;
-            this.Btn_ayuda4.Click += new System.EventHandler(this.Btn_ayuda4_Click);
+            this.Btn_ayudaAdmin2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ayudaAdmin2.Location = new System.Drawing.Point(351, 92);
+            this.Btn_ayudaAdmin2.Name = "Btn_ayudaAdmin2";
+            this.Btn_ayudaAdmin2.Size = new System.Drawing.Size(173, 31);
+            this.Btn_ayudaAdmin2.TabIndex = 35;
+            this.Btn_ayudaAdmin2.Text = "Aprobación de Cursos";
+            this.Btn_ayudaAdmin2.UseVisualStyleBackColor = true;
+            this.Btn_ayudaAdmin2.Click += new System.EventHandler(this.Btn_ayuda4_Click);
             // 
             // Lbl_cambiocontracatedratico
             // 
@@ -336,8 +336,8 @@ namespace AsignaciondeCursos
             // tabPage_menuadministrador
             // 
             this.tabPage_menuadministrador.BackColor = System.Drawing.Color.DodgerBlue;
-            this.tabPage_menuadministrador.Controls.Add(this.btn_bitacora);
-            this.tabPage_menuadministrador.Controls.Add(this.label1);
+            this.tabPage_menuadministrador.Controls.Add(this.Btn_bitacora);
+            this.tabPage_menuadministrador.Controls.Add(this.Lbl_bitacora);
             this.tabPage_menuadministrador.Controls.Add(this.Lbl_menuaccionadmin);
             this.tabPage_menuadministrador.Controls.Add(this.Lbl_eliminarusuarioestudiante);
             this.tabPage_menuadministrador.Controls.Add(this.Lbl_eliminarusuariocatedratico);
@@ -352,34 +352,34 @@ namespace AsignaciondeCursos
             this.tabPage_menuadministrador.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage_menuadministrador.Location = new System.Drawing.Point(4, 22);
             this.tabPage_menuadministrador.Name = "tabPage_menuadministrador";
-            this.tabPage_menuadministrador.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage_menuadministrador.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_menuadministrador.Size = new System.Drawing.Size(642, 299);
             this.tabPage_menuadministrador.TabIndex = 1;
             this.tabPage_menuadministrador.Text = "Menú administrativo";
             // 
-            // btn_bitacora
+            // Btn_bitacora
             // 
-            this.btn_bitacora.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bitacora.Location = new System.Drawing.Point(272, 82);
-            this.btn_bitacora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_bitacora.Name = "btn_bitacora";
-            this.btn_bitacora.Size = new System.Drawing.Size(104, 31);
-            this.btn_bitacora.TabIndex = 40;
-            this.btn_bitacora.Text = "Bitacora";
-            this.btn_bitacora.UseVisualStyleBackColor = true;
-            this.btn_bitacora.Click += new System.EventHandler(this.btn_bitacora_Click);
+            this.Btn_bitacora.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_bitacora.Location = new System.Drawing.Point(272, 82);
+            this.Btn_bitacora.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_bitacora.Name = "Btn_bitacora";
+            this.Btn_bitacora.Size = new System.Drawing.Size(104, 31);
+            this.Btn_bitacora.TabIndex = 40;
+            this.Btn_bitacora.Text = "Bitacora";
+            this.Btn_bitacora.UseVisualStyleBackColor = true;
+            this.Btn_bitacora.Click += new System.EventHandler(this.btn_bitacora_Click);
             // 
-            // label1
+            // Lbl_bitacora
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(256, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 16);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Registro de bitacora";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Lbl_bitacora.AutoSize = true;
+            this.Lbl_bitacora.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_bitacora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Lbl_bitacora.Location = new System.Drawing.Point(256, 54);
+            this.Lbl_bitacora.Name = "Lbl_bitacora";
+            this.Lbl_bitacora.Size = new System.Drawing.Size(141, 16);
+            this.Lbl_bitacora.TabIndex = 39;
+            this.Lbl_bitacora.Text = "Registro de bitacora";
+            this.Lbl_bitacora.Click += new System.EventHandler(this.label1_Click);
             // 
             // Lbl_menuaccionadmin
             // 
@@ -454,7 +454,7 @@ namespace AsignaciondeCursos
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(691, 397);
             this.Controls.Add(this.Tblcontrol_administradorcatedratico);
-            this.Controls.Add(this.Btn_ayudaAdmin4);
+            this.Controls.Add(this.Btn_ayudaAdmin5);
             this.Name = "AyudaAdmin";
             this.Text = "Ayuda de personal administrativo/catedrático";
             this.Tblcontrol_administradorcatedratico.ResumeLayout(false);
@@ -469,16 +469,16 @@ namespace AsignaciondeCursos
         #endregion
 
         private System.Windows.Forms.Label Lbl_menuayudaAdmin;
+        private System.Windows.Forms.Label Lbl_menuayudaAdmin4;
+        private System.Windows.Forms.Button Btn_ayudaAdmin4;
         private System.Windows.Forms.Label Lbl_menuayudaAdmin3;
         private System.Windows.Forms.Button Btn_ayudaAdmin3;
-        private System.Windows.Forms.Label Lbl_menuayudaAdmin2;
-        private System.Windows.Forms.Button Btn_ayudaAdmin2;
         private System.Windows.Forms.Label Lbl_menuayudaAdmin1;
         private System.Windows.Forms.Button Btn_ayudaAdmin1;
-        private System.Windows.Forms.Button Btn_ayudaAdmin4;
-        private System.Windows.Forms.Button AyudaAdm1;
-        private System.Windows.Forms.Button AyudaAdm2;
-        private System.Windows.Forms.Button AyudaAdm3;
+        private System.Windows.Forms.Button Btn_ayudaAdmin5;
+        private System.Windows.Forms.Button Btn_ayudaAdm1;
+        private System.Windows.Forms.Button Btn_ayudaAdm3;
+        private System.Windows.Forms.Button Btn_ayudaAdm4;
         private System.Windows.Forms.Button Btn_registrar1;
         private System.Windows.Forms.Button Btn_registrar2;
         private System.Windows.Forms.Button Btn_cambiocontra1;
@@ -495,10 +495,10 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_cambiocontraadmin;
         private System.Windows.Forms.Label Lbl_cambiocontracatedratico;
         private System.Windows.Forms.Button Btn_cambiocontra2;
-        private System.Windows.Forms.Button AyudaAdm4;
-        private System.Windows.Forms.Button Btn_ayuda4;
-        private System.Windows.Forms.Label Menu_aprob;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_bitacora;
+        private System.Windows.Forms.Button Btn_ayudaAdm2;
+        private System.Windows.Forms.Button Btn_ayudaAdmin2;
+        private System.Windows.Forms.Label Lbl_menuayudaAdmin2;
+        private System.Windows.Forms.Label Lbl_bitacora;
+        private System.Windows.Forms.Button Btn_bitacora;
     }
 }

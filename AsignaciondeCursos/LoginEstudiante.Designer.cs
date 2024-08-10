@@ -33,7 +33,7 @@ namespace AsignaciondeCursos
             this.Lbl_usuario = new System.Windows.Forms.Label();
             this.Txt_usuario = new System.Windows.Forms.TextBox();
             this.Txt_contra = new System.Windows.Forms.TextBox();
-            this.Lbl_contraseña = new System.Windows.Forms.Label();
+            this.Lbl_contra = new System.Windows.Forms.Label();
             this.Btn_ingreso = new System.Windows.Forms.Button();
             this.Btn_cambiocontra = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
@@ -77,16 +77,16 @@ namespace AsignaciondeCursos
             this.Txt_contra.TabIndex = 4;
             this.Txt_contra.UseSystemPasswordChar = true;
             // 
-            // Lbl_contraseña
+            // Lbl_contra
             // 
-            this.Lbl_contraseña.AutoSize = true;
-            this.Lbl_contraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_contraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_contraseña.Location = new System.Drawing.Point(85, 93);
-            this.Lbl_contraseña.Name = "Lbl_contraseña";
-            this.Lbl_contraseña.Size = new System.Drawing.Size(87, 16);
-            this.Lbl_contraseña.TabIndex = 3;
-            this.Lbl_contraseña.Text = "Contraseña:";
+            this.Lbl_contra.AutoSize = true;
+            this.Lbl_contra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_contra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_contra.Location = new System.Drawing.Point(85, 93);
+            this.Lbl_contra.Name = "Lbl_contra";
+            this.Lbl_contra.Size = new System.Drawing.Size(87, 16);
+            this.Lbl_contra.TabIndex = 3;
+            this.Lbl_contra.Text = "Contraseña:";
             // 
             // Btn_ingreso
             // 
@@ -143,7 +143,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Btn_cambiocontra);
             this.Controls.Add(this.Btn_ingreso);
             this.Controls.Add(this.Txt_contra);
-            this.Controls.Add(this.Lbl_contraseña);
+            this.Controls.Add(this.Lbl_contra);
             this.Controls.Add(this.Txt_usuario);
             this.Controls.Add(this.Lbl_usuario);
             this.Controls.Add(this.Lbl_loginestudiante);
@@ -160,7 +160,7 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_usuario;
         private System.Windows.Forms.TextBox Txt_usuario;
         private System.Windows.Forms.TextBox Txt_contra;
-        private System.Windows.Forms.Label Lbl_contraseña;
+        private System.Windows.Forms.Label Lbl_contra;
         private System.Windows.Forms.Button Btn_ingreso;
         private System.Windows.Forms.Button Btn_cambiocontra;
         private System.Windows.Forms.Button Btn_regresar;

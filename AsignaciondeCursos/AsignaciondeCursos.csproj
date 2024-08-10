@@ -139,7 +139,6 @@
     <Compile Include="AyudaAdmin.Designer.cs">
       <DependentUpon>AyudaAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="BitacoraHelper.cs" />
     <Compile Include="Boleta.cs">
       <SubType>Form</SubType>
     </Compile>

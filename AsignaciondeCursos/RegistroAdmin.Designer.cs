@@ -30,9 +30,9 @@ namespace AsignaciondeCursos
         private void InitializeComponent()
         {
             this.Txt_contra = new System.Windows.Forms.TextBox();
-            this.Lbl_contraseña = new System.Windows.Forms.Label();
+            this.Lbl_contra = new System.Windows.Forms.Label();
             this.Txt_username = new System.Windows.Forms.TextBox();
-            this.Lbl_username = new System.Windows.Forms.Label();
+            this.Lbl_usuario = new System.Windows.Forms.Label();
             this.Lbl_registroadmin = new System.Windows.Forms.Label();
             this.Txt_correo = new System.Windows.Forms.TextBox();
             this.Lbl_correo = new System.Windows.Forms.Label();
@@ -50,16 +50,16 @@ namespace AsignaciondeCursos
             this.Txt_contra.TabIndex = 9;
             this.Txt_contra.UseSystemPasswordChar = true;
             // 
-            // Lbl_contraseña
+            // Lbl_contra
             // 
-            this.Lbl_contraseña.AutoSize = true;
-            this.Lbl_contraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_contraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_contraseña.Location = new System.Drawing.Point(90, 101);
-            this.Lbl_contraseña.Name = "Lbl_contraseña";
-            this.Lbl_contraseña.Size = new System.Drawing.Size(87, 16);
-            this.Lbl_contraseña.TabIndex = 8;
-            this.Lbl_contraseña.Text = "Contraseña:";
+            this.Lbl_contra.AutoSize = true;
+            this.Lbl_contra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_contra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_contra.Location = new System.Drawing.Point(90, 101);
+            this.Lbl_contra.Name = "Lbl_contra";
+            this.Lbl_contra.Size = new System.Drawing.Size(87, 16);
+            this.Lbl_contra.TabIndex = 8;
+            this.Lbl_contra.Text = "Contraseña:";
             // 
             // Txt_username
             // 
@@ -68,16 +68,16 @@ namespace AsignaciondeCursos
             this.Txt_username.Size = new System.Drawing.Size(310, 20);
             this.Txt_username.TabIndex = 7;
             // 
-            // Lbl_username
+            // Lbl_usuario
             // 
-            this.Lbl_username.AutoSize = true;
-            this.Lbl_username.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_username.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_username.Location = new System.Drawing.Point(37, 65);
-            this.Lbl_username.Name = "Lbl_username";
-            this.Lbl_username.Size = new System.Drawing.Size(137, 16);
-            this.Lbl_username.TabIndex = 6;
-            this.Lbl_username.Text = "Nombre de usuario:";
+            this.Lbl_usuario.AutoSize = true;
+            this.Lbl_usuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_usuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_usuario.Location = new System.Drawing.Point(37, 65);
+            this.Lbl_usuario.Name = "Lbl_usuario";
+            this.Lbl_usuario.Size = new System.Drawing.Size(137, 16);
+            this.Lbl_usuario.TabIndex = 6;
+            this.Lbl_usuario.Text = "Nombre de usuario:";
             // 
             // Lbl_registroadmin
             // 
@@ -162,9 +162,9 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Txt_correo);
             this.Controls.Add(this.Lbl_correo);
             this.Controls.Add(this.Txt_contra);
-            this.Controls.Add(this.Lbl_contraseña);
+            this.Controls.Add(this.Lbl_contra);
             this.Controls.Add(this.Txt_username);
-            this.Controls.Add(this.Lbl_username);
+            this.Controls.Add(this.Lbl_usuario);
             this.Controls.Add(this.Lbl_registroadmin);
             this.Name = "RegistroAdmin";
             this.Text = "Registro de personal administrativo";
@@ -176,9 +176,9 @@ namespace AsignaciondeCursos
         #endregion
 
         private System.Windows.Forms.TextBox Txt_contra;
-        private System.Windows.Forms.Label Lbl_contraseña;
+        private System.Windows.Forms.Label Lbl_contra;
         private System.Windows.Forms.TextBox Txt_username;
-        private System.Windows.Forms.Label Lbl_username;
+        private System.Windows.Forms.Label Lbl_usuario;
         private System.Windows.Forms.Label Lbl_registroadmin;
         private System.Windows.Forms.TextBox Txt_correo;
         private System.Windows.Forms.Label Lbl_correo;

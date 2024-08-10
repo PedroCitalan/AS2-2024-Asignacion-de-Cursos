@@ -29,28 +29,28 @@ namespace AsignaciondeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.Lbl_loginadmin = new System.Windows.Forms.Label();
+            this.Lbl_cambiocontraest = new System.Windows.Forms.Label();
             this.Txt_correo = new System.Windows.Forms.TextBox();
             this.Btn_buscar = new System.Windows.Forms.Button();
             this.Lbl_correo = new System.Windows.Forms.Label();
             this.Txt_contra = new System.Windows.Forms.TextBox();
             this.Txt_confirmarcontra = new System.Windows.Forms.TextBox();
-            this.Lbl_contraseña = new System.Windows.Forms.Label();
+            this.Lbl_contra = new System.Windows.Forms.Label();
             this.Lbl_confirmarcontra = new System.Windows.Forms.Label();
             this.Btn_regresar = new System.Windows.Forms.Button();
             this.Btn_cambiocontra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Lbl_loginadmin
+            // Lbl_cambiocontraest
             // 
-            this.Lbl_loginadmin.AutoSize = true;
-            this.Lbl_loginadmin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_loginadmin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_loginadmin.Location = new System.Drawing.Point(144, 9);
-            this.Lbl_loginadmin.Name = "Lbl_loginadmin";
-            this.Lbl_loginadmin.Size = new System.Drawing.Size(357, 23);
-            this.Lbl_loginadmin.TabIndex = 25;
-            this.Lbl_loginadmin.Text = "Cambio de contraseña de estudiante";
+            this.Lbl_cambiocontraest.AutoSize = true;
+            this.Lbl_cambiocontraest.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_cambiocontraest.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_cambiocontraest.Location = new System.Drawing.Point(144, 9);
+            this.Lbl_cambiocontraest.Name = "Lbl_cambiocontraest";
+            this.Lbl_cambiocontraest.Size = new System.Drawing.Size(357, 23);
+            this.Lbl_cambiocontraest.TabIndex = 25;
+            this.Lbl_cambiocontraest.Text = "Cambio de contraseña de estudiante";
             // 
             // Txt_correo
             // 
@@ -100,17 +100,17 @@ namespace AsignaciondeCursos
             this.Txt_confirmarcontra.UseSystemPasswordChar = true;
             this.Txt_confirmarcontra.Visible = false;
             // 
-            // Lbl_contraseña
+            // Lbl_contra
             // 
-            this.Lbl_contraseña.AutoSize = true;
-            this.Lbl_contraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_contraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl_contraseña.Location = new System.Drawing.Point(81, 86);
-            this.Lbl_contraseña.Name = "Lbl_contraseña";
-            this.Lbl_contraseña.Size = new System.Drawing.Size(87, 16);
-            this.Lbl_contraseña.TabIndex = 38;
-            this.Lbl_contraseña.Text = "Contraseña:";
-            this.Lbl_contraseña.Visible = false;
+            this.Lbl_contra.AutoSize = true;
+            this.Lbl_contra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_contra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Lbl_contra.Location = new System.Drawing.Point(81, 86);
+            this.Lbl_contra.Name = "Lbl_contra";
+            this.Lbl_contra.Size = new System.Drawing.Size(87, 16);
+            this.Lbl_contra.TabIndex = 38;
+            this.Lbl_contra.Text = "Contraseña:";
+            this.Lbl_contra.Visible = false;
             // 
             // Lbl_confirmarcontra
             // 
@@ -156,13 +156,13 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Btn_cambiocontra);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Lbl_confirmarcontra);
-            this.Controls.Add(this.Lbl_contraseña);
+            this.Controls.Add(this.Lbl_contra);
             this.Controls.Add(this.Txt_confirmarcontra);
             this.Controls.Add(this.Txt_contra);
             this.Controls.Add(this.Lbl_correo);
             this.Controls.Add(this.Btn_buscar);
             this.Controls.Add(this.Txt_correo);
-            this.Controls.Add(this.Lbl_loginadmin);
+            this.Controls.Add(this.Lbl_cambiocontraest);
             this.Name = "CambioContraEstudiante";
             this.Text = "Cambio de contraseña de estudiantes";
             this.ResumeLayout(false);
@@ -172,13 +172,13 @@ namespace AsignaciondeCursos
 
         #endregion
 
-        private System.Windows.Forms.Label Lbl_loginadmin;
+        private System.Windows.Forms.Label Lbl_cambiocontraest;
         private System.Windows.Forms.TextBox Txt_correo;
         private System.Windows.Forms.Button Btn_buscar;
         private System.Windows.Forms.Label Lbl_correo;
         private System.Windows.Forms.TextBox Txt_contra;
         private System.Windows.Forms.TextBox Txt_confirmarcontra;
-        private System.Windows.Forms.Label Lbl_contraseña;
+        private System.Windows.Forms.Label Lbl_contra;
         private System.Windows.Forms.Label Lbl_confirmarcontra;
         private System.Windows.Forms.Button Btn_regresar;
         private System.Windows.Forms.Button Btn_cambiocontra;

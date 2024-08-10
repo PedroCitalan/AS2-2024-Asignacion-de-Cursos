@@ -17,7 +17,7 @@ namespace AsignaciondeCursos
         public Validacion()
         {
             InitializeComponent();
-            Txt_carnetCer1.TextChanged += new EventHandler(Txt_carnetCer1_TextChanged);
+            Txt_idboleta.TextChanged += new EventHandler(Txt_carnetCer1_TextChanged);
         }
 
         private void Txt_carnetCer1_TextChanged(object sender, EventArgs e)
@@ -25,9 +25,9 @@ namespace AsignaciondeCursos
             try
             {
 
-                if (!string.IsNullOrEmpty(Txt_carnetCer1.Text))
+                if (!string.IsNullOrEmpty(Txt_idboleta.Text))
                 {
-                    long.Parse(Txt_carnetCer1.Text);
+                    long.Parse(Txt_idboleta.Text);
                 }
             }
             catch (FormatException ex)
@@ -36,20 +36,15 @@ namespace AsignaciondeCursos
                 MessageBox.Show(ex.Message, "Entrada inválida, solo se permite ingresar números.", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
-                Txt_carnetCer1.Text = new string(Txt_carnetCer1.Text.Where(char.IsDigit).ToArray());
+                Txt_idboleta.Text = new string(Txt_idboleta.Text.Where(char.IsDigit).ToArray());
 
-                Txt_carnetCer1.SelectionStart = Txt_carnetCer1.Text.Length;
+                Txt_idboleta.SelectionStart = Txt_idboleta.Text.Length;
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void Validacion_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void Btn_regresar_Click(object sender, EventArgs e)
@@ -62,7 +57,7 @@ namespace AsignaciondeCursos
 
         private void Btn_Validar_Click(object sender, EventArgs e)
         {
-            Validar(Convert.ToInt32(Txt_carnetCer1.Text.Trim()));
+            Validar(Convert.ToInt32(Txt_idboleta.Text.Trim()));
         }
         ConexionMySQL con = new ConexionMySQL();
         private void Validar(int idboleta)

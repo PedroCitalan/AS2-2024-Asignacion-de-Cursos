@@ -55,7 +55,7 @@ namespace AsignaciondeCursos
             this.Lbl_listCat.AutoSize = true;
             this.Lbl_listCat.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_listCat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Lbl_listCat.Location = new System.Drawing.Point(208, 7);
+            this.Lbl_listCat.Location = new System.Drawing.Point(283, 9);
             this.Lbl_listCat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_listCat.Name = "Lbl_listCat";
             this.Lbl_listCat.Size = new System.Drawing.Size(228, 23);

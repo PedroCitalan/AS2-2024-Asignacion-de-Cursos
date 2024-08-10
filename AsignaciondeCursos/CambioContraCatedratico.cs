@@ -47,7 +47,7 @@ namespace AsignaciondeCursos
                     if (mAdminCRUD.buscarCorreoCatedratico(mAdmin))
                     {
                         MessageBox.Show("Correo encontrado con éxito, puede proceder a cambiar la contraseña.", "Correo Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Lbl_contraseña.Visible = true;
+                        Lbl_contra.Visible = true;
                         Lbl_confirmarcontra.Visible = true;
                         Txt_contra.Visible = true;
                         Txt_confirmarcontra.Visible = true;

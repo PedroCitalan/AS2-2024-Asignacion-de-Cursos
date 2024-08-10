@@ -29,7 +29,7 @@ namespace AsignaciondeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.Lbl_loginadmin = new System.Windows.Forms.Label();
+            this.Lbl_registroestudiante = new System.Windows.Forms.Label();
             this.Lbl_nombre = new System.Windows.Forms.Label();
             this.Lbl_apellido = new System.Windows.Forms.Label();
             this.Txt_nombre = new System.Windows.Forms.TextBox();
@@ -40,9 +40,9 @@ namespace AsignaciondeCursos
             this.Lbl_creditosacumulados = new System.Windows.Forms.Label();
             this.Txt_creditosacumulados = new System.Windows.Forms.TextBox();
             this.Lbl_idcarrera = new System.Windows.Forms.Label();
-            this.Txt_ID_carrera = new System.Windows.Forms.TextBox();
+            this.Txt_idcarrera = new System.Windows.Forms.TextBox();
             this.Lbl_idcurso = new System.Windows.Forms.Label();
-            this.Txt_ID_curso = new System.Windows.Forms.TextBox();
+            this.Txt_idcurso = new System.Windows.Forms.TextBox();
             this.Txt_seccion = new System.Windows.Forms.TextBox();
             this.Lbl_seccion = new System.Windows.Forms.Label();
             this.Btn_regresar = new System.Windows.Forms.Button();
@@ -51,22 +51,22 @@ namespace AsignaciondeCursos
             this.Txt_contra = new System.Windows.Forms.TextBox();
             this.Lbl_confirmarcontra = new System.Windows.Forms.Label();
             this.Txt_confirmarcontra = new System.Windows.Forms.TextBox();
-            this.Lbl_nombreusuario = new System.Windows.Forms.Label();
-            this.Txt_nombreusuario = new System.Windows.Forms.TextBox();
+            this.Lbl_usuario = new System.Windows.Forms.Label();
+            this.Txt_username = new System.Windows.Forms.TextBox();
             this.picker_fechanac = new System.Windows.Forms.DateTimePicker();
-            this.Lbl_correoelectronico = new System.Windows.Forms.Label();
-            this.Txt_correoelectronico = new System.Windows.Forms.TextBox();
+            this.Lbl_correo = new System.Windows.Forms.Label();
+            this.Txt_correo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // Lbl_loginadmin
+            // Lbl_registroestudiante
             // 
-            this.Lbl_loginadmin.AutoSize = true;
-            this.Lbl_loginadmin.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_loginadmin.Location = new System.Drawing.Point(223, 9);
-            this.Lbl_loginadmin.Name = "Lbl_loginadmin";
-            this.Lbl_loginadmin.Size = new System.Drawing.Size(223, 23);
-            this.Lbl_loginadmin.TabIndex = 6;
-            this.Lbl_loginadmin.Text = "Registro de estudiantes";
+            this.Lbl_registroestudiante.AutoSize = true;
+            this.Lbl_registroestudiante.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_registroestudiante.Location = new System.Drawing.Point(223, 9);
+            this.Lbl_registroestudiante.Name = "Lbl_registroestudiante";
+            this.Lbl_registroestudiante.Size = new System.Drawing.Size(223, 23);
+            this.Lbl_registroestudiante.TabIndex = 6;
+            this.Lbl_registroestudiante.Text = "Registro de estudiantes";
             // 
             // Lbl_nombre
             // 
@@ -156,12 +156,12 @@ namespace AsignaciondeCursos
             this.Lbl_idcarrera.TabIndex = 17;
             this.Lbl_idcarrera.Text = "ID de carrera:";
             // 
-            // Txt_ID_carrera
+            // Txt_idcarrera
             // 
-            this.Txt_ID_carrera.Location = new System.Drawing.Point(207, 231);
-            this.Txt_ID_carrera.Name = "Txt_ID_carrera";
-            this.Txt_ID_carrera.Size = new System.Drawing.Size(310, 20);
-            this.Txt_ID_carrera.TabIndex = 18;
+            this.Txt_idcarrera.Location = new System.Drawing.Point(207, 231);
+            this.Txt_idcarrera.Name = "Txt_idcarrera";
+            this.Txt_idcarrera.Size = new System.Drawing.Size(310, 20);
+            this.Txt_idcarrera.TabIndex = 18;
             // 
             // Lbl_idcurso
             // 
@@ -173,12 +173,12 @@ namespace AsignaciondeCursos
             this.Lbl_idcurso.TabIndex = 19;
             this.Lbl_idcurso.Text = "ID de curso:";
             // 
-            // Txt_ID_curso
+            // Txt_idcurso
             // 
-            this.Txt_ID_curso.Location = new System.Drawing.Point(207, 267);
-            this.Txt_ID_curso.Name = "Txt_ID_curso";
-            this.Txt_ID_curso.Size = new System.Drawing.Size(310, 20);
-            this.Txt_ID_curso.TabIndex = 20;
+            this.Txt_idcurso.Location = new System.Drawing.Point(207, 267);
+            this.Txt_idcurso.Name = "Txt_idcurso";
+            this.Txt_idcurso.Size = new System.Drawing.Size(310, 20);
+            this.Txt_idcurso.TabIndex = 20;
             // 
             // Txt_seccion
             // 
@@ -255,22 +255,22 @@ namespace AsignaciondeCursos
             this.Txt_confirmarcontra.TabIndex = 29;
             this.Txt_confirmarcontra.UseSystemPasswordChar = true;
             // 
-            // Lbl_nombreusuario
+            // Lbl_usuario
             // 
-            this.Lbl_nombreusuario.AutoSize = true;
-            this.Lbl_nombreusuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_nombreusuario.Location = new System.Drawing.Point(66, 345);
-            this.Lbl_nombreusuario.Name = "Lbl_nombreusuario";
-            this.Lbl_nombreusuario.Size = new System.Drawing.Size(137, 16);
-            this.Lbl_nombreusuario.TabIndex = 29;
-            this.Lbl_nombreusuario.Text = "Nombre de usuario:";
+            this.Lbl_usuario.AutoSize = true;
+            this.Lbl_usuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_usuario.Location = new System.Drawing.Point(66, 345);
+            this.Lbl_usuario.Name = "Lbl_usuario";
+            this.Lbl_usuario.Size = new System.Drawing.Size(137, 16);
+            this.Lbl_usuario.TabIndex = 29;
+            this.Lbl_usuario.Text = "Nombre de usuario:";
             // 
-            // Txt_nombreusuario
+            // Txt_username
             // 
-            this.Txt_nombreusuario.Location = new System.Drawing.Point(208, 344);
-            this.Txt_nombreusuario.Name = "Txt_nombreusuario";
-            this.Txt_nombreusuario.Size = new System.Drawing.Size(310, 20);
-            this.Txt_nombreusuario.TabIndex = 23;
+            this.Txt_username.Location = new System.Drawing.Point(208, 344);
+            this.Txt_username.Name = "Txt_username";
+            this.Txt_username.Size = new System.Drawing.Size(310, 20);
+            this.Txt_username.TabIndex = 23;
             // 
             // picker_fechanac
             // 
@@ -279,22 +279,22 @@ namespace AsignaciondeCursos
             this.picker_fechanac.Size = new System.Drawing.Size(311, 20);
             this.picker_fechanac.TabIndex = 12;
             // 
-            // Lbl_correoelectronico
+            // Lbl_correo
             // 
-            this.Lbl_correoelectronico.AutoSize = true;
-            this.Lbl_correoelectronico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_correoelectronico.Location = new System.Drawing.Point(70, 383);
-            this.Lbl_correoelectronico.Name = "Lbl_correoelectronico";
-            this.Lbl_correoelectronico.Size = new System.Drawing.Size(133, 16);
-            this.Lbl_correoelectronico.TabIndex = 32;
-            this.Lbl_correoelectronico.Text = "Correo electronico:";
+            this.Lbl_correo.AutoSize = true;
+            this.Lbl_correo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_correo.Location = new System.Drawing.Point(70, 383);
+            this.Lbl_correo.Name = "Lbl_correo";
+            this.Lbl_correo.Size = new System.Drawing.Size(133, 16);
+            this.Lbl_correo.TabIndex = 32;
+            this.Lbl_correo.Text = "Correo electronico:";
             // 
-            // Txt_correoelectronico
+            // Txt_correo
             // 
-            this.Txt_correoelectronico.Location = new System.Drawing.Point(207, 382);
-            this.Txt_correoelectronico.Name = "Txt_correoelectronico";
-            this.Txt_correoelectronico.Size = new System.Drawing.Size(310, 20);
-            this.Txt_correoelectronico.TabIndex = 25;
+            this.Txt_correo.Location = new System.Drawing.Point(207, 382);
+            this.Txt_correo.Name = "Txt_correo";
+            this.Txt_correo.Size = new System.Drawing.Size(310, 20);
+            this.Txt_correo.TabIndex = 25;
             // 
             // RegistroEstudiante
             // 
@@ -302,11 +302,11 @@ namespace AsignaciondeCursos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(636, 567);
-            this.Controls.Add(this.Txt_correoelectronico);
-            this.Controls.Add(this.Lbl_correoelectronico);
+            this.Controls.Add(this.Txt_correo);
+            this.Controls.Add(this.Lbl_correo);
             this.Controls.Add(this.picker_fechanac);
-            this.Controls.Add(this.Txt_nombreusuario);
-            this.Controls.Add(this.Lbl_nombreusuario);
+            this.Controls.Add(this.Txt_username);
+            this.Controls.Add(this.Lbl_usuario);
             this.Controls.Add(this.Txt_confirmarcontra);
             this.Controls.Add(this.Lbl_confirmarcontra);
             this.Controls.Add(this.Txt_contra);
@@ -315,9 +315,9 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Lbl_seccion);
             this.Controls.Add(this.Txt_seccion);
-            this.Controls.Add(this.Txt_ID_curso);
+            this.Controls.Add(this.Txt_idcurso);
             this.Controls.Add(this.Lbl_idcurso);
-            this.Controls.Add(this.Txt_ID_carrera);
+            this.Controls.Add(this.Txt_idcarrera);
             this.Controls.Add(this.Lbl_idcarrera);
             this.Controls.Add(this.Txt_creditosacumulados);
             this.Controls.Add(this.Lbl_creditosacumulados);
@@ -328,7 +328,7 @@ namespace AsignaciondeCursos
             this.Controls.Add(this.Txt_nombre);
             this.Controls.Add(this.Lbl_apellido);
             this.Controls.Add(this.Lbl_nombre);
-            this.Controls.Add(this.Lbl_loginadmin);
+            this.Controls.Add(this.Lbl_registroestudiante);
             this.Name = "RegistroEstudiante";
             this.Text = "Registro de estudiantes";
             this.ResumeLayout(false);
@@ -338,7 +338,7 @@ namespace AsignaciondeCursos
 
         #endregion
 
-        private System.Windows.Forms.Label Lbl_loginadmin;
+        private System.Windows.Forms.Label Lbl_registroestudiante;
         private System.Windows.Forms.Label Lbl_nombre;
         private System.Windows.Forms.Label Lbl_apellido;
         private System.Windows.Forms.TextBox Txt_nombre;
@@ -349,9 +349,9 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_creditosacumulados;
         private System.Windows.Forms.TextBox Txt_creditosacumulados;
         private System.Windows.Forms.Label Lbl_idcarrera;
-        private System.Windows.Forms.TextBox Txt_ID_carrera;
+        private System.Windows.Forms.TextBox Txt_idcarrera;
         private System.Windows.Forms.Label Lbl_idcurso;
-        private System.Windows.Forms.TextBox Txt_ID_curso;
+        private System.Windows.Forms.TextBox Txt_idcurso;
         private System.Windows.Forms.TextBox Txt_seccion;
         private System.Windows.Forms.Label Lbl_seccion;
         private System.Windows.Forms.Button Btn_regresar;
@@ -360,10 +360,10 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.TextBox Txt_contra;
         private System.Windows.Forms.Label Lbl_confirmarcontra;
         private System.Windows.Forms.TextBox Txt_confirmarcontra;
-        private System.Windows.Forms.Label Lbl_nombreusuario;
-        private System.Windows.Forms.TextBox Txt_nombreusuario;
+        private System.Windows.Forms.Label Lbl_usuario;
+        private System.Windows.Forms.TextBox Txt_username;
         private System.Windows.Forms.DateTimePicker picker_fechanac;
-        private System.Windows.Forms.Label Lbl_correoelectronico;
-        private System.Windows.Forms.TextBox Txt_correoelectronico;
+        private System.Windows.Forms.Label Lbl_correo;
+        private System.Windows.Forms.TextBox Txt_correo;
     }
 }
