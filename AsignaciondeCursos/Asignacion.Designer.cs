@@ -47,6 +47,8 @@ namespace AsignaciondeCursos
             this.Lbl_cod3 = new System.Windows.Forms.Label();
             this.Btn_asignar = new System.Windows.Forms.Button();
             this.Btn_regresar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Lbl_asignacioncurso
@@ -250,7 +252,7 @@ namespace AsignaciondeCursos
             // Btn_asignar
             // 
             this.Btn_asignar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_asignar.Location = new System.Drawing.Point(345, 439);
+            this.Btn_asignar.Location = new System.Drawing.Point(179, 439);
             this.Btn_asignar.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_asignar.Name = "Btn_asignar";
             this.Btn_asignar.Size = new System.Drawing.Size(108, 42);
@@ -271,12 +273,35 @@ namespace AsignaciondeCursos
             this.Btn_regresar.UseVisualStyleBackColor = true;
             this.Btn_regresar.Click += new System.EventHandler(this.Btn_regresar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(369, 439);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 28);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "NO. Boleta";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(537, 445);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(181, 22);
+            this.textBox1.TabIndex = 29;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Asignacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(829, 524);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_regresar);
             this.Controls.Add(this.Btn_asignar);
             this.Controls.Add(this.comboBox3);
@@ -324,5 +349,7 @@ namespace AsignaciondeCursos
         private System.Windows.Forms.Label Lbl_cod3;
         private System.Windows.Forms.Button Btn_asignar;
         private System.Windows.Forms.Button Btn_regresar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
