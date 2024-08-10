@@ -41,14 +41,17 @@ namespace AsignaciondeCursos
                 adapter.Fill(dataTable);
 
                 // Asignar los datos a los ComboBox
-                comboBox1.DataSource = dataTable.Copy();
+                comboBox1.DataSource = dataTable;
                 comboBox1.DisplayMember = "NOMBRE_C";
+                comboBox1.ValueMember = "ID_CURSOS"; // Cambia a la columna adecuada
 
                 comboBox2.DataSource = dataTable.Copy();
                 comboBox2.DisplayMember = "NOMBRE_C";
+                comboBox2.ValueMember = "ID_CURSOS"; // Cambia a la columna adecuada
 
                 comboBox3.DataSource = dataTable.Copy();
                 comboBox3.DisplayMember = "NOMBRE_C";
+                comboBox3.ValueMember = "ID_CURSOS"; // Cambia a la columna adecuada
             }
             catch (Exception ex)
             {
@@ -98,6 +101,25 @@ namespace AsignaciondeCursos
                 {
                     // Lógica para asignar cursos si la boleta existe
                     MessageBox.Show("Boleta encontrada. Procediendo con la asignación de cursos.");
+
+                    // Inserción en la tabla TBL_ASIGNACION_CURSOS
+                    string insertQuery = "INSERT INTO TBL_ASIGNACION_CURSOS (ID_BOLETA, ID_CURSO) VALUES (@idBoleta, @idCurso)";
+                    using (MySqlCommand insertCmd = new MySqlCommand(insertQuery, connection))
+                    {
+                        insertCmd.Parameters.AddWithValue("@idBoleta", numeroBoleta);
+
+                        // Asignar los cursos seleccionados en los ComboBox
+                        insertCmd.Parameters.AddWithValue("@idCurso", Convert.ToInt32(comboBox1.SelectedValue));
+                        insertCmd.ExecuteNonQuery();
+
+                        insertCmd.Parameters["@idCurso"].Value = Convert.ToInt32(comboBox2.SelectedValue);
+                        insertCmd.ExecuteNonQuery();
+
+                        insertCmd.Parameters["@idCurso"].Value = Convert.ToInt32(comboBox3.SelectedValue);
+                        insertCmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Cursos asignados exitosamente.");
+                    }
                 }
                 else
                 {
